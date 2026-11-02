@@ -19,8 +19,10 @@ results/           the outputs these scripts produced for the paper (each file s
 
 **Data.** No source text is included, and no embeddings except the crane example's vectors: several corpora are
 copyrighted (see "Data and licences" below, which gives every selection rule and identifier needed to rebuild them).
-Derived data that are not here (embeddings and per-query features for all nine models, about 2 GB) are available from
-the authors on request, for research use where the source texts' terms permit.
+Derived data that are not here (embeddings for all nine models, per-query features and results, and the chunk tables;
+about 2 GB) are kept privately. The authors share them, on request to the corresponding author, only with SIAM
+editors and with researchers whose institutional affiliation they can verify, for research use. Texts of copyrighted
+corpora are not shared, only their chunk identifiers and offsets.
 
 ---
 
