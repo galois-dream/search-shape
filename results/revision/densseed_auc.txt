@@ -1,0 +1,4 @@
+seed-0 reproduction: max |W1 diff| over combinations 0.00e+00 (n=45)
+mean score   : AUROC (multi-like > poly-like), mean over seeds: median 0.52 range 0.46-0.84; > 0.5 in every seed: 31/45; < 0.5 in every seed: 2/45; mean > 0.5: 42/45; seed-to-seed range: median 0.024, max 0.042
+SD of scores : AUROC (multi-like > poly-like), mean over seeds: median 0.52 range 0.43-0.57; > 0.5 in every seed: 26/45; < 0.5 in every seed: 5/45; mean > 0.5: 40/45; seed-to-seed range: median 0.031, max 0.065
+W1           : AUROC (multi-like > poly-like), mean over seeds: median 0.93 range 0.72-1.00; > 0.5 in every seed: 45/45; < 0.5 in every seed: 0/45; mean > 0.5: 45/45; seed-to-seed range: median 0.023, max 0.137

@@ -541,6 +541,8 @@ tables through `code/realtext/features.py`. Outputs are in `results/revision/`.
 | `loops.py` | median LT_max(H1) per combination, real vs random-bearing vs corpus-bearing control | par. "Loops respond to dimension" |
 | `h2probe.py` | H2 (voids) and the participation ratio of the bearings for 200 queries per cell (Nobel; two models) and for synthetic scatter in p dimensions. **Run with `CLEAN=1`** so the corpora match the paper's | Limitations; par. "Loops respond to dimension" |
 | `gen_fig_design.py` | the 2x2 design figure | Fig. "The 2x2 design" |
+| `../realtext/densseed.py` + `densseed_auc.py` | the size-matched cell over ten C250 subsamples (seed 0 reproduces the pipeline exactly); AUROC per seed | sec. "What else could produce the signature", corpus density |
+| `gen_fig_loops.py` | median LT_max(H1) against the participation ratio, from `h2probe.txt` | Fig. "Loops shrink as the neighbours fill more dimensions" |
 
 How to run: `signature.py stats` and `h2probe.py` need numpy, pandas and ripser (`code/realtext/requirements.txt`).
 Scripts that `import features` (here and in `code/geometry/`) need `PYTHONPATH=code/realtext`. `signature.py extract`
