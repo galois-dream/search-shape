@@ -1,0 +1,39 @@
+% fig_examples.tex -- Appendix figure "From flag to clarifying question": three real
+% neighbourhoods (all-MiniLM-L6-v2, English Wikipedia), the 50 neighbours laid out by classical MDS of their unit offset
+% directions (display only; distances are approximate), coloured and shaped by the page they come from, the minimum
+% spanning tree in faint grey and its longest edge (L_max) in vermillion. Data: data/examples/ex{0,1,2}_{pts,mst,long}.dat
+% from paper/examples/to_dat.py <- ring2.json (ring_examples.py). A vermillion circle marks a chunk that the longest edge
+% isolates (a side of 3 or fewer). Titles sit at a fixed height. \input from main.tex (no preamble here).
+% pedagogical pass: a key that names every mark (the
+% vermillion line IS the longest bar L_max: the edge whose cut splits the neighbours in two), and one verdict per panel.
+\providecommand{\didpath}{figs_didactic/}%
+\definecolor{didV}{HTML}{D55E00}\definecolor{exA}{HTML}{0072B2}\definecolor{exB}{HTML}{009E73}\definecolor{exC}{HTML}{CC79A7}%
+\pgfplotsset{exax/.style={scale only axis, width=4.3cm, height=4.3cm, axis equal image, hide axis, clip=false},
+  exsc/.style={scatter, only marks, scatter src=explicit symbolic, mark size=1.5pt,
+    scatter/classes={0={mark=*, exA}, 1={mark=square*, exB, mark size=1.3pt}, 2={mark=triangle*, exC, mark size=1.9pt},
+      3={mark=diamond*, black!75, mark size=1.9pt}, 9={mark=o, black!40, mark size=1.2pt}}}}%
+\begin{tikzpicture}[font=\footnotesize]
+  % #1 index, #2 x shift, #3 title, #4 legend lines
+  \def\expanel#1#2#3#4{%
+    \begin{axis}[exax, at={(#2,0cm)}, anchor=south west]
+      \addplot[line width=0.35pt, black!22, empty line=jump] table {\didpath data/examples/ex#1_mst.dat};
+      \addplot[line width=1.5pt, didV] table {\didpath data/examples/ex#1_long.dat};
+      \addplot[exsc] table[meta=c] {\didpath data/examples/ex#1_pts.dat};
+      \addplot[only marks, mark=o, mark size=4pt, line width=0.7pt, didV, unbounded coords=discard]
+        table[x=x, y expr={ifthenelse(\thisrow{s}==1, \thisrow{y}, nan)}] {\didpath data/examples/ex#1_pts.dat};
+    \end{axis}
+    \node[anchor=south, align=center, inner sep=0pt] at ({#2+2.15cm}, 4.55cm) {#3};
+    \node[anchor=north west, align=left, inner sep=0pt] at (#2,-0.15cm) {#4};}
+  \expanel{0}{0cm}{\emph{jaguar}\\Jaguar or Jaguar Cars?}%
+    {\textbf{\checkmark\ splits the two meanings}\\{\scriptsize (the animal from the cars)}\\[2pt]\textcolor{exA}{$\bullet$} animal (27)\quad \textcolor{exB}{$\blacksquare$} cars (21)\\ \textcolor{black!45}{$\circ$} other pages (2)}
+  \expanel{1}{5.1cm}{\emph{mercury}\\Mercury (element) or Freddie Mercury?}%
+    {\textbf{\checkmark\ splits off the singer}\\{\scriptsize (element and planet stay together)}\\[2pt]\textcolor{exA}{$\bullet$} element (19)\quad \textcolor{exB}{$\blacksquare$} planet (14)\\ \textcolor{exC}{$\blacktriangle$} singer (9)\quad \textcolor{black!45}{$\circ$} other (8)}
+  \expanel{2}{10.2cm}{\emph{ring}\\One Ring or Ring (mathematics)?}%
+    {\textbf{$\times$ cuts off one stray chunk}\\{\scriptsize (clusters still split Tolkien from algebra)}\\[2pt]\textcolor{exA}{$\bullet$} Tolkien (20)\quad \textcolor{exB}{$\blacksquare$} algebra (13)\quad \textcolor{exC}{$\blacktriangle$} jewellery (3)\\ \textcolor{black!75}{$\blacklozenge$} boxing (2)\quad \textcolor{black!45}{$\circ$} other (12)}
+  % key: what every mark means
+  \begin{scope}[shift={(0.2cm,6.25cm)}, every node/.style={anchor=west, inner sep=1pt}]
+    \draw[didV, line width=1.5pt] (0,0) -- (0.45,0); \node at (0.55,0) {\textbf{the longest edge, $L_{\max}$}: cut it and the 50 chunks fall into two groups};
+    \draw[black!30, line width=0.5pt] (0,-0.4) -- (0.45,-0.4); \node at (0.55,-0.4) {the minimum spanning tree: the shortest web of edges joining all 50 chunks};
+    \draw[didV, line width=0.7pt] (0.22,-0.8) circle (4pt); \node at (0.55,-0.8) {a chunk the cut leaves on its own\quad\textbullet\quad under each title: the question built from the two largest clusters};
+  \end{scope}
+\end{tikzpicture}%

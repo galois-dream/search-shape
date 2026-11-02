@@ -1,0 +1,65 @@
+medal_year,laureate,decision,icm_year,language,words,reason
+1936,Jesse Douglas,skipped,,,,no ICM plenary or invited talk in the IMU speaker list
+1936,Lars Ahlfors,skipped,,,,"1936 plenary: 2819 words < 3000; next by the rule, 1932 section, not examined; moot: medal year older than the cap cut-off (1974)"
+1950,Atle Selberg,skipped,1950,en,3078,"qualifies (1950 plenary, 3078 words) but beyond the 40-lecture cap (older medal year)"
+1950,Laurent Schwartz,skipped,1950,fr,4756,"excluded by the English-only rule: lecture (1950 plenary, 4756 words) is in fr"
+1954,Jean-Pierre Serre,skipped,1962,fr,3283,"excluded by the English-only rule: lecture (1962 plenary, 3283 words) is in fr"
+1954,Kunihiko Kodaira,skipped,,,,1954 section: no lecture text by Kodaira in ICM 1954 vols I or III (name search; vol II holds abstracts only)
+1958,Klaus Roth,skipped,,,,1958 plenary: 2766 words < 3000
+1958,René Thom,skipped,1970,fr,3486,"excluded by the English-only rule: lecture (1970 section, 3486 words) is in fr"
+1962,John Milnor,skipped,,,,1962 plenary: 2424 words < 3000; 1958 section: 1743 words < 3000
+1962,Lars Hörmander,skipped,1970,en,5124,"qualifies (1970 plenary, 5124 words) but beyond the 40-lecture cap (older medal year)"
+1966,Alexander Grothendieck,skipped,1958,en,6818,"qualifies (1958 plenary, 6818 words) but beyond the 40-lecture cap (older medal year)"
+1966,Michael Atiyah,skipped,,,,"1966 plenary: 2898 words < 3000; 1962 section: 1678 words < 3000; 1970 section: 1025 words < 3000; next by the rule, 1978 section, not examined; moot: medal year older than the cap cut-off (1974)"
+1966,Paul Cohen,skipped,,,,1966 section: not in ICM 1966 vol 1 contents; 1962 section: 2266 words < 3000
+1966,Stephen Smale,skipped,1962,en,3053,"qualifies (1962 section, 3053 words) but beyond the 40-lecture cap (older medal year)"
+1970,Alan Baker,skipped,1970,en,3117,"qualifies (1970 plenary, 3117 words) but beyond the 40-lecture cap (older medal year)"
+1970,Heisuke Hironaka,skipped,1962,en,7798,"qualifies (1962 section, 7798 words) but beyond the 40-lecture cap (older medal year)"
+1970,John Thompson,skipped,,,,1970 section: 885 words < 3000; 1966 plenary: 1854 words < 3000; 1962 section: 2568 words < 3000
+1970,Sergei Novikov,skipped,,,,1970 section: 2564 words < 3000; 1966 section: not in ICM 1966 vol 1 contents; 1978 plenary: 245 words < 3000
+1974,David Mumford,included,2002,en,8886,kept: 2002 plenary (closer talks failed: 1970 section: 2850 words < 3000; 1962 section: 2413 words < 3000)
+1974,Enrico Bombieri,included,1974,en,3873,kept: 1974 plenary
+1978,Charles Fefferman,included,1974,en,9468,kept: 1974 plenary
+1978,Daniel Quillen,skipped,,,,1974 plenary: 2536 words < 3000; 1970 section: 2113 words < 3000
+1978,Grigory Margulis,included,1990,en,9157,kept: 1990 plenary (closer talks failed: 1974 section: no text by Margulis in ICM 1974 vol 2 (name search))
+1978,Pierre Deligne,skipped,,,,1974 plenary: no text in ICM 1974 vol 1; 1970 section: 2483 words < 3000
+1982,Alain Connes,included,1978,en,5737,kept: 1978 plenary
+1982,Shing-Tung Yau,included,1978,en,5215,kept: 1978 plenary
+1982,William Thurston,skipped,,,,1978 plenary: no text in ICM 1978 vol 1; 1974 section: 1747 words < 3000
+1986,Gerd Faltings,skipped,1994,de,3040,"excluded by the English-only rule: lecture (1994 section, 3040 words) is in de"
+1986,Michael Freedman,included,1983,en,5843,"kept: 1983 section; no reference heading found, list kept"
+1986,Simon Donaldson,included,1986,en,4801,kept: 1986 plenary
+1990,Edward Witten,included,1986,en,16203,kept: 1986 plenary
+1990,Shigefumi Mori,included,1990,en,4482,kept: 1990 plenary
+1990,Vaughan Jones,included,1990,en,6037,kept: 1990 plenary
+1990,Vladimir Drinfeld,included,1986,en,10140,kept: 1986 section
+1994,Efim Zelmanov,skipped,,,,1994 plenary: no text in ICM 1994 vol 1 (laudatio only); 1990 section: 2510 words < 3000; 1983 section: 2797 words < 3000
+1994,Jean Bourgain,included,1994,en,4628,kept: 1994 plenary
+1994,Jean-Christophe Yoccoz,included,1994,en,7019,kept: 1994 plenary
+1994,Pierre-Louis Lions,included,1994,en,5435,kept: 1994 plenary
+1998,Curtis McMullen,included,1998,en,5654,kept: 1998 section
+1998,Maxim Kontsevich,included,1994,en,8105,kept: 1994 plenary
+1998,Richard Borcherds,included,1998,en,3701,kept: 1998 plenary
+1998,Timothy Gowers,included,1998,en,7092,kept: 1998 plenary
+2002,Laurent Lafforgue,skipped,2002,fr,7713,"excluded by the English-only rule: lecture (2002 plenary, 7713 words) is in fr"
+2002,Vladimir Voevodsky,included,1998,en,11864,kept: 1998 plenary
+2006,Andrei Okounkov,included,2006,en,8027,kept: 2006 section
+2006,Grigori Perelman,included,1994,en,4024,kept: 1994 section
+2006,Terence Tao,included,2006,en,13702,kept: 2006 plenary
+2006,Wendelin Werner,included,2006,en,8702,kept: 2006 section
+2010,Cédric Villani,included,2010,en,5426,kept: 2010 plenary
+2010,Elon Lindenstrauss,included,2010,en,9710,kept: 2010 plenary
+2010,Ngô Bảo Châu,included,2010,en,11484,kept: 2010 plenary
+2010,Stanislav Smirnov,included,2010,en,9157,kept: 2010 plenary
+2014,Artur Avila,included,2010,en,8577,kept: 2010 plenary (closer talks failed: 2014 plenary: no lecture text in ICM 2014 vol 1 (laudatio only))
+2014,Manjul Bhargava,included,2014,en,12719,kept: 2014 plenary
+2014,Martin Hairer,included,2014,en,13188,kept: 2014 section
+2014,Maryam Mirzakhani,included,2010,en,5948,kept: 2010 section (closer talks failed: 2014 plenary: lecture not given (IMU speaker list))
+2018,Akshay Venkatesh,included,2018,en,13095,kept: 2018 plenary
+2018,Alessio Figalli,included,2018,en,6874,kept: 2018 plenary
+2018,Caucher Birkar,included,2018,en,11089,kept: 2018 section
+2018,Peter Scholze,included,2018,en,13330,kept: 2018 plenary
+2022,Hugo Duminil-Copin,included,2022,en,20221,kept: 2022 plenary
+2022,James Maynard,included,2022,en,11544,kept: 2022 plenary
+2022,June Huh,included,2022,en,9811,kept: 2022 plenary
+2022,Maryna Viazovska,included,2022,en,4565,kept: 2022 plenary

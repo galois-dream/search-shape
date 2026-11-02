@@ -1,0 +1,4 @@
+# vmf_elongation.txt -- text-embedding-3-small, Nobel, clean, 120 queries per cell
+Q250|C750: n=120; Spearman(vmf2, top-direction share of top-5 variance) = +0.86; Spearman(vmf2, effective rank) = -0.87; median effective rank 7.6
+Q750|C250: n=120; Spearman(vmf2, top-direction share of top-5 variance) = +0.77; Spearman(vmf2, effective rank) = -0.71; median effective rank 9.5
+pooled: n=240; Spearman(vmf2, top-direction share of top-5 variance) = +0.82; Spearman(vmf2, effective rank) = -0.80; median effective rank 8.4

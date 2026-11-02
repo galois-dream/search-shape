@@ -1,0 +1,149 @@
+% fig_overview.tex -- second row (the near miss) (pedagogy pass). Hero figure (page 1):
+% the method left to right on computed 3-D toys (data/overview_coords.tex from overview.py, seeds recorded there).
+% Row 1, two groups: clump 1 blue, clump 2 grey. Row 2, one group of 16 (blue). Query: black cross. Vermillion only
+% for the gap between the clumps (c) and the longest H0 bar (d).
+% (a) neighbours on the sphere, (b) unit offsets u_i seen from q (top view: x, y components), (c) Rips discs of one
+% radius r (the same in both rows; row 1: just before the groups join), (d) barcodes on one axis 0-2, (e) features.
+% bars 1.1pt at 0.13 cm spacing;
+% direct labels on the long bar, the short-bar stack and the joining edge in (c); a marker key and a one-line gloss of
+% H0/H1 bars under the figure; L_max marked as a full (not halved) length in (e); (c) retitled.
+% Pure TikZ (arrows.meta, calc). \input from main.tex (no preamble here).
+\providecommand{\didpath}{figs_didactic/}%
+\definecolor{didV}{HTML}{D55E00}\definecolor{didB}{HTML}{0072B2}%
+\input{\didpath data/overview_coords.tex}%
+\begin{tikzpicture}[font=\footnotesize,
+    hair/.style={line width=0.4pt, black!45},
+    flow/.style={-{Stealth[length=4pt, width=3pt]}, line width=0.4pt, black!45},
+    title/.style={anchor=south west, inner sep=0pt},
+    qx/.style={line width=0.75pt, black},
+    gA/.style={fill=didB}, gB/.style={fill=black!50}]
+  \def\ttl{1.55}     % baseline of the panel titles (cm)
+  \def\rowtwo{-3.3}  % y offset of the second row (cm)
+  \def\qcross#1#2{\draw[qx] ($(#1)+(-#2,-#2)$) -- ($(#1)+(#2,#2)$) ($(#1)+(-#2,#2)$) -- ($(#1)+(#2,-#2)$);}
+  % sphere with equator and the cap 35 deg from q (unit radius; caller sets the scale)
+  \def\didsphere{%
+    \begin{scope}
+      \clip (0,0) circle (1);
+      \shade[overlay, inner color=white, outer color=black!20] (-0.3,0.35) circle (1.45);
+    \end{scope}
+    \draw[hair] (0,0) circle (1);
+    \draw[hair, densely dashed, black!25] (1,0) arc[x radius=1, y radius=\ovSinEl, start angle=0, end angle=180];
+    \draw[hair, black!35] (-1,0) arc[x radius=1, y radius=\ovSinEl, start angle=180, end angle=360];
+    \draw[hair, densely dashed, black!35] (\ovCapR,\ovCapY) arc[x radius=\ovCapR, y radius={\ovCapR*\ovSinEl}, start angle=0, end angle=180];
+    \draw[hair, black!55] (-\ovCapR,\ovCapY) arc[x radius=\ovCapR, y radius={\ovCapR*\ovSinEl}, start angle=180, end angle=360];}
+  % barcode: #1 list i/d (longest first), #2 number of bars, #3 mean death, #4 height of the dotted line above the top bar
+  \def\sx{1.6}       % cm per unit of d
+  \def\sy{0.13}      % bar spacing (cm)
+  \def\ytop{0.95}    % y of the longest bar
+  \def\didbars#1#2#3#4{%
+    \foreach \i/\d in #1 {
+      \pgfmathsetmacro{\yy}{\ytop-(\i-1)*\sy}
+      \ifnum\i=1 \draw[line width=1.6pt, didV] (0,\yy) -- ({\d*\sx},\yy);
+      \else      \draw[line width=1.1pt, black!60] (0,\yy) -- ({\d*\sx},\yy); \fi}
+    \node[anchor=east, inner sep=2pt] at (0,{\ytop-(#2-1)*\sy/2}) {$H_0$};
+    \draw[densely dotted, line width=0.6pt, black] ({#3*\sx},{\ytop-(#2-1)*\sy-0.05}) -- ({#3*\sx},{\ytop+#4});}
+  % axis 0..2 at height #1
+  \def\didaxis#1{%
+    \draw[line width=0.4pt, black!70] (0,#1) -- ({2*\sx},#1);
+    \foreach \v in {0,0.5,1,1.5,2} { \draw[line width=0.4pt, black!70] ({\v*\sx},#1) -- ({\v*\sx},#1-0.06)
+      node[below=0.5pt, inner sep=1pt] {$\pgfmathprintnumber{\v}$}; }}
+  \pgfmathsetmacro{\yh}{\ytop-14*\sy-0.3}   % H1 row (15 H0 bars in both rows)
+  \pgfmathsetmacro{\ya}{\yh-0.25}           % axis
+  % ---------------- row labels ----------------
+  \node[rotate=90, anchor=south] at (-0.05,-0.1) {two groups};
+  \node[rotate=90, anchor=south] at (-0.05,\rowtwo-0.1) {one group};
+  % ================= ROW 1: two groups =================
+  \begin{scope}[shift={(1.1,-0.2)}, x=1.0cm, y=1.0cm]
+    \didsphere
+    \foreach \x/\y in \ovNbrsA { \fill[gA] (\x,\y) circle (1.5pt); }
+    \foreach \x/\y in \ovNbrsB { \fill[gB] (\x,\y) circle (1.5pt); }
+    \qcross{\ovQ}{0.07}
+    \node[above=3pt, inner sep=0pt] at (\ovQ) {$\bm q$};
+  \end{scope}
+  \node[title] at (0.1,\ttl) {(a)\enspace neighbours};
+  \draw[flow] (2.25,0) -- (2.6,0);
+  \begin{scope}[shift={(3.6,-0.1)}, x=0.85cm, y=0.85cm]
+    \draw[hair, densely dashed, black!30] (0,0) circle (1);
+    \foreach \x/\y in \ovTopA { \fill[gA] (\x,\y) circle (1.4pt); }
+    \foreach \x/\y in \ovTopB { \fill[gB] (\x,\y) circle (1.4pt); }
+    \qcross{0,0}{0.08}
+    \node[below=3pt, inner sep=0pt] at (0,0) {$\bm q$};
+    \node[anchor=south west, inner sep=1pt] at (0.72,0.42) {$\bm u_i$};
+  \end{scope}
+  \node[title] at (2.75,\ttl) {(b)\enspace directions from $\bm q$};
+  \draw[flow] (4.65,0) -- (5.05,0);
+  \begin{scope}[shift={(6.85,-0.1)}, x=0.7cm, y=0.7cm]
+    \draw[line width=0.8pt, didB!45] \foreach \x/\y in \ovTopA { (\x,\y) circle (\ovRdraw) };
+    \draw[line width=0.8pt, black!30] \foreach \x/\y in \ovTopB { (\x,\y) circle (\ovRdraw) };
+    \fill[didB!10] \foreach \x/\y in \ovTopA { (\x,\y) circle (\ovRdraw) };
+    \fill[black!7] \foreach \x/\y in \ovTopB { (\x,\y) circle (\ovRdraw) };
+    \draw[line width=1.2pt, didV] (\ovGapTop) -- (\ovGapTopB);
+    \node[above=2pt, inner sep=1pt, text=didV, fill=white, fill opacity=0.85, text opacity=1] at ($(\ovGapTop)!0.5!(\ovGapTopB)$) {joins at $d=\ovLmaxTxt$};
+    \foreach \x/\y in \ovTopA { \fill[gA] (\x,\y) circle (1.4pt); }
+    \foreach \x/\y in \ovTopB { \fill[gB] (\x,\y) circle (1.4pt); }
+    \draw[line width=0.4pt, black!70, {Bar[width=3pt]}-{Bar[width=3pt]}] (-0.9551,-0.17) -- ++(0,-\ovRdraw);
+    \node[anchor=north, inner sep=1pt] at ($(-0.9551,-0.17)+(0,-\ovRdraw)$) {$r=d/2$};
+  \end{scope}
+  \node[title] at (5.8,\ttl) {(c)\enspace discs of radius $r$};
+  \draw[flow] (8.2,0) -- (8.6,0);
+  \begin{scope}[shift={(9.2,0)}]
+    \didbars{\ovHzero}{\ovNbars}{\ovMeanD}{0.34}
+    \node[anchor=west, inner sep=1.5pt] at ({\ovMeanD*\sx},{\ytop+0.34}) {mean death};
+    \node[anchor=north east, inner sep=1.5pt, text=didV] at ({\ovLmax*\sx},{\ytop-0.06}) {longest bar};
+    \node[anchor=west, inner sep=1.5pt, text=black!70, align=left] at ({\ovMeanD*\sx+0.05},{\ytop-9*\sy}) {14 short bars:\\joins within a group};
+    \draw[line width=1.8pt, black, line cap=round] ({\ovHoneB*\sx},\yh) -- ({\ovHoneD*\sx},\yh);
+    \node[anchor=west, inner sep=1pt] at ({\ovHoneD*\sx+0.08},\yh) {$H_1$: one tiny loop};
+    \didaxis{\ya}
+  \end{scope}
+  \node[title] at (8.8,\ttl) {(d)\enspace barcode};
+  \draw[flow] (12.55,0) -- (12.95,0);
+  \node[title] at (13.1,\ttl) {(e)\enspace features};
+  \node[anchor=west, align=left, inner sep=0pt] at (13.1,-0.05) {%
+    $W_1(H_0)=\ovWoneTxt$\\[-1pt] {\color{black!65}half the mean death}\\[4pt]
+    $LT_{\max}(H_1)=\ovLTTxt$\\[-1pt] {\color{black!65}half the lifetime of}\\[-1pt] {\color{black!65}the longest loop}\\[4pt]
+    \textcolor{didV}{$L_{\max}(H_0)=\ovLmaxTxt$}\\[-1pt] {\color{black!65}longest bar, full}\\[-1pt] {\color{black!65}length (not halved)}};
+  % ================= ROW 2: one group (the near miss) =================
+  \begin{scope}[yshift=\rowtwo cm]
+    \begin{scope}[shift={(1.1,-0.2)}, x=1.0cm, y=1.0cm]
+      \didsphere
+      \foreach \x/\y in \ovONbrs { \fill[gA] (\x,\y) circle (1.5pt); }
+      \qcross{\ovQ}{0.07}
+      \node[above=3pt, inner sep=0pt] at (\ovQ) {$\bm q$};
+    \end{scope}
+    \draw[flow] (2.25,0) -- (2.6,0);
+    \begin{scope}[shift={(3.6,-0.1)}, x=0.85cm, y=0.85cm]
+      \draw[hair, densely dashed, black!30] (0,0) circle (1);
+      \foreach \x/\y in \ovOTop { \fill[gA] (\x,\y) circle (1.4pt); }
+      \qcross{0,0}{0.08}
+      \node[below=3pt, inner sep=0pt] at (0,0) {$\bm q$};
+    \end{scope}
+    \draw[flow] (4.65,0) -- (5.05,0);
+    \begin{scope}[shift={(6.85,-0.1)}, x=0.7cm, y=0.7cm]
+      \draw[line width=0.8pt, didB!45] \foreach \x/\y in \ovOTop { (\x,\y) circle (\ovRdraw) };
+      \fill[didB!10] \foreach \x/\y in \ovOTop { (\x,\y) circle (\ovRdraw) };
+      \foreach \x/\y in \ovOTop { \fill[gA] (\x,\y) circle (1.4pt); }
+      \node[anchor=east, text=black!60, align=right] at (-0.05,0) {same $r$:\\no gap};
+    \end{scope}
+    \draw[flow] (8.2,0) -- (8.6,0);
+    \begin{scope}[shift={(9.2,0)}]
+      \didbars{\ovOHzero}{\ovONbars}{\ovOMeanD}{0.12}
+      \node[anchor=west, inner sep=1pt] at (0.08,\yh) {$H_1$: none};
+      \node[anchor=west, inner sep=1.5pt, text=black!70, align=left] at (0.25,{\ytop-7*\sy}) {15 short bars,\\no long one};
+      \didaxis{\ya}
+      \node[anchor=north, inner sep=1pt] at (\sx,\ya-0.42) {death $d$ (distance between directions)};
+    \end{scope}
+    % key and gloss
+    \begin{scope}[shift={(0.2,\ya-0.6)}, every node/.style={anchor=west, inner sep=1pt}]
+      \qcross{0,0}{0.07}\node at (0.12,0) {query $\bm q$};
+      \fill[gA] (1.55,0) circle (1.5pt); \node at (1.65,0) {neighbours, group 1};
+      \fill[gB] (4.9,0) circle (1.5pt); \node at (5.0,0) {group 2 (top row)};
+      \node[text=black!80] at (-0.2,-0.48) {$H_0$ bar: a group of directions; it ends at the $d$ where the group joins another.};
+      \node[text=black!80] at (-0.2,-0.88) {$H_1$ bar: a loop of edges. \textcolor{didV}{Vermillion}: the longest $H_0$ bar and the edge that ends it.};
+    \end{scope}
+    \draw[flow] (12.55,0) -- (12.95,0);
+    \node[anchor=west, align=left, inner sep=0pt] at (13.1,-0.05) {%
+      $W_1(H_0)=\ovOWoneTxt$\\[4pt]
+      $LT_{\max}(H_1)=\ovOLTTxt$\\[4pt]
+      \textcolor{didV}{$L_{\max}(H_0)=\ovOLmaxTxt$}};
+  \end{scope}
+\end{tikzpicture}%

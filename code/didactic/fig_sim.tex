@@ -1,0 +1,140 @@
+% fig_sim.tex -- The four simulation figures of the appendix, redrawn from
+% matplotlib for readability. Defines \simMain (fig:sim), \simDims (fig:simall), \simProj (fig:proj), \simMixed (fig:sim_mixed).
+% Data: data/sim/sim_*.dat from code/simulation/make_figs.py (KDEs of the all-50-neighbour features; eps means).
+% Density units: a KDE value y is y% of queries per 0.01 of W1; LT_max panels divide by 10 (% per 0.001).
+% W1 eps panel uses the same scale as the W1 density panel's x axis, so the plateau reads against it. \input once.
+\providecommand{\didpath}{figs_didactic/}%
+\definecolor{didV}{HTML}{D55E00}\definecolor{didB}{HTML}{0072B2}\definecolor{simC}{HTML}{009E73}%
+\pgfplotsset{simax/.style={scale only axis, width=5.9cm, height=3.3cm, axis x line=bottom, axis y line=left,
+    tick label style={font=\scriptsize}, label style={font=\footnotesize}, major tick length=2pt,
+    every axis plot/.append style={line width=1pt, mark=none}, clip=false, ymin=0,
+    scaled ticks=false, xticklabel style={/pgf/number format/fixed}, yticklabel style={/pgf/number format/fixed}},
+  simw/.style={simax, xlabel={$\Wone$, all 50 neighbours}, ylabel={\% of queries per 0.01}},
+  siml/.style={simax, xlabel={$\LTmax$, all 50 neighbours}, ylabel={\% of queries per 0.001}, ylabel shift=4pt},  % clear of the tick labels
+  simnull/.style={line width=0.7pt, dash pattern=on 3pt off 1.5pt}}%
+\tikzset{simlab/.style={font=\scriptsize, inner sep=1pt}}%
+\newcommand{\simFill}[3]{\addplot[#1, fill=#1, fill opacity=0.12, draw opacity=1] table[y expr=#3] {#2} \closedcycle;}%
+%
+% fig:sim -- main configuration, with the random-bearing control and the eps sweep
+\newcommand{\simMain}{%
+\begin{tikzpicture}
+  \def\F{\didpath data/sim/sim_main_w1.dat}\def\G{\didpath data/sim/sim_main_lt.dat}\def\E{\didpath data/sim/sim_main_eps.dat}
+  \begin{axis}[simw, at={(0,4.9cm)}, xmin=0.28, xmax=0.68, ymax=30]
+    \simFill{didV}{\F}{\thisrow{s1}}\simFill{didB}{\F}{\thisrow{s2}}
+    \addplot[didV, simnull] table[y=n1] {\F};\addplot[didB, simnull] table[y=n2] {\F};
+    \node[simlab, anchor=south east, text=didV] at (axis cs:0.515,26.5) {S1 multi-factual};
+    \node[simlab, anchor=south, text=didB] at (axis cs:0.39,10.6) {S2 polysemic};
+    \node[simlab, anchor=south west, text=didB] at (axis cs:0.556,17.2) {S2 control};
+    \node[simlab, anchor=south east, text=didV] at (axis cs:0.633,10.6) {S1 control};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(a)\enspace densities, $\Wone$};
+  \end{axis}
+  \begin{axis}[siml, at={(7.5cm,4.9cm)}, xmin=0, xmax=0.087, ymax=13.5, xtick={0,0.02,0.04,0.06,0.08}]
+    \simFill{didV}{\G}{\thisrow{s1}/10}\simFill{didB}{\G}{\thisrow{s2}/10}
+    \addplot[didV, simnull] table[y expr=\thisrow{n1}/10] {\G};\addplot[didB, simnull] table[y expr=\thisrow{n2}/10] {\G};
+    \node[simlab, anchor=south west, text=didV] at (axis cs:0.053,5.9) {S1};
+    \node[simlab, anchor=west, text=didB] at (axis cs:0.033,8.6) {S2};
+    \node[simlab, anchor=west, text=black!70] at (axis cs:0.030,12.4) {controls (dashed), both scenarios};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(b)\enspace densities, $\LTmax$};
+  \end{axis}
+  \begin{axis}[simax, at={(0,0)}, xmode=log, xmin=0.04, xmax=5, ymin=0.28, ymax=0.68,
+      xtick={0.05,0.1,0.2,0.4,1,2,4}, xticklabels={0.05,0.1,0.2,0.4,1,2,4}, xlabel={neighbourhood cut-off $\varepsilon$ (log axis)},
+      ylabel={mean $\Wone$}, ytick={0.3,0.4,0.5}]
+    \addplot[black!40, line width=0.5pt, densely dotted] coordinates {(0.4,0.28) (0.4,0.60)};
+    \addplot[didV] table[x=eps, y=s1_w1] {\E};\addplot[didB] table[x=eps, y=s2_w1] {\E};
+    \addplot[didV, only marks, mark=*, mark size=1.5pt] table[x=eps, y=s1_w1] {\E};
+    \addplot[didB, only marks, mark=*, mark size=1.5pt, unbounded coords=discard] table[x=eps, y expr={\thisrow{s2_ok}>=0.5 ? \thisrow{s2_w1} : nan}] {\E};
+    \addplot[didB, only marks, mark=*, mark size=1.5pt, fill=white, unbounded coords=discard] table[x=eps, y expr={\thisrow{s2_ok}<0.5 ? \thisrow{s2_w1} : nan}] {\E};
+    \node[simlab, anchor=east, text=black!60] at (axis cs:0.036,0.655) {kept, S1};
+    \node[simlab, anchor=east, text=black!60] at (axis cs:0.036,0.625) {kept, S2};
+    \foreach \e/\a/\b in {0.05/14/3, 0.1/39/7, 0.2/50/15, 0.4/50/27, 1/50/44, 2/50/50, 4/50/50} {
+      \edef\tmp{\noexpand\node[simlab, text=didV] at (axis cs:\e,0.655) {\a};
+                \noexpand\node[simlab, text=didB] at (axis cs:\e,0.625) {\b};}\tmp}
+    \node[simlab, anchor=south west, text=black!60] at (axis cs:0.41,0.28) {secondary analysis};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(c)\enspace $\Wone$ against $\varepsilon$};
+  \end{axis}
+  \begin{axis}[simax, at={(7.5cm,0)}, xmode=log, xmin=0.04, xmax=5, ymin=0, ymax=0.087,
+      xtick={0.05,0.1,0.2,0.4,1,2,4}, xticklabels={0.05,0.1,0.2,0.4,1,2,4}, ytick={0,0.02,0.04,0.06,0.08},
+      xlabel={neighbourhood cut-off $\varepsilon$ (log axis)}, ylabel={mean $\LTmax$}]
+    \addplot[black!40, line width=0.5pt, densely dotted] coordinates {(0.4,0) (0.4,0.087)};
+    \addplot[didV] table[x=eps, y=s1_lt] {\E};\addplot[didB] table[x=eps, y=s2_lt] {\E};
+    \addplot[didV, only marks, mark=*, mark size=1.5pt] table[x=eps, y=s1_lt] {\E};
+    \addplot[didB, only marks, mark=*, mark size=1.5pt, unbounded coords=discard] table[x=eps, y expr={\thisrow{s2_ok}>=0.5 ? \thisrow{s2_lt} : nan}] {\E};
+    \addplot[didB, only marks, mark=*, mark size=1.5pt, fill=white, unbounded coords=discard] table[x=eps, y expr={\thisrow{s2_ok}<0.5 ? \thisrow{s2_lt} : nan}] {\E};
+    \node[simlab, anchor=south, text=didV] at (axis cs:2,0.054) {S1};
+    \node[simlab, anchor=south, text=didB] at (axis cs:2,0.033) {S2};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(d)\enspace $\LTmax$ against $\varepsilon$};
+  \end{axis}
+\end{tikzpicture}}%
+%
+% fig:simall -- dimension sweep; line style = D
+\newcommand{\simDims}{%
+\begin{tikzpicture}
+  \def\F{\didpath data/sim/sim_dims_w1.dat}\def\G{\didpath data/sim/sim_dims_lt.dat}
+  \pgfplotsset{d64/.style={densely dotted}, d128/.style={dashed}, d256/.style={solid}}
+  \begin{axis}[simw, at={(0,0)}, xmin=0.15, xmax=0.57, ymax=30]
+    \addplot[didV, d64] table[y=s1_64] {\F};\addplot[didB, d64] table[y=s2_64] {\F};\addplot[didV, d128] table[y=s1_128] {\F};\addplot[didB, d128] table[y=s2_128] {\F};\addplot[didV, d256] table[y=s1_256] {\F};\addplot[didB, d256] table[y=s2_256] {\F};
+    \node[simlab, text=didV, anchor=south] at (axis cs:0.428,22.0) {64};
+    \node[simlab, text=didV, anchor=south east] at (axis cs:0.468,26.4) {128};
+    \node[simlab, text=didV, anchor=south west] at (axis cs:0.523,27.0) {256};
+    \node[simlab, text=didB, anchor=south] at (axis cs:0.241,8.1) {64};
+    \node[simlab, text=didB, anchor=south east] at (axis cs:0.35,12.0) {128};
+    \node[simlab, text=didB, anchor=south west] at (axis cs:0.398,10.6) {256};
+    \node[simlab, text=didB, anchor=west] at (axis cs:0.16,25) {S2 polysemic};
+    \node[simlab, text=didV, anchor=west] at (axis cs:0.16,21) {S1 multi-factual};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(a)\enspace $\Wone$; labels give $D$};
+  \end{axis}
+  \begin{axis}[siml, at={(7.5cm,0)}, xmin=0, xmax=0.155, ymax=10, xtick={0,0.05,0.1,0.15}]
+    \addplot[didV, d64] table[y expr=\thisrow{s1_64}/10] {\G};\addplot[didB, d64] table[y expr=\thisrow{s2_64}/10] {\G};\addplot[didV, d128] table[y expr=\thisrow{s1_128}/10] {\G};\addplot[didB, d128] table[y expr=\thisrow{s2_128}/10] {\G};\addplot[didV, d256] table[y expr=\thisrow{s1_256}/10] {\G};\addplot[didB, d256] table[y expr=\thisrow{s2_256}/10] {\G};
+    \node[simlab, text=didV, anchor=south] at (axis cs:0.106,1.76) {64};
+    \node[simlab, text=didV, anchor=south west] at (axis cs:0.075,3.7) {128};
+    \node[simlab, text=didV, anchor=south west] at (axis cs:0.052,6.0) {256};
+    \draw[didB, line width=0.3pt] (axis cs:0.014,4.6) -- (axis cs:0.041,3.7); \node[simlab, text=didB, anchor=east] at (axis cs:0.014,4.6) {64};  % moved off the curves with a leader line
+    \node[simlab, text=didB, anchor=south west] at (axis cs:0.039,6.4) {128};
+    \node[simlab, text=didB, anchor=south west] at (axis cs:0.029,9.26) {256};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(b)\enspace $\LTmax$; labels give $D$};
+  \end{axis}
+\end{tikzpicture}}%
+%
+% fig:proj -- unprojected (solid) against D'=64 (dashed); D'=224, 192, 128 lie between (not drawn)
+\newcommand{\simProj}{%
+\begin{tikzpicture}
+  \def\F{\didpath data/sim/sim_proj_w1.dat}\def\G{\didpath data/sim/sim_proj_lt.dat}
+  \begin{axis}[simw, at={(0,0)}, xmin=0.2, xmax=0.59, ymax=18]
+    \addplot[didV] table[y=s1_256] {\F};\addplot[didB] table[y=s2_256] {\F};
+    \addplot[didV, dashed] table[y=s1_64] {\F};\addplot[didB, dashed] table[y=s2_64] {\F};
+    \node[simlab, text=didV, anchor=south west] at (axis cs:0.528,15.5) {S1};
+    \node[simlab, text=didB, anchor=south west] at (axis cs:0.39,10.2) {S2};
+    \node[simlab, anchor=west, text=black!70] at (axis cs:0.205,16.5) {solid: $D=256$, unprojected};
+    \node[simlab, anchor=west, text=black!70] at (axis cs:0.205,14.5) {dashed: projected to $D'=64$};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(a)\enspace $\Wone$};
+  \end{axis}
+  \begin{axis}[siml, at={(7.5cm,0)}, xmin=0, xmax=0.22, ymax=8, xtick={0,0.05,0.1,0.15,0.2}]
+    \addplot[didV] table[y expr=\thisrow{s1_256}/10] {\G};\addplot[didB] table[y expr=\thisrow{s2_256}/10] {\G};
+    \addplot[didV, dashed] table[y expr=\thisrow{s1_64}/10] {\G};\addplot[didB, dashed] table[y expr=\thisrow{s2_64}/10] {\G};
+    \node[simlab, text=didV, anchor=south west] at (axis cs:0.095,2.7) {S1};
+    \node[simlab, text=didB, anchor=south west] at (axis cs:0.037,7.5) {S2};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(b)\enspace $\LTmax$};
+  \end{axis}
+\end{tikzpicture}}%
+%
+% fig:sim_mixed -- S1 against the mixed scenario S3, S2 as a grey reference (sigma = 0.2)
+\newcommand{\simMixed}{%
+\begin{tikzpicture}
+  \def\F{\didpath data/sim/sim_mixed_w1.dat}\def\G{\didpath data/sim/sim_mixed_lt.dat}
+  \begin{axis}[simw, at={(0,0)}, xmin=0.32, xmax=0.55, ymax=36]
+    \addplot[didB!55] table[y=s2] {\F};
+    \simFill{didV}{\F}{\thisrow{s1}}\simFill{simC}{\F}{\thisrow{s4}}
+    \node[simlab, text=didV, anchor=south east] at (axis cs:0.513,33.5) {S1 multi-factual};
+    \node[simlab, text=simC, anchor=south east] at (axis cs:0.485,27.7) {S3 mixed};
+    \node[simlab, text=didB, anchor=south] at (axis cs:0.411,12.0) {S2 polysemic};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(a)\enspace $\Wone$};
+  \end{axis}
+  \begin{axis}[siml, at={(7.5cm,0)}, xmin=0, xmax=0.057, ymax=12, xtick={0,0.01,0.02,0.03,0.04,0.05}]
+    \addplot[didB!55] table[y expr=\thisrow{s2}/10] {\G};
+    \simFill{didV}{\G}{\thisrow{s1}/10}\simFill{simC}{\G}{\thisrow{s4}/10}
+    \node[simlab, text=didV, anchor=south west] at (axis cs:0.032,7.0) {S1};
+    \node[simlab, text=simC, anchor=south east] at (axis cs:0.025,7.8) {S3};
+    \node[simlab, text=didB, anchor=south west] at (axis cs:0.0245,11.2) {S2};
+    \node[anchor=south west, inner sep=0pt, font=\footnotesize] at (rel axis cs:0,1.08) {(b)\enspace $\LTmax$};
+  \end{axis}
+\end{tikzpicture}}%

@@ -1,0 +1,129 @@
+# real_data.py run
+loops:
+ T   m  k  frac   lo   hi      x  eplus  eminus
+ 1   2 54  0.54 0.44 0.63   1.80   0.09    0.10
+ 1   5 69  0.69 0.59 0.77   4.50   0.08    0.10
+ 1  20  4  0.04 0.02 0.10  18.00   0.06    0.02
+ 1 383  0  0.00 0.00 0.04 344.70   0.04    0.00
+ 2   2 62  0.62 0.52 0.71   2.00   0.09    0.10
+ 2   5 59  0.59 0.49 0.68   5.00   0.09    0.10
+ 2  20  5  0.05 0.02 0.11  20.00   0.06    0.03
+ 2 383  0  0.00 0.00 0.04 383.00   0.04    0.00
+ 3   2 56  0.56 0.46 0.65   2.22   0.09    0.10
+ 3   5 52  0.52 0.42 0.62   5.55   0.10    0.10
+ 3  20  2  0.02 0.01 0.07  22.20   0.05    0.01
+ 3 383  0  0.00 0.00 0.04 425.13   0.04    0.00
+ratio forest (diag AUROC, est [lo, hi]):
+   corpus            model     arm    w1  w1_lo  w1_hi    lb  lb_lo  lb_hi
+    nobel   openai-3-small primary 0.141  0.108  0.172 0.491  0.450  0.527
+    nobel   openai-3-small    LODO 0.173  0.135  0.201 0.378  0.317  0.440
+    nobel   openai-3-large primary 0.193  0.150  0.228 0.497  0.461  0.529
+    nobel   openai-3-large    LODO 0.236  0.196  0.265 0.456  0.413  0.497
+    nobel       vertex-005 primary 0.852  0.809  0.899 0.882  0.860  0.903
+    nobel       vertex-005    LODO 0.829  0.790  0.886 0.846  0.825  0.870
+    nobel modernbert-embed primary 0.366  0.333  0.399 0.449  0.419  0.473
+    nobel modernbert-embed    LODO 0.384  0.346  0.420 0.427  0.377  0.477
+    nobel         bge-base primary 0.389  0.348  0.429 0.480  0.451  0.509
+    nobel         bge-base    LODO 0.444  0.407  0.476 0.487  0.453  0.527
+    nobel       gemini-001 primary 0.090  0.062  0.116 0.513  0.476  0.548
+    nobel       gemini-001    LODO 0.112  0.075  0.139 0.432  0.381  0.479
+    nobel   openai-ada-002 primary 0.262  0.224  0.300 0.464  0.432  0.491
+    nobel   openai-ada-002    LODO 0.310  0.262  0.348 0.404  0.370  0.439
+    nobel           bge-m3 primary 0.226  0.194  0.256 0.450  0.414  0.489
+    nobel           bge-m3    LODO 0.253  0.218  0.284 0.379  0.340  0.415
+    nobel       qwen3-0.6b primary 0.230  0.185  0.267 0.464  0.427  0.498
+    nobel       qwen3-0.6b    LODO 0.267  0.212  0.309 0.422  0.377  0.460
+     wiki   openai-3-small primary 0.040  0.017  0.063 0.659  0.617  0.698
+     wiki   openai-3-small    LODO 0.072  0.046  0.102 0.386  0.338  0.433
+     wiki   openai-3-large primary 0.060  0.034  0.088 0.679  0.635  0.724
+     wiki   openai-3-large    LODO 0.213  0.166  0.253 0.401  0.352  0.450
+     wiki       vertex-005 primary 0.597  0.528  0.665 0.891  0.857  0.922
+     wiki       vertex-005    LODO 0.865  0.822  0.907 0.773  0.720  0.819
+     wiki modernbert-embed primary 0.220  0.181  0.258 0.470  0.432  0.506
+     wiki modernbert-embed    LODO 0.293  0.253  0.331 0.414  0.377  0.450
+     wiki         bge-base primary 0.161  0.131  0.195 0.537  0.508  0.567
+     wiki         bge-base    LODO 0.328  0.298  0.358 0.470  0.425  0.512
+     wiki       gemini-001 primary 0.057  0.030  0.085 0.652  0.606  0.696
+     wiki       gemini-001    LODO 0.089  0.057  0.121 0.433  0.385  0.479
+     wiki   openai-ada-002 primary 0.092  0.055  0.131 0.635  0.591  0.678
+     wiki   openai-ada-002    LODO 0.198  0.152  0.241 0.402  0.363  0.440
+     wiki           bge-m3 primary 0.110  0.075  0.145 0.580  0.535  0.622
+     wiki           bge-m3    LODO 0.176  0.128  0.228 0.389  0.349  0.427
+     wiki       qwen3-0.6b primary 0.107  0.082  0.132 0.615  0.561  0.666
+     wiki       qwen3-0.6b    LODO 0.222  0.171  0.271 0.440  0.402  0.480
+gutenberg   openai-3-small primary 0.164  0.130  0.194 0.537  0.502  0.572
+gutenberg   openai-3-small    LODO 0.188  0.143  0.225 0.383  0.336  0.429
+gutenberg   openai-3-large primary 0.182  0.146  0.218 0.569  0.529  0.609
+gutenberg   openai-3-large    LODO 0.211  0.162  0.255 0.387  0.340  0.430
+gutenberg       vertex-005 primary 0.751  0.710  0.800 0.890  0.863  0.916
+gutenberg       vertex-005    LODO 0.700  0.652  0.749 0.850  0.824  0.878
+gutenberg modernbert-embed primary 0.351  0.323  0.377 0.478  0.454  0.501
+gutenberg modernbert-embed    LODO 0.355  0.321  0.386 0.408  0.381  0.434
+gutenberg         bge-base primary 0.380  0.352  0.406 0.491  0.475  0.509
+gutenberg         bge-base    LODO 0.425  0.399  0.448 0.454  0.416  0.490
+gutenberg       gemini-001 primary 0.194  0.151  0.232 0.523  0.478  0.573
+gutenberg       gemini-001    LODO 0.161  0.115  0.203 0.353  0.314  0.389
+gutenberg   openai-ada-002 primary 0.258  0.226  0.288 0.498  0.472  0.528
+gutenberg   openai-ada-002    LODO 0.265  0.220  0.305 0.393  0.358  0.425
+gutenberg           bge-m3 primary 0.278  0.241  0.312 0.481  0.447  0.521
+gutenberg           bge-m3    LODO 0.245  0.200  0.288 0.402  0.373  0.430
+gutenberg       qwen3-0.6b primary 0.222  0.178  0.263 0.498  0.461  0.539
+gutenberg       qwen3-0.6b    LODO 0.189  0.147  0.229 0.347  0.306  0.388
+   turing   openai-3-small primary 0.236  0.201  0.263 0.472  0.443  0.498
+   turing   openai-3-small    LODO 0.237  0.203  0.262 0.378  0.330  0.418
+   turing   openai-3-large primary 0.235  0.198  0.263 0.481  0.450  0.519
+   turing   openai-3-large    LODO 0.246  0.206  0.273 0.439  0.394  0.484
+   turing       vertex-005 primary 0.849  0.805  0.896 0.836  0.806  0.864
+   turing       vertex-005    LODO 0.816  0.772  0.863 0.802  0.765  0.835
+   turing modernbert-embed primary 0.400  0.362  0.434 0.445  0.408  0.483
+   turing modernbert-embed    LODO 0.412  0.382  0.439 0.455  0.420  0.490
+   turing         bge-base primary 0.379  0.339  0.419 0.491  0.464  0.525
+   turing         bge-base    LODO 0.423  0.386  0.459 0.530  0.494  0.568
+   turing       gemini-001 primary 0.186  0.144  0.223 0.492  0.457  0.529
+   turing       gemini-001    LODO 0.179  0.144  0.207 0.341  0.293  0.388
+   turing   openai-ada-002 primary 0.338  0.301  0.370 0.485  0.451  0.523
+   turing   openai-ada-002    LODO 0.346  0.312  0.374 0.444  0.406  0.479
+   turing           bge-m3 primary 0.335  0.291  0.382 0.449  0.421  0.477
+   turing           bge-m3    LODO 0.322  0.280  0.357 0.383  0.347  0.418
+   turing       qwen3-0.6b primary 0.336  0.290  0.384 0.457  0.421  0.492
+   turing       qwen3-0.6b    LODO 0.338  0.304  0.363 0.431  0.390  0.468
+   fields   openai-3-small primary 0.117  0.090  0.145 0.457  0.430  0.486
+   fields   openai-3-small    LODO 0.094  0.070  0.118 0.317  0.284  0.350
+   fields   openai-3-large primary 0.125  0.092  0.158 0.488  0.463  0.511
+   fields   openai-3-large    LODO 0.111  0.078  0.140 0.421  0.389  0.452
+   fields       vertex-005 primary 0.945  0.916  0.967 0.916  0.904  0.929
+   fields       vertex-005    LODO 0.927  0.884  0.961 0.908  0.879  0.935
+   fields modernbert-embed primary 0.322  0.292  0.350 0.451  0.427  0.476
+   fields modernbert-embed    LODO 0.335  0.303  0.365 0.450  0.419  0.482
+   fields         bge-base primary 0.351  0.314  0.386 0.433  0.406  0.462
+   fields         bge-base    LODO 0.357  0.325  0.386 0.392  0.365  0.419
+   fields       gemini-001 primary 0.031  0.016  0.047 0.482  0.444  0.521
+   fields       gemini-001    LODO 0.013  0.006  0.021 0.330  0.293  0.367
+   fields   openai-ada-002 primary 0.336  0.310  0.361 0.460  0.443  0.477
+   fields   openai-ada-002    LODO 0.316  0.294  0.337 0.410  0.382  0.437
+   fields           bge-m3 primary 0.264  0.224  0.304 0.406  0.381  0.433
+   fields           bge-m3    LODO 0.182  0.159  0.203 0.327  0.297  0.357
+   fields       qwen3-0.6b primary 0.202  0.157  0.250 0.453  0.422  0.483
+   fields       qwen3-0.6b    LODO 0.152  0.111  0.190 0.389  0.353  0.429
+intervals containing 0.5 -- W1 primary: []; W1 LODO: []; longbar primary: [['nobel', 'openai-3-small'], ['nobel', 'openai-3-large'], ['nobel', 'bge-base'], ['nobel', 'gemini-001'], ['wiki', 'modernbert-embed'], ['gutenberg', 'modernbert-embed'], ['gutenberg', 'bge-base'], ['gutenberg', 'gemini-001'], ['gutenberg', 'openai-ada-002'], ['gutenberg', 'bge-m3'], ['gutenberg', 'qwen3-0.6b'], ['turing', 'openai-3-large'], ['turing', 'bge-base'], ['turing', 'gemini-001'], ['turing', 'openai-ada-002'], ['fields', 'openai-3-large'], ['fields', 'gemini-001']]; longbar LODO: [['nobel', 'bge-base'], ['wiki', 'bge-base'], ['turing', 'bge-base']]
+effects (nobel, turing, fields, gutenberg, wiki; primary arm):
+  w1 q: range 0.426-0.960; CI contains 0.5 in 0/45; entirely below 0.5 in 1
+  w1 c: range 0.525-0.997; CI contains 0.5 in 1/45; entirely below 0.5 in 0
+  w1 m: range 0.031-0.945; CI contains 0.5 in 0/45; entirely below 0.5 in 40
+  lb q: range 0.537-0.936; CI contains 0.5 in 0/45; entirely below 0.5 in 0
+  lb c: range 0.385-0.942; CI contains 0.5 in 0/45; entirely below 0.5 in 3
+  lb m: range 0.406-0.916; CI contains 0.5 in 17/45; entirely below 0.5 in 14
+gutenberg: n C250 (lodo_dens) = 2372, n C750 (lodo) = 2372
+  w1       real : median C250 0.406  C750 0.343  AUROC(C250>C750) 0.958
+  w1       enull: median C250 0.435  C750 0.394  AUROC(C250>C750) 0.941
+  w1       iso  : median C250 0.582  C750 0.586  AUROC(C250>C750) 0.415
+  longbar  real : median C250 0.974  C750 0.912  AUROC(C250>C750) 0.831
+  longbar  enull: median C250 1.026  C750 0.996  AUROC(C250>C750) 0.699
+  longbar  iso  : median C250 1.189  C750 1.198  AUROC(C250>C750) 0.421
+wiki: n C250 (lodo_dens) = 1249, n C750 (lodo) = 1249
+  w1       real : median C250 0.354  C750 0.296  AUROC(C250>C750) 1.000
+  w1       enull: median C250 0.409  C750 0.373  AUROC(C250>C750) 0.987
+  w1       iso  : median C250 0.539  C750 0.541  AUROC(C250>C750) 0.427
+  longbar  real : median C250 0.988  C750 0.977  AUROC(C250>C750) 0.627
+  longbar  enull: median C250 1.008  C750 0.992  AUROC(C250>C750) 0.668
+  longbar  iso  : median C250 1.108  C750 1.111  AUROC(C250>C750) 0.464

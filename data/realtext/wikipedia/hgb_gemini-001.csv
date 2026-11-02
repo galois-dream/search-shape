@@ -1,0 +1,403 @@
+model,comparison,rep,auc_A,auc_B,B_minus_A
+gemini-001,same length Q250: C750 vs C250 (subsampled),0,0.9999891025710881,0.9999955128233893,6.4102523011921875e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),1,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),2,0.9999959951300782,1.0,4.004869921803156e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),3,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),4,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),5,0.9999922263854247,0.9999922263854248,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),6,0.9999964551598398,0.9999946827397597,-1.7724200801483292e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),7,0.9998603623161528,0.999884362543064,2.4000226911180533e-05
+gemini-001,same length Q250: C750 vs C250 (subsampled),8,0.9999977043158862,0.9999977043158861,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),9,0.9995026693129974,0.9995301172615575,2.7447948560133106e-05
+gemini-001,same length Q250: C750 vs C250 (subsampled),10,0.9999792797385982,0.9999792797385982,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),11,0.9999888541034929,0.999990165385435,1.3112819420291189e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),12,0.9999778546712802,0.9999778546712802,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),13,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),14,0.9999960341066826,0.9999973560711218,1.3219644392492569e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),15,0.9999913336358307,0.999993190713867,1.857078036349158e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),16,0.9999935143735894,0.9999935143735894,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),17,0.998521610768083,0.9985571657592737,3.555499119067829e-05
+gemini-001,same length Q250: C750 vs C250 (subsampled),18,0.9999771345112395,0.9999771345112395,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),19,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),20,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),21,0.9999329043079951,0.9999174206867631,-1.5483621231937583e-05
+gemini-001,same length Q250: C750 vs C250 (subsampled),22,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),23,0.9868797681141316,0.9859202012251511,-0.0009595668889804676
+gemini-001,same length Q250: C750 vs C250 (subsampled),24,0.9999742763251444,0.9999707035925255,-3.572732618861707e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),25,0.9978685165278152,0.9978685165278152,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),26,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),27,0.9999819468651107,0.9999759291534809,-6.0177116297799316e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),28,0.9999470554526655,0.9999563986080775,9.343155412011583e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),29,0.9999587765923186,0.9999587765923186,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),30,0.9999440387252021,0.9999440387252021,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),31,0.9999813942046049,0.9999772595834059,-4.134621198970123e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),32,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),33,0.9999992818155703,0.9999992818155702,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),34,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),35,0.9999862519333219,0.9999862519333219,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),36,0.9999923140342148,0.9999923140342148,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),37,0.9999893818089151,0.9999893818089151,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),38,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),39,0.9998221691743827,0.9998221691743827,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),40,0.9999514375497007,0.9999423320902696,-9.105459431113516e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),41,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),42,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),43,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),44,0.9999922495039683,0.9999922495039684,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),45,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),46,0.9937421396405535,0.9936508580469796,-9.128159357385535e-05
+gemini-001,same length Q250: C750 vs C250 (subsampled),47,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),48,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),49,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),50,0.9999929103196796,0.9999929103196795,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),51,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),52,0.9999097205906666,0.9999097205906666,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),53,0.9999554698501018,0.9999565559513188,1.0861012170737538e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),54,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),55,0.9999797001153403,0.9999686274509804,-1.1072664359956796e-05
+gemini-001,same length Q250: C750 vs C250 (subsampled),56,0.9999932371018005,0.9999959422610805,2.7051592799143265e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),57,0.9999999999999999,0.9999999999999999,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),58,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),59,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),60,0.9999762193698276,0.9999762193698277,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),61,0.9977333257032052,0.9977491121753825,1.5786472177370392e-05
+gemini-001,same length Q250: C750 vs C250 (subsampled),62,0.9999929731424722,0.9999929731424722,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),63,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),64,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),65,0.9999863868928816,0.9999863868928816,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),66,0.9999737112443075,0.9999743853149663,6.740706588459489e-07
+gemini-001,same length Q250: C750 vs C250 (subsampled),67,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),68,0.9999945579745023,0.9999891159490045,-5.442025497792713e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),69,0.9999926935980643,0.9999920293797064,-6.642183578708938e-07
+gemini-001,same length Q250: C750 vs C250 (subsampled),70,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),71,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),72,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),73,0.9852406193511472,0.9895246542909732,0.004284034939826098
+gemini-001,same length Q250: C750 vs C250 (subsampled),74,0.9999781299796062,0.9999781299796061,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),75,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),76,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),77,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),78,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),79,0.9999954839438073,0.9999935484911534,-1.935452653922809e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),80,0.9999875214942262,0.9999875214942262,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),81,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),82,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),83,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),84,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),85,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),86,0.9999950734201162,0.9999950734201161,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),87,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),88,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),89,0.9999794324381301,0.9999794324381303,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),90,0.9999933469764669,0.9999906857670537,-2.661209413168386e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),91,0.9926091160060105,0.9927139512399679,0.0001048352339573233
+gemini-001,same length Q250: C750 vs C250 (subsampled),92,1.0,0.9999993281375973,-6.71862402712442e-07
+gemini-001,same length Q250: C750 vs C250 (subsampled),93,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),94,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),95,0.9999855328039862,0.9999824870785097,-3.045725476491512e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),96,0.9999924891844255,0.9999924891844255,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),97,0.999924787220621,0.9999247872206211,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),98,0.9999988363440023,0.9999988363440022,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),99,0.9999950150438853,0.9999950150438853,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),100,0.9999968655358775,0.9999956117502283,-1.253785649191208e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),101,0.9999829949324899,0.9999829949324899,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),102,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),103,0.9999812800313426,0.9999812800313426,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),104,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),105,0.99995371881651,0.9999518675691703,-1.8512473396459228e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),106,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),107,0.9999821326912602,0.9999815165771658,-6.161140944094257e-07
+gemini-001,same length Q250: C750 vs C250 (subsampled),108,0.9999810735224257,0.9999810735224257,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),109,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),110,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),111,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),112,0.9999910828536651,0.9999910828536652,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),113,0.9999945664281329,0.9999927552375104,-1.8111906224804741e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),114,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),115,0.9999786856439663,0.9999749242870192,-3.761356947129535e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),116,0.9999928665997078,0.9999928665997078,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),117,0.9999966283724704,0.9999966283724705,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),118,0.9999985238719429,1.0,1.476128057120718e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),119,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),120,0.9999873316517275,0.999991554434485,4.222782757468124e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),121,0.9999950101156045,0.999993346820806,-1.6632947985595337e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),122,0.9999939532383768,0.9999899220639613,-4.031174415497496e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),123,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),124,0.9999977656676967,0.9999977656676967,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),125,0.9999841364267301,0.9999841364267301,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),126,0.9999705653115876,0.9999705653115877,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),127,0.9930184935649184,0.9933805663720571,0.0003620728071386248
+gemini-001,same length Q250: C750 vs C250 (subsampled),128,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),129,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),130,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),131,0.9999908801977173,0.9999908801977173,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),132,0.9999819647591395,0.9999806765276493,-1.2882314901485614e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),133,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),134,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),135,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),136,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),137,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),138,0.9999821086376303,0.9999821086376303,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),139,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),140,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),141,0.9999884059165897,0.9999884059165897,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),142,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),143,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),144,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),145,0.9999781910009182,0.9999781910009183,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),146,0.999986800113519,0.999985600123839,-1.1999896800674037e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),147,0.9999906336839652,0.9999918044734697,1.170789504456593e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),148,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),149,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),150,0.9999850494210076,0.9999775741315114,-7.475289496183812e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),151,0.9999916534132987,0.9999916534132987,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),152,0.9999948387929227,0.9999948387929227,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),153,0.9999879107660673,0.9999890097873338,1.0990212665484833e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),154,0.9999605825001809,0.9999605825001809,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),155,0.9999959622089678,0.9999959622089678,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),156,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),157,0.9999786755518534,0.9999733444398168,-5.331112036599528e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),158,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),159,0.9999999999999999,0.9999970879101678,-2.912089832052267e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),160,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),161,0.9999958609728369,0.9999937914592554,-2.06951358150409e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),162,0.9999987658351069,0.9999987658351068,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),163,0.999995162644002,0.999992743966003,-2.418677998994312e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),164,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),165,0.9999981660809333,0.9999981660809333,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),166,0.9999879628364613,0.9999879628364613,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),167,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),168,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),169,0.9999989234398894,0.9999983851598342,-5.382800551956279e-07
+gemini-001,same length Q250: C750 vs C250 (subsampled),170,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),171,0.9999975394079199,0.9999975394079201,2.220446049250313e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),172,0.9920347800833201,0.9941202832078193,0.0020855031244991773
+gemini-001,same length Q250: C750 vs C250 (subsampled),173,0.999995000703026,0.9999950007030263,2.220446049250313e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),174,0.999997800947645,0.999997800947645,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),175,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),176,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),177,0.9999849488363057,0.9999856329801099,6.84143804163817e-07
+gemini-001,same length Q250: C750 vs C250 (subsampled),178,0.9999828862460182,0.9999828862460183,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),179,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),180,0.9999914126191056,0.9999898971989478,-1.5154201578049253e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),181,0.9853015848101843,0.9847864393318939,-0.0005151454782903464
+gemini-001,same length Q250: C750 vs C250 (subsampled),182,0.9999668072278955,0.9999668072278955,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),183,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),184,0.999996166136635,0.999996166136635,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),185,0.9999861840605506,0.9999861840605507,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),186,1.0,0.9999992593931171,-7.406068829318713e-07
+gemini-001,same length Q250: C750 vs C250 (subsampled),187,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),188,1.0,0.9999993569169053,-6.430830946646537e-07
+gemini-001,same length Q250: C750 vs C250 (subsampled),189,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),190,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),191,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),192,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),193,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),194,0.9999895907126024,0.9999895907126024,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),195,0.9999225391789549,0.9999225391789551,2.220446049250313e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),196,0.9999808001651185,0.9999808001651186,1.1102230246251565e-16
+gemini-001,same length Q250: C750 vs C250 (subsampled),197,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),198,1.0,1.0,0.0
+gemini-001,same length Q250: C750 vs C250 (subsampled),199,0.9999861209501366,0.9999872775376253,1.1565874886709793e-06
+gemini-001,same length Q250: C750 vs C250 (subsampled),200,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),0,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),1,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),2,0.9999946601734376,0.9999973300867188,2.669913281128089e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),3,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),4,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),5,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),6,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),7,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),8,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),9,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),10,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),11,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),12,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),13,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),14,0.9999920682133651,0.9999907462489259,-1.3219644391382346e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),15,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),16,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),17,0.9991968381454263,0.9991181092363614,-7.872890906490682e-05
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),18,0.9999992854534762,0.9999985709069524,-7.145465237279325e-07
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),19,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),20,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),21,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),22,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),23,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),24,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),25,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),26,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),27,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),28,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),29,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),30,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),31,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),32,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),33,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),34,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),35,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),36,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),37,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),38,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),39,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),40,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),41,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),42,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),43,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),44,0.9999994463931405,0.9999994463931406,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),45,0.9999964551598398,0.9999964551598398,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),46,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),47,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),48,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),49,0.99999808,0.99999808,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),50,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),51,0.9999999999999998,1.0,2.220446049250313e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),52,0.9999983684444097,0.9999983684444098,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),53,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),54,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),55,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),56,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),57,0.99999880186717,0.9999988018671702,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),58,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),59,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),60,0.9999992793748432,0.9999992793748433,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),61,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),62,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),63,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),64,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),65,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),66,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),67,0.9999926066308663,0.9999926066308663,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),68,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),69,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),70,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),71,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),72,0.99997634003245,0.9999827927508727,6.452718422700343e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),73,0.9999951095491555,0.9999951095491555,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),74,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),75,0.9999973859096609,0.9999973859096609,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),76,0.9999992926468517,0.9999992926468517,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),77,0.9999969860344894,0.9999969860344895,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),78,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),79,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),80,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),81,0.9999946499316529,0.9999946499316529,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),82,0.999327493833923,0.9994619950671384,0.00013450123321534502
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),83,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),84,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),85,0.9999955908507949,0.9999955908507949,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),86,0.999091046011441,0.9991726864780865,8.164046664549396e-05
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),87,0.9999972314583846,0.9999972314583847,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),88,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),89,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),90,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),91,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),92,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),93,0.9984945252101567,0.9984538616799215,-4.066353023524094e-05
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),94,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),95,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),96,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),97,0.999996967226638,0.999996967226638,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),98,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),99,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),100,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),101,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),102,1.0000000000000002,1.0,-2.220446049250313e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),103,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),104,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),105,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),106,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),107,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),108,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),109,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),110,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),111,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),112,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),113,1.0000000000000002,0.9999999999999999,-3.3306690738754696e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),114,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),115,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),116,0.9981923963659606,0.9982494635682981,5.7067202337557354e-05
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),117,0.9999955044966273,1.0,4.495503372670129e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),118,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),119,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),120,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),121,0.9999994455684006,0.9999994455684006,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),122,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),123,0.9999905325443788,0.9999905325443788,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),124,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),125,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),126,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),127,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),128,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),129,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),130,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),131,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),132,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),133,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),134,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),135,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),136,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),137,0.9999984392363496,0.9999984392363496,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),138,0.9999980830683175,1.0,1.916931682499623e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),139,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),140,0.9999828508834295,0.9999828508834295,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),141,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),142,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),143,0.9999883851792443,0.999990219098311,1.8339190667182592e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),144,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),145,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),146,0.9999892000928793,0.999985600123839,-3.5999690403132334e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),147,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),148,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),149,0.9999987981491496,0.9999987981491496,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),150,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),151,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),152,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),153,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),154,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),155,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),156,0.9999920682133651,0.9999920682133651,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),157,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),158,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),159,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),160,0.999979811044839,0.9999838488358712,4.0377910321964805e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),161,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),162,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),163,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),164,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),165,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),166,0.9999945832764076,0.9999981944254692,3.6111490616663744e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),167,0.9999985111082492,0.9999977666623736,-7.444458756111771e-07
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),168,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),169,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),170,0.9999973431265687,0.9999973431265687,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),171,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),172,1.0,0.9999962445922127,-3.755407787298104e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),173,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),174,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),175,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),176,0.9999955044966273,0.9999955044966273,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),177,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),178,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),179,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),180,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),181,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),182,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),183,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),184,0.9999961661366351,0.9999968051138626,6.389772274628669e-07
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),185,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),186,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),187,0.9999954473163448,1.0,4.552683655179024e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),188,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),189,1.0000000000000002,1.0,-2.220446049250313e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),190,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),191,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),192,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),193,1.0,0.9999999999999999,-1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),194,0.9999988434125113,0.9999988434125113,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),195,0.9999999999999999,1.0,1.1102230246251565e-16
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),196,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),197,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),198,0.9999962207105064,0.9999974804736709,1.2597631644517548e-06
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),199,1.0,1.0,0.0
+gemini-001,LODO same length Q250: C750 vs C250 (subsampled),200,1.0,1.0,0.0

@@ -1,0 +1,403 @@
+model,comparison,rep,auc_A,auc_B,B_minus_A
+openai-3-small,same length Q250: C750 vs C250 (subsampled),0,0.9999987179495398,0.9999987179495398,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),1,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),2,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),3,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),4,0.9999688328081444,1.0,3.1167191855585585e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),5,0.9999022745596248,0.9999933369017926,9.106234216782472e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),6,0.9999976367732265,1.0,2.363226773494098e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),7,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),8,0.999940886134068,0.9999799127640037,3.9026629935712265e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),9,0.9999790872772877,0.9999777802321183,-1.3070451694296992e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),10,0.9999962326797451,1.0,3.7673202548660356e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),11,0.9999206674425085,0.9999521382091167,3.147076660814374e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),12,0.9999975394079201,0.99999876970396,1.2302960398224982e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),13,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),14,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),15,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),16,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),17,0.9999860319677466,0.9999961905366581,1.0158568911511345e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),18,0.9999506962898601,0.9999935690812862,4.287279142611844e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),19,0.9999862462712112,0.9999847180791237,-1.5281920875409583e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),20,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),21,0.9999948387929227,1.0,5.16120707727552e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),22,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),23,0.9999914831341215,1.0,8.516865878549496e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),24,0.9974640743871513,0.9974640743871513,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),25,0.9999932813759742,0.9999999999999999,6.71862402568113e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),26,0.9999200809846023,0.9999568437316853,3.6762747082974556e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),27,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),28,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),29,0.9999935588425498,0.999999355884255,5.797041705224437e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),30,0.999982194139837,0.9999968203821138,1.4626242276771784e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),31,0.9999917307576021,0.9999979326894005,6.201931798455185e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),32,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),33,0.9999813272048261,0.9999935363401322,1.2209135306084917e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),34,0.9999987462143509,1.0,1.2537856490801857e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),35,0.9999912512302958,0.9999956256151479,4.374384852123825e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),36,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),37,1.0,0.9999994101004953,-5.898995046882405e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),38,0.9999922953648915,1.0,7.704635108463087e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),39,0.9977213541666665,0.9974365234375001,-0.0002848307291664076
+openai-3-small,same length Q250: C750 vs C250 (subsampled),40,0.9999671191742765,0.9999656015977045,-1.517576571963275e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),41,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),42,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),43,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),44,0.9999767485119047,0.9999928031108276,1.6054598922954355e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),45,0.9999893654795194,0.999995273546453,5.908066933568712e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),46,0.9999340744046412,0.9999968305002231,6.27560955819284e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),47,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),48,0.9999941994316603,0.9999999999999999,5.800568339542345e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),49,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),50,0.9999828666058923,0.9999982275799199,1.5360974027545105e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),51,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),52,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),53,0.9999918542408723,0.9999983708481746,6.5166073022204785e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),54,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),55,0.9968264513648597,0.9972183006535948,0.00039184928873514657
+openai-3-small,same length Q250: C750 vs C250 (subsampled),56,0.9999939133916206,1.0,6.0866083794186565e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),57,0.9999760373434041,1.0,2.3962656595877263e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),58,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),59,0.9999985513807153,1.0,1.4486192847495971e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),60,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),61,1.0,0.9999934223032594,-6.577696740617256e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),62,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),63,0.9999999999999999,0.9999999999999999,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),64,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),65,1.0,1.0000000000000002,2.220446049250313e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),66,0.9999838223041893,0.9999912370814358,7.414777246528281e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),67,0.9999870616040161,0.9999944549731498,7.393369133690264e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),68,0.9999963719830015,1.0,3.628016998491468e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),69,0.9999980073449266,1.0,1.9926550733906367e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),70,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),71,0.9999701100106212,0.9999783555249326,8.245514311444602e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),72,0.9999949812190045,0.9999985660625728,3.5848435682162005e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),73,0.9999999999999998,1.0,2.220446049250313e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),74,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),75,0.9999980394322457,0.9999980394322457,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),76,0.9999957558811109,1.0,4.244118889107362e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),77,0.9999867385517534,1.0,1.3261448246648655e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),78,0.9999871176850996,1.0,1.2882314900375391e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),79,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),80,0.9999887693448035,0.9999968803735565,8.111028752977312e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),81,0.9999803830827273,0.9999991083219422,1.872523921486735e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),82,0.9999931025008607,1.0,6.897499139291163e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),83,1.0,0.9999993548491153,-6.451508847149512e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),84,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),85,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),86,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),87,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),88,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),89,0.9999925728248803,1.0,7.427175119700813e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),90,0.9999973387905867,1.0,2.6612094132794084e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),91,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),92,0.9999926095135716,0.9999932813759742,6.718624026014197e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),93,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),94,0.9999954327293226,1.0,4.567270677435786e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),95,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),96,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),97,0.9999939344532759,0.9999945410079484,6.065546724887128e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),98,0.9999982545160034,0.9999988363440024,5.818279990021935e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),99,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),100,0.9999811932152644,0.9999937310717548,1.253785649046879e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),101,0.9999922060107245,1.0,7.793989275528546e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),102,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),103,0.9999953200078356,0.9999953200078356,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),104,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),105,0.9999950633404278,0.9999956804228742,6.170824464746261e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),106,0.9999094674556214,0.999985798816568,7.63313609466465e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),107,0.9990314686434892,0.9991362080395497,0.00010473939606048255
+openai-3-small,same length Q250: C750 vs C250 (subsampled),108,0.9999962147044852,0.9999993691174142,3.154412928974004e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),109,0.9999745170235171,0.9999905179622389,1.6000938721782987e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),110,0.9999928786341221,0.9999978635902366,4.984956114451045e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),111,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),112,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),113,0.9999921515073029,0.9999909440468882,-1.2074604147649382e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),114,0.9999891257733444,0.9999972814433361,8.155669991682934e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),115,0.9999705360372475,0.9999962386430529,2.5702605805366652e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),116,0.9999828798392988,1.0,1.7120160701211695e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),117,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),118,0.9999741677590014,0.9999955716158287,2.1403856827362233e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),119,0.9999459531132447,0.9999776606201412,3.170750689640567e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),120,0.9999992962028736,0.9999985924057475,-7.037971261336651e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),121,0.999996673410403,0.999998891136801,2.217726397968356e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),122,0.9999919376511691,1.0,8.06234883088397e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),123,0.9999928994082841,0.9999952662721894,2.3668639053120444e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),124,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),125,0.999998678035561,1.0,1.3219644390272123e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),126,0.9999484892952784,0.999954621522031,6.132226752608716e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),127,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),128,0.9999869365169728,0.9999944995860939,7.563069121085952e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),129,0.9999835794300049,0.9999936436503245,1.0064220319572215e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),130,0.9999999999999999,0.9999999999999999,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),131,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),132,0.9999974235370199,0.9999967794212749,-6.441157450742807e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),133,0.9999756341961873,1.0,2.4365803812709252e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),134,0.999994960947342,0.9999999999999999,5.039052657918042e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),135,0.9999895907126024,0.9999994217062557,9.830993653259235e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),136,0.9999937011841775,0.9999974804736709,3.7792894933552645e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),137,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),138,0.9999884984099051,0.9999884984099052,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),139,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),140,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),141,0.9999227061105973,0.9999903382638247,6.763215322735938e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),142,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),143,0.9999779929711996,0.9999975547745779,1.9561803378254083e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),144,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),145,0.9999839302112029,0.9999965564738292,1.2626262626325158e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),146,0.9999802001702784,0.9999952000412796,1.4999871001175613e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),147,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),148,0.9999961415014318,1.0,3.858498568209967e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),149,0.9999867796406466,1.0,1.3220359353360855e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),150,0.9999501647366924,1.0,4.983526330759602e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),151,0.9999908946326895,1.0000000000000002,9.105367310691115e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),152,0.9999974193964614,0.999988387284076,-9.032112385343183e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),153,0.9999923068511336,1.0,7.693148866394495e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),154,0.999994830491827,1.0,5.1695081729752346e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),155,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),156,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),157,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),158,0.9999910202224591,1.0,8.979777540885081e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),159,0.9999941758203357,1.0,5.824179664326579e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),160,0.9999932703482796,0.9999973081393119,4.037791032307503e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),161,0.9999993101621395,1.0,6.898378605013633e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),162,0.9999876583510693,0.9999987658351068,1.110748403754247e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),163,0.9999873019405053,0.9999969766525013,9.674711995977248e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),164,0.9999933692758767,0.9999975888275915,4.219551714812475e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),165,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),166,0.9999927777018767,0.9999927777018768,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),167,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),168,0.9999933382791564,0.9999963663340853,3.028054928910784e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),169,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),170,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),171,0.9999594002306805,0.9999446366782007,-1.476355247986838e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),172,1.0000000000000002,1.0,-2.220446049250313e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),173,0.9999837522848349,1.0,1.624771516506307e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),174,0.9999054407487333,0.9996972637924563,-0.0002081769562770619
+openai-3-small,same length Q250: C750 vs C250 (subsampled),175,0.9999907582885829,0.9999907582885829,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),176,0.9999983141862353,1.0,1.6858137646957871e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),177,0.9999856329801099,0.9999958951371744,1.0262157064455657e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),178,0.9999942954153394,1.0,5.704584660648493e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),179,0.9999953876905534,1.0,4.612309446594409e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),180,0.9999333215130561,0.9999717121570542,3.8390643998020835e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),181,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),182,0.9999952581754137,1.0,4.741824586318444e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),183,0.9999930869257635,0.9999984637612807,5.376835517156842e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),184,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),185,0.9999585521816521,0.9999942433585628,3.569117691071266e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),186,0.9978485370051635,0.9978485370051635,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),187,0.9999886182908619,1.0,1.1381709138058582e-05
+openai-3-small,same length Q250: C750 vs C250 (subsampled),188,0.9999961415014318,1.0,3.858498568209967e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),189,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),190,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),191,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),192,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,same length Q250: C750 vs C250 (subsampled),193,0.9999956363223798,0.9999978181611898,2.1818388100669495e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),194,0.9999965302375341,0.9999953736500455,-1.156587488559957e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),195,0.9999960276502028,0.9999966897085024,6.620582996275104e-07
+openai-3-small,same length Q250: C750 vs C250 (subsampled),196,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),197,1.0,0.999998722045545,-1.277954455036756e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),198,1.0,1.0,0.0
+openai-3-small,same length Q250: C750 vs C250 (subsampled),199,0.999992482181324,0.9999947953563013,2.3131749773419585e-06
+openai-3-small,same length Q250: C750 vs C250 (subsampled),200,0.9999948054680241,0.999998701367006,3.8958989818649314e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),0,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),1,1.0,0.9999988074119348,-1.1925880651908471e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),2,1.0,0.9999959951300782,-4.004869921803156e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),3,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),4,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),5,0.9999977789672643,0.9999966684508963,-1.1105163679747676e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),6,0.9999090157692214,0.9994056484664726,-0.0005033673027488028
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),7,1.0,0.9999836362089242,-1.6363791075835188e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),8,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),9,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),10,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),11,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),12,0.9999999999999999,0.9999999999999999,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),13,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),14,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),15,1.0,0.9999993809739879,-6.19026012116386e-07
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),16,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),17,0.998406374501992,0.998406374501992,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),18,0.9999899963486673,0.9999971418139049,7.145465237612392e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),19,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),20,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),21,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),22,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),23,0.9999943220894143,1.0,5.677910585699664e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),24,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),25,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),26,0.9999999999999999,0.9999904097181523,-9.590281847549065e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),27,0.9999984955720925,1.0,1.5044279074727385e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),28,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),29,0.9999954911897848,1.0,4.508810215186898e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),30,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),31,1.0,0.9999648557198092,-3.514428019080196e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),32,1.0,0.9999546115826463,-4.5388417353686705e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),33,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),34,0.9998984433624274,0.9999987462143509,0.00010030285192352828
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),35,0.9999962505272696,1.0,3.7494727304077102e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),36,0.999998462806843,0.999999487602281,1.0247954379538626e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),37,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),38,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),39,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),40,0.9989457901414178,0.9994051099838328,0.0004593198424149847
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),41,0.9999606922101787,0.999998771631568,3.807942138933651e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),42,0.9999977387076714,0.9999988693538358,1.130646164360094e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),43,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),44,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),45,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),46,0.9999746440017849,0.9999949288003571,2.02847985721899e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),47,0.999987774463299,1.0,1.22255367009938e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),48,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),49,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),50,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),51,0.9999870136700603,1.0,1.2986329939734809e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),52,0.999998912296273,0.9999994561481365,5.438518634326428e-07
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),53,0.9999994569493915,0.9999999999999999,5.430506083703435e-07
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),54,0.9999994970071928,1.0,5.029928071831336e-07
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),55,0.9999975394079201,1.0,2.460592079867041e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),56,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),57,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),58,1.0,0.999995847187577,-4.152812423052765e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),59,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),60,0.9999985587496866,0.9999596449912228,-3.8913758463765546e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),61,1.0,0.9999986844606519,-1.3155393481234512e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),62,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),63,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),64,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),65,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),66,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),67,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),68,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),69,0.9999946862531375,0.9999986715632845,3.985310147003318e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),70,0.9999943000490196,0.9999796001754384,-1.4699873581158762e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),71,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),72,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),73,1.0,0.9999963321618666,-3.6678381334365184e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),74,0.999993924994335,0.9999981774983004,4.252503965407328e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),75,0.9999869295483048,0.9999954253419067,8.495793601848156e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),76,1.0,0.9999985852937036,-1.4147062964431356e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),77,0.9999782994483238,0.999995177655183,1.6878206859138878e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),78,1.0,0.9999935588425497,-6.441157450298718e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),79,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),80,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),81,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),82,0.9999735595866328,0.9998861912642024,-8.736832243039228e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),83,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),84,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),85,0.9999829145468304,1.0,1.7085453169585207e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),86,0.9999387696500158,0.9999556607810458,1.689113102998352e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),87,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),88,0.9999921450340905,0.9999934541950755,1.3091609849524843e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),89,0.9999885735767391,0.9999937154672064,5.141890467297294e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),90,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),91,0.9999970879101678,0.9999963598877099,-7.280224579853112e-07
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),92,0.9999677506046762,1.0,3.2249395323757923e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),93,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),94,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),95,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),96,1.0,0.9999862301714468,-1.376982855316733e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),97,0.9999981803359828,0.9999836230238449,-1.4557312137841727e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),98,0.9999860361280277,1.0,1.3963871972277886e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),99,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),100,0.9991493064371235,0.9989725226606084,-0.00017678377651508814
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),101,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),102,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),103,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),104,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),105,0.9998432610585802,0.9998420268936872,-1.2341648930602744e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),106,0.9999940828402367,0.9999928994082841,-1.1834319526560222e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),107,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),108,0.9999892749960413,0.9999968455870709,7.570591029626428e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),109,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),110,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),111,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),112,0.999984713463426,0.9999859873414739,1.2738780479359946e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),113,0.9999927552375105,0.9999752470614941,-1.750817601642307e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),114,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),115,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),116,0.999993579939737,0.9999892998995618,-4.280040175275168e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),117,0.9999651598488611,0.9999887612415681,2.3601392706962265e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),118,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),119,0.9999978381245297,0.9999942349987461,-3.603125783624428e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),120,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),121,0.9999922379576069,0.9999639619460328,-2.8276011574179805e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),122,0.9999989922063961,0.999996640687987,-2.351518409104969e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),123,0.9999988165680473,0.999996449704142,-2.3668639053120444e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),124,0.9999941348777038,0.9999994414169242,5.306539220373274e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),125,0.9999986780355608,0.9999999999999999,1.3219644391382346e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),126,1.0,0.9999779239836908,-2.2076016309213742e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),127,0.999992042355887,0.9999907160818682,-1.3262740188313416e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),128,0.9999814361030667,1.0,1.856389693333238e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),129,1.0,0.9999878169964552,-1.2183003544774529e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),130,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),131,0.9976379712087842,0.9964843162200244,-0.0011536549887597447
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),132,0.9999961353055299,0.9999999999999999,3.864694470001595e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),133,0.9999908628235703,1.0,9.13717642969658e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),134,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),135,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),136,0.9999817334341145,0.9999703955656337,-1.1337868480731927e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),137,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),138,0.9999999999999999,1.0,1.1102230246251565e-16
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),139,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),140,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),141,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),142,0.9999624065503738,0.9999897472410111,2.7340690637256415e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),143,1.0,0.9999706572949326,-2.9342705067381125e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),144,0.9999986780355609,1.0,1.3219644391382346e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),145,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),146,0.9999970000257998,0.9999772001960783,-1.979982972155625e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),147,1.0,0.9999988292104955,-1.170789504456593e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),148,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),149,0.9999984976864371,0.9999873805660717,-1.1117120365389255e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),150,0.9999968852960432,0.9999757053091375,-2.1179986905761616e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),151,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),152,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),153,1.0,0.9999945048936669,-5.4951063330754835e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),154,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),155,0.9999973081393119,1.0,2.691860688130987e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),156,0.9995531760195652,0.9995280586952212,-2.5117324343959524e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),157,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),158,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),159,0.999997087910168,0.9999985439550839,1.4560449159706224e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),160,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),161,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),162,0.9999444625798118,1.0,5.553742018815644e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),163,0.9999927439660031,0.9999915346270035,-1.2093389996081783e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),164,0.9999620240345666,0.9999728743104047,1.0850275838136803e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),165,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),166,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),167,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),168,0.9999903102242275,0.9999975775560569,7.26733182943029e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),169,0.999997846879779,0.9999956937595578,-2.153120221226601e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),170,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),171,0.9999987697039601,0.9999827758554402,-1.5993848519912923e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),172,0.9999962445922128,1.0,3.7554077871870817e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),173,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),174,0.9994586666119347,0.9995070457637456,4.837915181088448e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),175,0.9999815165771658,1.0,1.848342283417015e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),176,0.999982017986509,0.9999370629527814,-4.4955033727589466e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),177,1.0,0.9999999999999999,-1.1102230246251565e-16
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),178,1.0,0.9999988590830678,-1.140916932151903e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),179,0.9999930815358299,1.0,6.9184641701136584e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),180,0.9999898971989478,1.0,1.0102801052180865e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),181,0.999998658475317,1.0,1.3415246830073002e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),182,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),183,0.9968338119997142,0.9968798991612905,4.6087161576280344e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),184,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),185,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),186,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),187,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),188,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),189,0.999999292646852,0.9999957558811109,-3.536765741052328e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),190,0.9999897271531888,0.9999987158941486,8.988740959781083e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),191,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),192,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),193,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),194,1.0,0.9999976868250228,-2.3131749772309362e-06
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),195,0.9982419041855988,0.9984299287426651,0.00018802455706634635
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),196,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),197,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),198,0.9999937011841774,0.9998941798941798,-9.952128999757281e-05
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),199,1.0,1.0,0.0
+openai-3-small,LODO same length Q250: C750 vs C250 (subsampled),200,0.999997402734012,1.0,2.5972659879469617e-06

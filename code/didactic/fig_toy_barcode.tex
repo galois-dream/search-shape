@@ -1,0 +1,49 @@
+% fig_toy_barcode.tex -- Didactic figure "the near miss": two tight meanings and one
+% wide meaning have the same mean H0 bar but very different longest bars. Data: data/toy_*.dat from toy_barcode.py
+% (seed 11); numbers below copied from data/toy_summary.txt. \input from main.tex (no preamble here).
+\providecommand{\didpath}{figs_didactic/}%
+\definecolor{didV}{HTML}{D55E00}\definecolor{didB}{HTML}{0072B2}%
+\pgfplotsset{did/.style={scale only axis, axis line style={line width=0.4pt, black!70},
+  tick style={line width=0.4pt, black!70}, major tick length=2pt, tick label style={font=\footnotesize},
+  label style={font=\footnotesize}, clip=false}}%
+\begin{tikzpicture}[font=\footnotesize]
+% #1 scene tag, #2 y offset, #3 #4 #5 panel letters, #6 row name, #7 longest bar, #8 W1 text, #9 L_max text
+\def\didrow#1#2#3#4#5#6#7#8#9{%
+  \node[rotate=90, anchor=south] at (-0.15cm, #2+1.5cm) {#6};
+  % (i) points and query, to scale
+  \begin{axis}[did, at={(0cm,#2)}, anchor=south west, width=3cm, height=3cm, axis equal image,
+      xmin=-0.75, xmax=0.75, ymin=-0.75, ymax=0.75, hide axis]
+    \addplot[only marks, mark=*, mark size=0.75pt, draw=none, fill=black!55] table {\didpath data/toy_#1_pts.dat};
+    \addplot[only marks, mark=x, mark size=2.6pt, line width=0.6pt, black] coordinates {(0,0)};
+    \node[anchor=north west, inner sep=1pt] at (axis cs:0.02,-0.02) {$\bm q$};
+    \draw[line width=0.4pt, black!70] (axis cs:0.25,-0.78) -- (axis cs:0.75,-0.78)
+      node[midway, below=1pt, inner sep=0pt] {$0.5$};
+    \node[anchor=south west, inner sep=0pt] at (rel axis cs:0,1.02) {(#3)\enspace points and query};
+  \end{axis}
+  % (ii) unit offset directions on the unit circle; longest MST edge in vermillion
+  \begin{axis}[did, at={(3.6cm,#2)}, anchor=south west, width=3cm, height=3cm, axis equal image,
+      xmin=-1.12, xmax=1.12, ymin=-1.12, ymax=1.12, hide axis]
+    \addplot[domain=0:360, samples=181, line width=0.4pt, black!35] ({cos(x)}, {sin(x)});
+    \addplot[line width=1pt, didV] table {\didpath data/toy_#1_longedge.dat};
+    \addplot[only marks, mark=*, mark size=0.75pt, draw=none, fill=black!55] table {\didpath data/toy_#1_dirs.dat};
+    \addplot[only marks, mark=x, mark size=2pt, line width=0.5pt, black!70] coordinates {(0,0)};
+    \node[anchor=south west, inner sep=0pt] at (rel axis cs:0,1.02) {(#4)\enspace unit offsets $\bm u_i$};
+  \end{axis}
+  % (iii) H0 barcode sorted by length; longest in vermillion; dotted line at the mean death (= 2 W1).
+  % LOG distance axis so the 48 short bars and the
+  % long one are visible together; thicker bars; data/toy_*_barslog.dat holds one segment per bar.
+  \begin{axis}[did, at={(7.4cm,#2)}, anchor=south west, width=8cm, height=3.1cm, xmode=log,
+      xmin=0.001, xmax=2.6, ymin=0.2, ymax=49.8, y dir=reverse, axis x line=bottom, axis y line=none,
+      xtick={0.001,0.01,0.1,1}, xticklabels={0.001,0.01,0.1,1}, x axis line style={-}]
+    \addplot[line width=1.1pt, black!38, empty line=jump] table {\didpath data/toy_#1_barslog.dat};
+    \addplot[line width=1.8pt, didV] coordinates {(0.001,1) (#7,1)};
+    \draw[densely dotted, line width=0.7pt, black] (axis cs:0.0537,49.8) -- (axis cs:0.0537,0.2);
+    \node[anchor=south east, inner sep=1pt] at (axis cs:0.0537,49.8) {mean $=2W_1(H_0)$};
+    \node[anchor=east, align=right, inner sep=1pt, fill=white] at (rel axis cs:1,0.42)
+      {$W_1(H_0)=#8$\\[1pt] \textcolor{didV}{$L_{\max}(H_0)=#9$}};
+    \node[anchor=south west, inner sep=0pt] at (rel axis cs:0,1.02) {(#5)\enspace$H_0$ barcode: 49 bars, longest on top};
+  \end{axis}}
+\didrow{A}{0cm}{a}{b}{c}{two tight groups}{1.9702}{0.027}{1.97}
+\didrow{B}{-4.4cm}{d}{e}{f}{one wide group}{0.4300}{0.027}{0.43}
+\node[anchor=north] at (11.4cm,-4.4cm-0.55cm) {bar length: distance $d$ between unit offsets at which two groups merge (log axis)};
+\end{tikzpicture}%

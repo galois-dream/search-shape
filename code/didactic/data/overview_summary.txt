@@ -1,0 +1,4 @@
+# overview.py run
+seed 69; W1=0.0875 LT_max=0.0082 (H1 bar 0.1085-0.1250) L_max=1.8295; max within-clump MST edge 0.1085
+top view: closest cross-clump pair 2,13 at 1.8284 (3-D longest MST edge 2,13); drawn r = 0.8228
+one clump (seed 69): W1=0.0203 LT_max=0.0000 (H1 points: 0) L_max=0.1085

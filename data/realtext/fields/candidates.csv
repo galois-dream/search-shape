@@ -1,0 +1,97 @@
+medal_year,laureate,surname,icm_year,kind,title,volume,pdf_first,pdf_last,status
+1936,Lars Ahlfors,ahlfors,1936,plenary,Geometrie der Riemannschen Flächen,/fileadmin/ICM/Proceedings/ICM1936.1/ICM1936.1.ocr.pdf,239,248,located
+1936,Lars Ahlfors,ahlfors,1932,section,(section talk; volume not examined),/fileadmin/ICM/Proceedings/ICM1932.2/ICM1932.2.ocr.pdf,,,unlocated
+1936,Lars Ahlfors,ahlfors,1978,plenary,"Quasiconformal Mappings, Teichmüller Spaces, and Kleinian Groups",/fileadmin/ICM/Proceedings/ICM1978.1/ICM1978.1.ocr.pdf,71,84,located
+1936,Jesse Douglas,douglas,,,,,,,absent:no ICM plenary or invited talk in the IMU speaker list
+1950,Atle Selberg,selberg,1950,plenary,The General Sieve-Method and Its Place in Prime Number Theory,/fileadmin/ICM/Proceedings/ICM1950.1/ICM1950.1.ocr.pdf,294,300,located
+1950,Atle Selberg,selberg,1962,plenary,Discontinuous Groups and Harmonic Analysis,/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,227,239,located
+1950,Laurent Schwartz,schwartz,1950,plenary,Théorie des noyaux,/fileadmin/ICM/Proceedings/ICM1950.1/ICM1950.1.ocr.pdf,228,238,located
+1954,Kunihiko Kodaira,kodaira,1954,section,,/fileadmin/ICM/Proceedings/ICM1954.3/ICM1954.3.ocr.pdf,,,absent:no lecture text by Kodaira in ICM 1954 vols I or III (name search; vol II holds abstracts only)
+1954,Jean-Pierre Serre,serre,1954,section,Cohomologie et géométrie algébrique,/fileadmin/ICM/Proceedings/ICM1954.3/ICM1954.3.ocr.pdf,515,520,located
+1954,Jean-Pierre Serre,serre,1962,plenary,Géométrie algébrique,/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,240,246,located
+1958,Klaus Roth,roth,1958,plenary,Rational Approximations to Algebraic Numbers,/fileadmin/ICM/Proceedings/ICM1958/ICM1958.ocr.pdf,267,274,located
+1958,René Thom,thom,1958,plenary,Des variétés triangulées aux variétés différentiables,/fileadmin/ICM/Proceedings/ICM1958/ICM1958.ocr.pdf,312,319,located
+1958,René Thom,thom,1970,section,Structure locale des morphismes analytiques,/fileadmin/ICM/Proceedings/ICM1970.2/ICM1970.2.ocr.pdf,265,273,located
+1958,René Thom,thom,1983,plenary,,/fileadmin/ICM/Proceedings/ICM1983.1/ICM1983.1.ocr.pdf,,,absent:no text in ICM 1983 vol 1 plenary series
+1962,Lars Hörmander,hormander,1962,section,"Existence, Uniqueness and Regularity of Solutions of Linear Differential Equations",/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,389,396,located
+1962,Lars Hörmander,hormander,1970,plenary,Linear Differential Operators,/fileadmin/ICM/Proceedings/ICM1970.1/ICM1970.1.ocr.pdf,159,171,located
+1962,John Milnor,milnor,1962,plenary,Topological Manifolds and Smooth Manifolds,/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,182,188,located
+1962,John Milnor,milnor,1958,section,"Bernoulli Numbers, Homotopy Groups, and a Theorem of Rohlin (with M. A. Kervaire)",/fileadmin/ICM/Proceedings/ICM1958/ICM1958.ocr.pdf,518,522,located
+1966,Michael Atiyah,atiyah,1966,plenary,Global Aspects of the Theory of Elliptic Differential Operators,/fileadmin/ICM/Proceedings/ICM1966.1/ICM1966.1.ocr.pdf,57,64,located
+1966,Michael Atiyah,atiyah,1962,section,The Grothendieck Ring in Geometry and Topology,/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,492,496,located
+1966,Michael Atiyah,atiyah,1970,section,Elliptic Operators and Singularities of Vector Fields,/fileadmin/ICM/Proceedings/ICM1970.2/ICM1970.2.ocr.pdf,215,217,located
+1966,Michael Atiyah,atiyah,1978,section,(section talk; volume not examined),/fileadmin/ICM/Proceedings/ICM1978.2/ICM1978.2.ocr.pdf,,,unlocated
+1966,Paul Cohen,cohen,1966,section,(half-hour report),/fileadmin/ICM/Proceedings/ICM1966.1/ICM1966.1.ocr.pdf,,,absent:not in ICM 1966 vol 1 contents
+1966,Paul Cohen,cohen,1962,section,Idempotent Measures and Homomorphisms of Group Algebras,/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,381,386,located
+1966,Alexander Grothendieck,grothendieck,1970,section,Groupes de Barsotti-Tate et cristaux,/fileadmin/ICM/Proceedings/ICM1970.1/ICM1970.1.ocr.pdf,469,474,located
+1966,Alexander Grothendieck,grothendieck,1958,plenary,The Cohomology Theory of Abstract Algebraic Varieties,/fileadmin/ICM/Proceedings/ICM1958/ICM1958.ocr.pdf,167,182,located
+1966,Stephen Smale,smale,1966,plenary,Differentiable Dynamical Systems (one-page note),/fileadmin/ICM/Proceedings/ICM1966.1/ICM1966.1.ocr.pdf,139,139,located
+1966,Stephen Smale,smale,1962,section,Dynamical Systems and the Topological Conjugacy Problem for Diffeomorphisms,/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,540,546,located
+1966,Stephen Smale,smale,1986,plenary,Algorithms for Solving Equations,/fileadmin/ICM/Proceedings/ICM1986.1/ICM1986.1.ocr.pdf,274,297,located
+1970,Alan Baker,baker,1970,plenary,Effective Methods in the Theory of Numbers,/fileadmin/ICM/Proceedings/ICM1970.1/ICM1970.1.ocr.pdf,57,64,located
+1970,Heisuke Hironaka,hironaka,1970,section,Desingularization of Complex-Analytic Varieties,/fileadmin/ICM/Proceedings/ICM1970.2/ICM1970.2.ocr.pdf,635,639,located
+1970,Heisuke Hironaka,hironaka,1962,section,On Resolution of Singularities (Characteristic Zero),/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,557,571,located
+1970,Sergei Novikov,novikov,1970,section,Analogues hermitiens de la K-théorie,/fileadmin/ICM/Proceedings/ICM1970.2/ICM1970.2.ocr.pdf,47,53,located
+1970,Sergei Novikov,novikov,1966,section,(half-hour report),/fileadmin/ICM/Proceedings/ICM1966.1/ICM1966.1.ocr.pdf,,,absent:not in ICM 1966 vol 1 contents
+1970,Sergei Novikov,novikov,1978,plenary,Linear Operators and Integrable Hamiltonian Systems,/fileadmin/ICM/Proceedings/ICM1978.1/ICM1978.1.ocr.pdf,187,188,located
+1970,John Thompson,thompson,1970,section,Quadratic Pairs,/fileadmin/ICM/Proceedings/ICM1970.1/ICM1970.1.ocr.pdf,413,414,located
+1970,John Thompson,thompson,1966,plenary,Characterizations of Finite Simple Groups,/fileadmin/ICM/Proceedings/ICM1966.1/ICM1966.1.ocr.pdf,158,162,located
+1970,John Thompson,thompson,1962,section,Two Results about Finite Groups,/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,346,351,located
+1974,Enrico Bombieri,bombieri,1974,plenary,Variational Problems and Elliptic Equations,/fileadmin/ICM/Proceedings/ICM1974.1/ICM1974.1.ocr.pdf,109,120,located
+1974,David Mumford,mumford,1970,section,The Structure of the Moduli Spaces of Curves and Abelian Varieties,/fileadmin/ICM/Proceedings/ICM1970.1/ICM1970.1.ocr.pdf,495,503,located
+1974,David Mumford,mumford,1962,section,Projective Invariants of Projective Structures and Applications,/fileadmin/ICM/Proceedings/ICM1962.1/ICM1962.1.ocr.pdf,576,580,located
+1974,David Mumford,mumford,2002,plenary,Pattern Theory: The Mathematics of Perception,/fileadmin/ICM/Proceedings/ICM2002.1/ICM2002.1.ocr.pdf,400,421,located
+1978,Pierre Deligne,deligne,1974,plenary,,/fileadmin/ICM/Proceedings/ICM1974.1/ICM1974.1.ocr.pdf,,,absent:no text in ICM 1974 vol 1
+1978,Pierre Deligne,deligne,1970,section,Théorie de Hodge I,/fileadmin/ICM/Proceedings/ICM1970.1/ICM1970.1.ocr.pdf,463,468,located
+1978,Charles Fefferman,fefferman,1974,plenary,Recent Progress in Classical Fourier Analysis,/fileadmin/ICM/Proceedings/ICM1974.1/ICM1974.1.ocr.pdf,151,174,located
+1978,Grigory Margulis,margulis,1974,section,,/fileadmin/ICM/Proceedings/ICM1974.2/ICM1974.2.ocr.pdf,,,absent:no text by Margulis in ICM 1974 vol 2 (name search)
+1978,Grigory Margulis,margulis,1990,plenary,Dynamical and Ergodic Properties of Subgroup Actions on Homogeneous Spaces with Applications to Number Theory,/fileadmin/ICM/Proceedings/ICM1990.1/ICM1990.1.ocr.pdf,281,303,located
+1978,Daniel Quillen,quillen,1974,plenary,Higher Algebraic K-Theory,/fileadmin/ICM/Proceedings/ICM1974.1/ICM1974.1.ocr.pdf,227,232,located
+1978,Daniel Quillen,quillen,1970,section,Cohomology of Groups,/fileadmin/ICM/Proceedings/ICM1970.2/ICM1970.2.ocr.pdf,55,59,located
+1982,Alain Connes,connes,1978,plenary,Von Neumann Algebras,/fileadmin/ICM/Proceedings/ICM1978.1/ICM1978.1.ocr.pdf,97,110,located
+1982,Alain Connes,connes,1986,section,(section talk; volume not examined),/fileadmin/ICM/Proceedings/ICM1986.2/ICM1986.2.ocr.pdf,,,unlocated
+1982,William Thurston,thurston,1978,plenary,,/fileadmin/ICM/Proceedings/ICM1978.1/ICM1978.1.ocr.pdf,,,absent:no text in ICM 1978 vol 1
+1982,William Thurston,thurston,1974,section,On the Construction and Classification of Foliations,/fileadmin/ICM/Proceedings/ICM1974.1/ICM1974.1.ocr.pdf,603,608,located
+1982,Shing-Tung Yau,yau,1978,plenary,The Role of Partial Differential Equations in Differential Geometry,/fileadmin/ICM/Proceedings/ICM1978.1/ICM1978.1.ocr.pdf,237,252,located
+1986,Simon Donaldson,donaldson,1986,plenary,The Geometry of 4-Manifolds,/fileadmin/ICM/Proceedings/ICM1986.1/ICM1986.1.ocr.pdf,145,156,located
+1986,Gerd Faltings,faltings,1986,plenary,Neuere Entwicklungen in der arithmetischen algebraischen Geometrie,/fileadmin/ICM/Proceedings/ICM1986.1/ICM1986.1.ocr.pdf,157,163,located
+1986,Gerd Faltings,faltings,1994,section,Mumford-Stabilität in der algebraischen Geometrie,/fileadmin/ICM/Proceedings/ICM1994.1/ICM1994.1.ocr.pdf,720,727,located
+1986,Michael Freedman,freedman,1983,section,The Disk Theorem for Four-Dimensional Manifolds,/fileadmin/ICM/Proceedings/ICM1983.1/ICM1983.1.ocr.pdf,709,726,located
+1990,Vladimir Drinfeld,drinfeld,1986,section,Quantum Groups,/fileadmin/ICM/Proceedings/ICM1986.1/ICM1986.1.ocr.pdf,900,922,located
+1990,Vaughan Jones,jones,1990,plenary,Von Neumann Algebras in Mathematics and Physics,/fileadmin/ICM/Proceedings/ICM1990.1/ICM1990.1.ocr.pdf,209,226,located
+1990,Shigefumi Mori,mori,1990,plenary,Birational Classification of Algebraic Threefolds,/fileadmin/ICM/Proceedings/ICM1990.1/ICM1990.1.ocr.pdf,323,336,located
+1990,Edward Witten,witten,1986,plenary,Physics and Geometry,/fileadmin/ICM/Proceedings/ICM1986.1/ICM1986.1.ocr.pdf,369,408,located
+1994,Jean Bourgain,bourgain,1994,plenary,Harmonic Analysis and Nonlinear Partial Differential Equations,/fileadmin/ICM/Proceedings/ICM1994.1/ICM1994.1.ocr.pdf,103,116,located
+1994,Pierre-Louis Lions,lions,1994,plenary,On Some Recent Methods for Nonlinear Partial Differential Equations,/fileadmin/ICM/Proceedings/ICM1994.1/ICM1994.1.ocr.pdf,212,227,located
+1994,Jean-Christophe Yoccoz,yoccoz,1994,plenary,Recent Developments in Dynamics,/fileadmin/ICM/Proceedings/ICM1994.1/ICM1994.1.ocr.pdf,318,337,located
+1994,Efim Zelmanov,zelmanov,1994,plenary,,/fileadmin/ICM/Proceedings/ICM1994.1/ICM1994.1.ocr.pdf,,,absent:no text in ICM 1994 vol 1 (laudatio only)
+1994,Efim Zelmanov,zelmanov,1990,section,On the Restricted Burnside Problem,/fileadmin/ICM/Proceedings/ICM1990.1/ICM1990.1.ocr.pdf,483,490,located
+1994,Efim Zelmanov,zelmanov,1983,section,On the Theory of Jordan Algebras,/fileadmin/ICM/Proceedings/ICM1983.1/ICM1983.1.ocr.pdf,517,526,located
+1998,Richard Borcherds,borcherds,1998,plenary,What Is Moonshine?,/fileadmin/ICM/Proceedings/ICM1998.1/ICM1998.1.ocr.pdf,609,617,located
+1998,Timothy Gowers,gowers,1998,plenary,Fourier Analysis and Szemerédi's Theorem,/fileadmin/ICM/Proceedings/ICM1998.1/ICM1998.1.ocr.pdf,619,631,located
+1998,Maxim Kontsevich,kontsevich,1994,plenary,Homological Algebra of Mirror Symmetry,/fileadmin/ICM/Proceedings/ICM1994.1/ICM1994.1.ocr.pdf,192,211,located
+1998,Curtis McMullen,mcmullen,1998,section,Rigidity and Inflexibility in Conformal Dynamics,/fileadmin/ICM/Proceedings/ICM1998.2/ICM1998.2.ocr.pdf,843,857,located
+2002,Laurent Lafforgue,lafforgue,2002,plenary,"Chtoucas de Drinfeld, formule des traces d'Arthur-Selberg et correspondance de Langlands",/fileadmin/ICM/Proceedings/ICM2002.1/ICM2002.1.ocr.pdf,382,399,located
+2002,Vladimir Voevodsky,voevodsky,1998,plenary,A1-Homotopy Theory,/fileadmin/ICM/Proceedings/ICM1998.1/ICM1998.1.ocr.pdf,581,606,located
+2006,Andrei Okounkov,okounkov,2006,section,Random Partitions and Instanton Counting,/fileadmin/ICM/Proceedings/ICM2006.3/ICM2006.3.ocr.pdf,697,721,located
+2006,Grigori Perelman,perelman,1994,section,Spaces with Curvature Bounded Below,/fileadmin/ICM/Proceedings/ICM1994.1/ICM1994.1.ocr.pdf,589,597,located
+2006,Terence Tao,tao,2006,plenary,"The Dichotomy between Structure and Randomness, Arithmetic Progressions, and the Primes",/fileadmin/ICM/Proceedings/ICM2006.1/ICM2006.1.ocr.pdf,591,618,located
+2006,Wendelin Werner,werner,2006,section,Conformal Restriction Properties,/fileadmin/ICM/Proceedings/ICM2006.3/ICM2006.3.ocr.pdf,751,772,located
+2010,Elon Lindenstrauss,lindenstrauss,2010,plenary,Equidistribution in Homogeneous Spaces and Number Theory,/fileadmin/ICM/Proceedings/ICM2010.1/ICM2010.1.pdf,522,548,located
+2010,Ngô Bảo Châu,ngo,2010,plenary,Endoscopy Theory of Automorphic Forms,/fileadmin/ICM/Proceedings/ICM2010.1/ICM2010.1.pdf,203,230,located
+2010,Stanislav Smirnov,smirnov,2010,plenary,Discrete Complex Analysis and Probability,/fileadmin/ICM/Proceedings/ICM2010.1/ICM2010.1.pdf,586,612,located
+2010,Cédric Villani,villani,2010,plenary,Landau Damping,/fileadmin/ICM/Proceedings/ICM2010.1/ICM2010.1.pdf,631,645,located
+2014,Artur Avila,avila,2014,plenary,,/fileadmin/ICM/Proceedings/ICM2014.1/ICM2014.1.pdf,,,absent:no lecture text in ICM 2014 vol 1 (laudatio only)
+2014,Artur Avila,avila,2010,plenary,Dynamics of Renormalization Operators,/fileadmin/ICM/Proceedings/ICM2010.1/ICM2010.1.pdf,147,168,located
+2014,Manjul Bhargava,bhargava,2014,plenary,Rational Points on Elliptic and Hyperelliptic Curves,/fileadmin/ICM/Proceedings/ICM2014.1/ICM2014.1.pdf,675,702,located
+2014,Martin Hairer,hairer,2014,section,Singular Stochastic PDEs,/fileadmin/ICM/Proceedings/ICM2014.1/ICM2014.1.pdf,703,727,located
+2014,Maryam Mirzakhani,mirzakhani,2014,plenary,,/fileadmin/ICM/Proceedings/ICM2014.1/ICM2014.1.pdf,,,absent:lecture not given (IMU speaker list)
+2014,Maryam Mirzakhani,mirzakhani,2010,section,On Weil-Petersson Volumes and Geometry of Random Hyperbolic Surfaces,/fileadmin/ICM/Proceedings/ICM2010.2/ICM2010.2.pdf,1131,1150,located
+2018,Caucher Birkar,birkar,2018,section,Birational Geometry of Algebraic Varieties,/fileadmin/ICM/Proceedings/uploads/ICM-2018-vol2-ver1-eb.pdf,638,665,located
+2018,Alessio Figalli,figalli,2018,plenary,Regularity of Interfaces in Phase Transitions via Obstacle Problems,/fileadmin/ICM/Proceedings/ICM2018/ICM-2018-vol1-ver1-eb.pdf,234,257,located
+2018,Peter Scholze,scholze,2018,plenary,p-Adic Geometry,/fileadmin/ICM/Proceedings/ICM2018/ICM-2018-vol1-ver1-eb.pdf,896,929,located
+2018,Akshay Venkatesh,venkatesh,2018,plenary,Cohomology of Arithmetic Groups,/fileadmin/ICM/Proceedings/ICM2018/ICM-2018-vol1-ver1-eb.pdf,276,309,located
+2022,Hugo Duminil-Copin,duminil-copin,2022,plenary,100 Years of the (Critical) Ising Model on the Hypercubic Lattice,/fileadmin/ICM/Proceedings/ICM2022/978-3-98547-559-9-volume-1.pdf,183,229,located
+2022,June Huh,huh,2022,plenary,Combinatorics and Hodge Theory,/fileadmin/ICM/Proceedings/ICM2022/978-3-98547-559-9-volume-1.pdf,231,258,located
+2022,James Maynard,maynard,2022,plenary,Counting Primes,/fileadmin/ICM/Proceedings/ICM2022/978-3-98547-559-9-volume-1.pdf,259,287,located
+2022,Maryna Viazovska,viazovska,2022,plenary,On Discrete Fourier Uniqueness Sets in Euclidean Space,/fileadmin/ICM/Proceedings/ICM2022/978-3-98547-559-9-volume-1.pdf,289,302,located

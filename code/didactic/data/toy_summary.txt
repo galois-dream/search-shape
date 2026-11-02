@@ -1,0 +1,3 @@
+# toy_barcode.py run
+A: W1=0.0269 Lmax=1.9702 mean death=0.0537
+B: spread sd=32.10 deg  W1=0.0269 Lmax=0.4300 mean death=0.0537  W1 ratio B/A=1.0000

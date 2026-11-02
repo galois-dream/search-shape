@@ -1,0 +1,65 @@
+\begin{table}[h]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llccccc}
+\toprule
+ & & \multicolumn{2}{c}{(1) As it first looks} & \multicolumn{3}{c}{(2) Same query length: real $-$ corpus-bearing control} \\
+ & & \multicolumn{2}{c}{\scriptsize AUROC; 1: perfect, 0.5: none} & \multicolumn{3}{c}{\scriptsize AUROC difference; 0: control explains it, $>0$: arrangement adds} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-7}
+Corpus & Model & $\Wone$ & $\Lmax$ & $\Wone$, own doc.\ out & $\Lmax$, all & $\Lmax$, own doc.\ out \\
+\midrule
+Nobel & 3-small & 1.00 & 0.98 & $+0.03$ & $+0.05$ & \textbf{+0.08}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & 3-large & 1.00 & 0.98 & $+0.01$ & $+0.04$ & \textbf{+0.06}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & 005 & 0.91 & 0.83 & $-0.06$ & $-0.18$ & $-0.05$ \\
+ & Gemini & 0.94 & 0.66 & $+0.03$ & $+0.12$ & $+0.04$ \\
+ & ada-002 & 0.98 & 0.95 & $+0.02$ & $+0.08$ & \textbf{+0.08}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & ModernBERT & 0.94 & 0.92 & $+0.00$ & $+0.02$ & $+0.01$ \\
+ & bge-base & 0.84 & 0.78 & $-0.01$ & $-0.02$ & $+0.00$ \\
+ & bge-m3 & 0.97 & 0.93 & $+0.04$ & $+0.05$ & \textbf{+0.04}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & Qwen3-0.6B & 0.90 & 0.77 & $+0.05$ & $+0.08$ & \textbf{+0.10}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+\midrule
+Turing & 3-small & 1.00 & 0.99 & $+0.01$ & $+0.08$ & \textbf{+0.08}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & 3-large & 1.00 & 0.97 & $+0.01$ & $+0.06$ & \textbf{+0.05}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & 005 & 0.85 & 0.82 & $-0.05$ & $-0.01$ & $-0.03$ \\
+ & Gemini & 0.87 & 0.70 & $+0.00$ & $+0.16$ & \textbf{+0.08}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & ada-002 & 0.94 & 0.90 & $+0.02$ & $+0.05$ & $+0.03$ \\
+ & ModernBERT & 0.95 & 0.92 & $-0.06$ & $+0.04$ & $+0.01$ \\
+ & bge-base & 0.84 & 0.75 & $+0.03$ & $+0.04$ & $+0.02$ \\
+ & bge-m3 & 0.93 & 0.93 & $+0.02$ & $+0.06$ & $+0.03$ \\
+ & Qwen3-0.6B & 0.80 & 0.74 & $+0.01$ & $+0.08$ & $+0.04$ \\
+\midrule
+Fields & 3-small & 1.00 & 0.99 & $+0.03$ & $+0.10$ & \textbf{+0.07}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & 3-large & 1.00 & 0.94 & $+0.02$ & $+0.09$ & $+0.02$ \\
+ & 005 & 0.92 & 0.87 & $+0.00$ & $+0.04$ & $-0.04$ \\
+ & Gemini & 0.97 & 0.43 & $+0.02$ & $+0.18$ & \textbf{+0.08}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & ada-002 & 0.90 & 0.85 & $+0.07$ & $+0.06$ & \textbf{+0.04}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & ModernBERT & 0.95 & 0.92 & $+0.05$ & $+0.14$ & \textbf{+0.15}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & bge-base & 0.84 & 0.80 & $+0.05$ & $+0.06$ & \textbf{+0.04}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & bge-m3 & 0.97 & 0.96 & $+0.02$ & $+0.06$ & \textbf{+0.05}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & Qwen3-0.6B & 0.93 & 0.78 & $+0.08$ & $+0.09$ & $+0.03$ \\
+\midrule
+Essays & 3-small & 0.99 & 0.96 & $+0.02$ & $+0.17$ & \textbf{+0.13}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & 3-large & 0.98 & 0.91 & $+0.01$ & $+0.13$ & \textbf{+0.11}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & 005 & 0.74 & 0.55 & $+0.03$ & $+0.01$ & $-0.01$ \\
+ & Gemini & 0.83 & 0.46 & $+0.01$ & $+0.21$ & \textbf{+0.11}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & ada-002 & 0.94 & 0.91 & $+0.02$ & $+0.17$ & \textbf{+0.11}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & ModernBERT & 0.83 & 0.77 & $+0.03$ & $+0.14$ & \textbf{+0.14}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & bge-base & 0.86 & 0.81 & $-0.02$ & $+0.07$ & \textbf{+0.06}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & bge-m3 & 0.93 & 0.89 & $+0.09$ & $+0.12$ & \textbf{+0.09}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+ & Qwen3-0.6B & 0.95 & 0.88 & $+0.06$ & $+0.18$ & \textbf{+0.18}\rlap{\,\textcolor[HTML]{D55E00}{$\bullet$}} \\
+\midrule
+Wikipedia & 3-small & 1.00 & 0.83 & $+0.01$ & $+0.12$ & $-0.02$ \\
+ & 3-large & 0.99 & 0.75 & $+0.02$ & $+0.09$ & $-0.02$ \\
+ & 005 & 0.78 & 0.42 & $+0.07$ & $-0.12$ & $-0.11$ \\
+ & Gemini & 0.79 & 0.14 & $+0.17$ & $+0.17$ & $+0.05$ \\
+ & ada-002 & 0.99 & 0.78 & $+0.05$ & $+0.04$ & $-0.01$ \\
+ & ModernBERT & 0.87 & 0.72 & $+0.08$ & $+0.04$ & $-0.05$ \\
+ & bge-base & 0.91 & 0.71 & $+0.04$ & $+0.09$ & $-0.01$ \\
+ & bge-m3 & 0.98 & 0.79 & $+0.03$ & $+0.09$ & $+0.00$ \\
+ & Qwen3-0.6B & 0.98 & 0.73 & $+0.08$ & $+0.11$ & $+0.00$ \\
+\bottomrule
+\end{tabular}
+\caption{Every corpus and embedding model behind \cref{tab:real}; columns as there. Bold, with a dot ({\color[HTML]{D55E00}$\bullet$}): the longest bar beats its control clearly, meaning the 95\% interval of the difference lies above 0 and its real AUROC above 0.5. This happens for 8 of 9 models on the essays, 6 on the Fields lectures, 5 on the Nobel lectures, 3 on the Turing lectures and none on Wikipedia. Models: 3-small, 3-large and ada-002 are text-embedding-3-small, -3-large and -ada-002; 005 is text-embedding-005; Gemini is gemini-embedding-001; ModernBERT is ModernBERT-base-embed; bge-base is bge-base-en-v1.5; Qwen3-0.6B is Qwen3-Embedding-0.6B. In (1), the 95\% intervals (bootstrap over documents) have a median half-width of 0.03 and reach 0.09. In (2), the real longest-bar AUROC is itself below 0.5 for text-embedding-005 on the essays and Wikipedia and for gemini-embedding-001 on Wikipedia. ``Own doc.\ out'': the query's own document is excluded from retrieval, the control is averaged over 20 draws, and the entry is the mean over ten size-matched subsamples; ``all'': every non-overlapping chunk. The supplementary material gives all intervals.}
+\label{tab:realfull}
+\end{table}

@@ -1,0 +1,48 @@
+% fig_effects.tex -- "What moves the features": for W1(H0) and L_max(H0), per corpus x
+% model (primary arm, all chunks), three AUROCs with 95% document-bootstrap intervals, oriented so > 0.5 means the named
+% direction: query length (Q750 above Q250 at C750), corpus (density-matched C250 above C750 at Q250) and the matched
+% cells (Q750|C750 above Q250|C250). Data: data/effects.dat + data/effects_meta.tex from real_data.py (reads every
+% data/reference_outputs/realtext_*_stats_long.csv). Replaces the appendix figures fig_real_interaction_*.pdf. \input from main.tex.
+% matched-cell triangles dropped (Table 5 holds them), larger markers, labels separated.
+\providecommand{\didpath}{figs_didactic/}%
+\definecolor{didV}{HTML}{D55E00}\definecolor{didB}{HTML}{0072B2}%
+\input{\didpath data/effects_meta.tex}%
+\pgfplotsset{dideff/.style={scale only axis, width=5.6cm, height=\efHeight, xmin=0, xmax=1, ymin=-0.9, ymax=\efYmax,
+  y dir=reverse, axis x line=bottom, axis y line=left, y axis line style={draw=none}, ytick style={draw=none},
+  x axis line style={line width=0.4pt, black!70, -}, xtick style={line width=0.4pt, black!70}, major tick length=2pt,
+  xtick={0,0.25,0.5,0.75,1}, xticklabels={$0$,,$0.5$,,$1$}, clip=false,
+  tick label style={font=\footnotesize}, label style={font=\footnotesize}, ytick/.expand once=\efYticks},
+  effq/.style={only marks, mark=*, mark size=1.8pt, didB, error bars/.cd, x dir=both, x explicit,
+    error bar style={line width=0.4pt, didB}, error mark=none},
+  effc/.style={only marks, mark=square*, mark size=1.5pt, black!75, error bars/.cd, x dir=both, x explicit,
+    error bar style={line width=0.4pt, black!75}, error mark=none},
+  effm/.style={only marks, mark=triangle*, mark size=1.6pt, mark options={fill=white, draw=black!55, line width=0.5pt},
+    black!55, error bars/.cd, x dir=both, x explicit, error bar style={line width=0.4pt, black!45}, error mark=none}}%
+\begin{tikzpicture}[font=\footnotesize]
+  % #1 x position, #2 feature tag in effects.dat, #3 title, #4 extra axis options
+  \def\didefcol#1#2#3#4{%
+    \begin{axis}[dideff, at={(#1,0cm)}, anchor=south west, #4]
+      \foreach \g/\name in \efGroups {\edef\tmp{\noexpand\fill[black!4] (axis cs:0,\g-0.5) rectangle (axis cs:1,\g+\efN-0.5);}\tmp}  % corpus bands, as in Fig. 12
+      \addplot[line width=0.6pt, black!40, mark=none, forget plot] coordinates {(0.5,-0.9) (0.5,\efYmax)};
+      \addplot[effc] table[x=#2_c, y=ym, x error plus=#2_c_ep, x error minus=#2_c_em] {\didpath data/effects.dat};
+      \addplot[effq] table[x=#2_q, y=yq, x error plus=#2_q_ep, x error minus=#2_q_em] {\didpath data/effects.dat};
+      \node[anchor=south west, inner sep=1pt, text=black!60] at (axis cs:0.5,-0.9) {no effect};
+      \node[anchor=south west, inner sep=0pt] at ([yshift=0.3cm]rel axis cs:0,1) {#3};  % fixed offset (taller axis pushed the titles into the key)
+    \end{axis}}
+  \didefcol{3.15cm}{w1}{(a)\enspace $W_1(H_0)$, AUROC with 95\% interval}{yticklabels/.expand once=\efYlabels}
+  \didefcol{9.45cm}{lb}{(b)\enspace $L_{\max}(H_0)$, AUROC with 95\% interval}{yticklabels={}}
+  % corpus groups (left of the model labels)
+  \begin{scope}[x=1cm, y=1cm]
+    \begin{axis}[dideff, at={(3.15cm,0cm)}, anchor=south west, hide axis, ytick=\empty]
+      \foreach \g/\name in \efGroups {
+        \edef\tmp{\noexpand\draw[line width=0.4pt, black!45] ([xshift=-2.05cm]axis cs:0,\g-0.3) -- ([xshift=-2.05cm]axis cs:0,\g+\efN-0.7);
+          \noexpand\node[rotate=90, inner sep=0pt] at ([xshift=-2.3cm]axis cs:0,\g+\efN/2-0.5) {\name};}\tmp}  % span all models
+    \end{axis}
+  \end{scope}
+  % key (direct labels, no box), one line above the panel titles; full definitions in the caption
+  \begin{scope}[shift={(3.15cm,{\efHeight+1.2cm})}, every node/.style={anchor=west, inner sep=1pt}]
+    \fill[didB] (0,0) circle (1.8pt);                        \node (k1) at (0.1,0) {query length (750 above 250 tokens)};
+    \fill[black!75] ([xshift=0.45cm, yshift=-0.04cm]k1.east) rectangle ++(0.08,0.08);
+    \node (k2) at ([xshift=0.6cm]k1.east) {corpus (finer above coarser)};
+  \end{scope}
+\end{tikzpicture}%

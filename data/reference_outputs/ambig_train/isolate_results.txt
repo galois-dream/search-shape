@@ -1,0 +1,5 @@
+# lenctl rows: bge-m3 embeddings (emb_bge-m3.npz); ambig rows: all-MiniLM-L6-v2.
+ambig group 0: n 5287; cut isolates <= 3 chunks in 0.96 (1 chunk: 0.83); longest bar = largest NN distance in 0.83; median smaller side 1
+ambig group 1: n 4749; cut isolates <= 3 chunks in 0.96 (1 chunk: 0.83); longest bar = largest NN distance in 0.83; median smaller side 1
+lenctl group Q1: n 240; cut isolates <= 3 chunks in 0.95 (1 chunk: 0.77); longest bar = largest NN distance in 0.77; median smaller side 1
+lenctl group Q3_g0: n 240; cut isolates <= 3 chunks in 0.80 (1 chunk: 0.63); longest bar = largest NN distance in 0.63; median smaller side 1

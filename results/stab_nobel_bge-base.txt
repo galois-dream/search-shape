@@ -1,0 +1,12 @@
+bge-base: C750 n=367 D=768  min pairwise |ci-cj| = 2.62e-01, pairs < 1e-3: 0, < 0.05: 0
+  queries 300; cos range in top-50: min 0.597 median-max 0.855 max 0.947; a_min=0.325
+  MST margin (min over non-tree edges, per query): min 7.0e-07 1% 1.2e-05 median 6.8e-04
+  NN margin (min over points 2nd-1st NN): min 7.0e-07 1% 8.5e-06 median 5.8e-04
+  float32 pipeline: MST edge set differs 0.000, NN set differs 0.000, max|d nnsh| 0.000, max|dW1| 1.7e-08
+  Gram-formula distances (f64): MST set differs 0.000, max|dW1| 1.7e-16
+  SD across queries: W1 0.0250 Lmax 0.0550 ratio 0.0503; median nnsh 0.796; lone share 0.807
+  noise 0.0001: MST set changes 0.003; |d nnsh| median 0.000 max 0.020; |dW1|/SD max 0.0002; |dLmax|/SD max 0.0006; lone flips 0.000
+  noise 0.001: MST set changes 0.043; |d nnsh| median 0.000 max 0.020; |dW1|/SD max 0.0022; |dLmax|/SD max 0.0068; lone flips 0.000
+  noise 0.01: MST set changes 0.293; |d nnsh| median 0.000 max 0.020; |dW1|/SD max 0.0215; |dLmax|/SD max 0.0589; lone flips 0.010
+  rank-50/51 swap (cos gap median 4.4e-04): |dW1|/SD median 0.040 95% 0.100; |dLmax|/SD median 0.000 95% 0.209 max 1.27; share Lmax changes >0: 0.087; |dratio|/SD median 0.035 95% 0.108; |dnnsh| median 0.000
+  Lmax - max NN dist on non-lone queries: min 5.2e-04, count < 1e-5 (isclose would mislabel): 0; exact-zero (lone) 0.807

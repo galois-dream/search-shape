@@ -1,0 +1,16 @@
+# real_data.py run
+clean text, text-embedding-3-small
+gutenberg: n C250 (lodo_dens) = 2372, n C750 (lodo) = 2372
+  w1       real : median C250 0.406  C750 0.343  AUROC(C250>C750) 0.958
+  w1       enull: median C250 0.435  C750 0.394  AUROC(C250>C750) 0.941
+  w1       iso  : median C250 0.582  C750 0.586  AUROC(C250>C750) 0.415
+  longbar  real : median C250 0.974  C750 0.912  AUROC(C250>C750) 0.831
+  longbar  enull: median C250 1.026  C750 0.996  AUROC(C250>C750) 0.699
+  longbar  iso  : median C250 1.189  C750 1.198  AUROC(C250>C750) 0.421
+wiki: n C250 (lodo_dens) = 1249, n C750 (lodo) = 1249
+  w1       real : median C250 0.354  C750 0.296  AUROC(C250>C750) 1.000
+  w1       enull: median C250 0.409  C750 0.373  AUROC(C250>C750) 0.987
+  w1       iso  : median C250 0.539  C750 0.541  AUROC(C250>C750) 0.427
+  longbar  real : median C250 0.988  C750 0.977  AUROC(C250>C750) 0.627
+  longbar  enull: median C250 1.008  C750 0.992  AUROC(C250>C750) 0.668
+  longbar  iso  : median C250 1.108  C750 1.111  AUROC(C250>C750) 0.464

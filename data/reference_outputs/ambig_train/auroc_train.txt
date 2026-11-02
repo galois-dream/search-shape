@@ -1,0 +1,24 @@
+# ambig.py auroc -- AmbigNQ train, n = 10036, ambiguous 0.473; AUROC = P(ambiguous > clear), 95% bootstrap over questions
+w1              0.477 [0.465, 0.487]  oriented 0.523
+longbar         0.502 [0.491, 0.513]  oriented 0.502
+ltmax           0.526 [0.514, 0.537]  oriented 0.526
+w1_corp         0.532 [0.521, 0.544]  oriented 0.532
+longbar_corp    0.534 [0.523, 0.546]  oriented 0.534
+ltmax_corp      0.506 [0.495, 0.518]  oriented 0.506
+w1_rand         0.534 [0.523, 0.546]  oriented 0.534
+longbar_rand    0.542 [0.531, 0.554]  oriented 0.542
+top1            0.529 [0.518, 0.540]  oriented 0.529
+mean_cos        0.536 [0.525, 0.548]  oriented 0.536
+std_cos         0.520 [0.508, 0.531]  oriented 0.520
+slope           0.477 [0.465, 0.488]  oriented 0.523
+nn_med          0.529 [0.518, 0.541]  oriented 0.529
+coherence       0.526 [0.514, 0.537]  oriented 0.526
+eig2            0.509 [0.497, 0.520]  oriented 0.509
+cov_gain        0.490 [0.479, 0.502]  oriented 0.510
+cov_gain_diff   0.489 [0.477, 0.500]  oriented 0.511
+nwords          0.463 [0.452, 0.473]  oriented 0.537
+w1 real - corpus-bearing control: -0.055 [-0.073, -0.038]
+longbar real - corpus-bearing control: -0.032 [-0.050, -0.015]
+ltmax real - corpus-bearing control: +0.019 [+0.003, +0.034]
+A1: best persistence ltmax 0.526 vs best similarity nn_med 0.529: difference -0.004
+A4: question length oriented 0.537; best persistence 0.526

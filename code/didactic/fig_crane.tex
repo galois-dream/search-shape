@@ -1,0 +1,47 @@
+% fig_crane.tex -- Appendix easter egg: the earlier preprint's own crane sentences, which
+% it used only as an illustration, searched for real (all-MiniLM-L6-v2, English Wikipedia, ~50k background chunks; pages
+% Crane (machine), Crane (bird) and Neck, the last standing in for the verb). Same marks as fig_examples.tex. Data:
+% data/examples_crane/ex{0,1,2}_{pts,mst,long}.dat from code/examples/to_dat.py <- data/examples/crane.json (ring_examples.py with
+% EXAMPLE_SET=crane). \input from main.tex (no preamble here).
+\providecommand{\didpath}{figs_didactic/}%
+\definecolor{didV}{HTML}{D55E00}\definecolor{exA}{HTML}{0072B2}\definecolor{exB}{HTML}{009E73}\definecolor{exC}{HTML}{CC79A7}%
+\pgfplotsset{crax/.style={scale only axis, width=3.6cm, height=3.6cm, axis equal image, hide axis, clip=false},
+  crsc/.style={scatter, only marks, scatter src=explicit symbolic, mark size=1.4pt,
+    scatter/classes={0={mark=*, exA}, 1={mark=square*, exB, mark size=1.2pt}, 2={mark=triangle*, exC, mark size=1.9pt},
+      9={mark=o, black!40, mark size=1.1pt}}}}%
+\begin{tikzpicture}[font=\footnotesize]
+  \def\crpanel#1#2#3#4{%
+    \begin{axis}[crax, at={(#2,0cm)}, anchor=south west]
+      \addplot[line width=0.35pt, black!22, empty line=jump] table {\didpath data/examples_crane/ex#1_mst.dat};
+      \addplot[line width=1.5pt, didV] table {\didpath data/examples_crane/ex#1_long.dat};
+      \addplot[crsc] table[meta=c] {\didpath data/examples_crane/ex#1_pts.dat};
+    \end{axis}
+    \node[anchor=north, align=center, text width=4.4cm, inner sep=0pt] at ({#2+1.8cm}, 4.75cm) {#3};
+    \node[anchor=north west, align=left, inner sep=0pt] at (#2,-0.15cm) {#4};}
+  \crpanel{0}{0cm}{``crane''}%
+    {\textbf{\checkmark\ two clusters}\\{\scriptsize machine (32) and bird (9)}\\[2pt]\textcolor{exA}{$\bullet$} machine (33)\quad \textcolor{exB}{$\blacksquare$} bird (12)\\ \textcolor{black!45}{$\circ$} other pages (5)}
+  \crpanel{1}{4.9cm}{``I saw a crane.''\\{\scriptsize polysemic}}%
+    {\textbf{$\times$ no clusters}\\[2pt]\textcolor{exA}{$\bullet$} machine (33)\quad \textcolor{exB}{$\blacksquare$} bird (7)\\ \textcolor{black!45}{$\circ$} other pages (10)}
+  \crpanel{2}{9.8cm}{``He craned his neck to watch the crane lift near the crane.''\\{\scriptsize multi-factual}}%
+    {\textbf{$\times$ no clusters: the same mix as the middle}\\[2pt]\textcolor{exA}{$\bullet$} machine (30)\quad \textcolor{exB}{$\blacksquare$} bird (7)\\ \textcolor{exC}{$\blacktriangle$} neck (2)\quad \textcolor{black!45}{$\circ$} other pages (11)}
+  % what topology says about the three queries (the illustration must answer "can topology tell them
+  % apart?"). Dot: the real neighbours' feature; grey bar: corpus-bearing control, mean +- 2 s.d. over 50 draws (same
+  % cosines, bearings from random non-neighbour chunks). Data: data/examples_crane/topo_*.dat from code/examples/crane_topo.py.
+  \node[anchor=west, font=\footnotesize\bfseries] at (0cm,-2.35cm) {Can topology tell them apart?};
+  \node[anchor=west, font=\scriptsize] at (5.4cm,-2.35cm) {$\bullet$ real neighbours\quad \textcolor{black!30}{\rule{8pt}{4pt}} control with the same cosines (mean $\pm$ 2 s.d. over 50 draws)};
+  \def\crstrip#1#2#3#4#5#6{%
+    \begin{axis}[at={(#2,-5.15cm)}, anchor=south west, width=3.6cm, height=2.1cm, scale only axis, xmin=#4, xmax=#5,
+      ymin=0.4, ymax=3.6, ytick=\empty, axis x line*=bottom, axis y line=none, xlabel={#6}, xlabel style={yshift=3pt},
+      tick label style={font=\scriptsize, /pgf/number format/fixed}, scaled x ticks=false, xtick distance=#1]
+      \addplot[only marks, mark=|, mark size=4pt, black!55, error bars/.cd, x dir=both, x explicit, error bar style={line width=4pt, black!22}, error mark=none]
+        table[x=corp, y=y, x error expr=2*\thisrow{sd}] {\didpath data/examples_crane/topo_#3.dat};
+      \addplot[only marks, mark=*, mark size=1.8pt, black] table[x=real, y=y] {\didpath data/examples_crane/topo_#3.dat};
+    \end{axis}}
+  \crstrip{0.05}{0cm}{W1}{0.36}{0.54}{$W_1(H_0)$}
+  \crstrip{0.1}{4.9cm}{Lmax}{0.95}{1.22}{$L_{\max}(H_0)$}
+  \crstrip{0.01}{9.8cm}{LTmax}{0.012}{0.050}{$LT_{\max}(H_1)$}
+  \foreach \yy/\lab in {3/{``crane''}, 2/{``I saw a crane.''}, 1/{multi-factual sentence}} {
+    \node[anchor=east, font=\scriptsize] at (-0.05cm, {-5.15cm + (\yy-0.4)/3.2*2.1cm}) {\lab};}
+  \node[anchor=north west, align=left, font=\scriptsize, text width=14cm] at (0cm,-6.05cm) {$W_1$: the same for the two sentences; $L_{\max}$: close; both below the control for every query, even for the word whose neighbours fall into two clusters.
+    Only the loop summary differs (0.035 against 0.019), within its spread over the six crane queries we searched (0.019 to 0.045). One query per regime: an illustration, not a test.};
+\end{tikzpicture}%

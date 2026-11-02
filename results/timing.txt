@@ -1,0 +1,4 @@
+# timing.py on an Apple M1 machine, run 2026-11-02 08:52 CET; ripser given the distance matrix; medians over 300 Q250|C750 queries, microseconds; e2e = distances + ratios (nn) or distances + H0,H1 (ph)
+nobel     bge-base         D=768 n=300 median us: dist 609 nn 7 mst 264 h0 139 h1 353 ctrl 1760 e2e_nn 616 e2e_ph 961
+nobel     openai-3-small   D=1536 n=300 median us: dist 1182 nn 7 mst 262 h0 135 h1 336 ctrl 1585 e2e_nn 1189 e2e_ph 1519
+nobel     openai-3-large   D=3072 n=300 median us: dist 2334 nn 7 mst 273 h0 135 h1 351 ctrl 2209 e2e_nn 2342 e2e_ph 2692

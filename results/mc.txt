@@ -1,0 +1,4 @@
+w1 n= 45 gain median 0.023 single-draw SD median/max 0.0024 0.0049 MC SE of 20-mean median/max 0.0005 0.0011
+   |gain|/MCSE min 1.2  gains within 2 MCSE of 0: 1
+longbar n= 45 gain median 0.029 single-draw SD median/max 0.0062 0.0101 MC SE of 20-mean median/max 0.0014 0.0023
+   |gain|/MCSE min 0.5  gains within 2 MCSE of 0: 2

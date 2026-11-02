@@ -1,0 +1,8 @@
+alpha=0.0 phi= 0 effrank= 32.5 P(vmf2>0)=0.00
+alpha=0.0 phi=30 effrank= 17.4 P(vmf2>0)=1.00
+alpha=1.0 phi= 0 effrank=  7.6 P(vmf2>0)=0.13
+alpha=1.0 phi=30 effrank=  7.9 P(vmf2>0)=0.13
+alpha=1.5 phi= 0 effrank=  3.3 P(vmf2>0)=0.90
+alpha=1.5 phi=30 effrank=  3.4 P(vmf2>0)=1.00
+alpha=2.0 phi= 0 effrank=  2.3 P(vmf2>0)=1.00
+alpha=2.0 phi=30 effrank=  2.2 P(vmf2>0)=1.00

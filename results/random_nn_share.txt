@@ -1,0 +1,7 @@
+# N=50 iid Gaussian clouds, 300 per dimension, seed 0: NN share of MST edges, median (5-95%)
+dim    1: 0.67 (0.63-0.73)  longest edge cuts off one point: 0.57
+dim    2: 0.73 (0.67-0.78)  longest edge cuts off one point: 0.83
+dim    5: 0.78 (0.73-0.84)  longest edge cuts off one point: 0.96
+dim   20: 0.86 (0.80-0.92)  longest edge cuts off one point: 0.99
+dim  100: 0.88 (0.82-0.94)  longest edge cuts off one point: 1.00
+dim  768: 0.90 (0.84-0.96)  longest edge cuts off one point: 1.00

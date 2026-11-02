@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcc@{\hspace{14pt}}cccc}
+\toprule
+ & \multicolumn{2}{c}{(1) As it first looks} & \multicolumn{4}{c}{(2) Same query length, own document left out} \\
+ & \multicolumn{2}{c}{\scriptsize AUROC (0.5: chance; 1: perfect)} & \multicolumn{4}{c}{\scriptsize gain over the corpus-bearing control (AUROC difference)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-7}
+Corpus & $\Wone$ & $\Lmax$ & $\Wone$ gain & clear & $\Lmax$ gain & clear \\
+\midrule
+Nobel & 0.94 {\scriptsize(0.84--1.00)} & 0.92 {\scriptsize(0.66--0.98)} & $+0.02$ {\scriptsize($-0.06$ to $+0.05$)} & 5 & $+0.04$ {\scriptsize($-0.05$ to $+0.10$)} & 5 \\
+Turing & 0.93 {\scriptsize(0.80--1.00)} & 0.90 {\scriptsize(0.70--0.99)} & $+0.01$ {\scriptsize($-0.06$ to $+0.03$)} & 0 & $+0.03$ {\scriptsize($-0.03$ to $+0.08$)} & 3 \\
+Fields & 0.95 {\scriptsize(0.84--1.00)} & 0.87 {\scriptsize(0.43--0.99)} & $+0.03$ {\scriptsize($+0.00$ to $+0.08$)} & 8 & $+0.04$ {\scriptsize($-0.04$ to $+0.15$)} & 6 \\
+Essays & 0.93 {\scriptsize(0.74--0.99)} & 0.88 {\scriptsize(0.46--0.96)} & $+0.02$ {\scriptsize($-0.02$ to $+0.09$)} & 2 & $+0.11$ {\scriptsize($-0.01$ to $+0.18$)} & 8 \\
+Wikipedia & 0.98 {\scriptsize(0.78--1.00)} & 0.73 {\scriptsize(0.14--0.83)} & $+0.05$ {\scriptsize($+0.01$ to $+0.17$)} & 8 & $-0.01$ {\scriptsize($-0.11$ to $+0.05$)} & 0 \\
+\bottomrule
+\end{tabular}
+\caption{Query length makes both features look like detectors; at equal query length the actual arrangement adds a little, most for the longest bar on the essays and nothing for it on Wikipedia. (1) AUROC for multi-factual-like queries (750 tokens, against the 250-token chunks) above polysemic-like ones (250 tokens, against the 750-token chunks); query length alone separates these perfectly, by construction. (2) All queries have 250 tokens, and the two groups differ only in the chunking searched (size-matched; mean over ten subsamples). Gain: the real feature's AUROC minus that of the corpus-bearing control, which keeps every cosine and borrows each bearing from a random chunk outside the query's cap (\cref{sec:geometry}). A gain of 0.10 means that, of every 100 pairs of neighbourhoods, one from each chunking, the feature orders 10 more correctly than its control. Clear: the number of the nine models whose 95\% interval of the gain lies above 0, with the real AUROC above 0.5. Entries: median over the nine models (range). \Cref{fig:realctl} in the appendix shows every model.}
+\label{tab:real}
+\end{table}

@@ -1,0 +1,7 @@
+# Python 3.14 (also expected to work on 3.11+). Exact versions used for the reported results.
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.1.0
+matplotlib==3.11.2
+ripser==0.6.15

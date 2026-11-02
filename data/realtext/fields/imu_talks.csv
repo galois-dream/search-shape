@@ -1,0 +1,127 @@
+surname,imu_last,imu_first,icm_year,city,section_or_type
+ahlfors,Ahlfors,L. V.,1932,Zurich,Analysis
+ahlfors,Ahlfors,L.V.,1978,Helsinki,Plenary
+ahlfors,Ahlfors,Lars V.,1936,Oslo,Plenary/Prize winner
+selberg,Selberg,A.,1950,Cambridge (USA),Algebra & Theory of Numbers/Prize winner
+selberg,Selberg,A.,1962,Stockholm,Plenary
+schwartz,Schwartz,L.,1950,Cambridge (USA),Plenary/Prize winner
+kodaira,Kodaira,K.,1954,Amsterdam,Analysis/Prize winner
+serre,Serre,J. P.,1954,Amsterdam,Geometry & Topology/Prize winner
+serre,Serre,J. P.,1962,Stockholm,Plenary
+roth,Roth,K. F.,1958,Edinburgh,Plenary/Prize winner
+thom,Thom,R.,1958,Edinburgh,Plenary/Prize winner
+thom,Thom,R.,1970,Nice,Geometry & Topology
+thom,Thom,R.,1983,Warszawa,Plenary
+hormander,Hörmander,L.,1962,Stockholm,Analysis/Prize winner
+hormander,Hörmander,Lars,1970,Nice,Plenary
+milnor,Milnor,J.,1962,Stockholm,Plenary/Prize winner
+milnor,Milnor,J. W.,1958,Edinburgh,Algebraic & Differential Geometry
+milnor,Milnor,John,2014,Seoul,ICM Abel Lecture
+atiyah,Atiyah,M. F.,1962,Stockholm,Topology & Differential Geometry
+atiyah,Atiyah,M. F.,1966,Moskva,Plenary/Prize winner
+atiyah,Atiyah,M. F.,1970,Nice,Geometry & Topology
+atiyah,Atiyah,M. F.,1978,Helsinki,Mathematical Physics & Mechanics
+atiyah,Atiyah,Michael,2018,Rio de Janeiro,ICM Abel Lecture
+cohen,Cohen,P. J.,1962,Stockholm,Analysis
+cohen,Cohen,P. J.,1966,Moskva,1/2 hr. report/Prize winner
+grothendieck,Grothendieck,A.,1958,Edinburgh,Plenary
+grothendieck,Grothendieck,A.,1970,Nice,Algebra
+smale,Smale,S.,1962,Stockholm,Topology & Differential Geometry
+smale,Smale,S.,1966,Moskva,Plenary/Prize winner
+smale,Smale,S.,1986,Berkeley,Plenary
+baker,Baker,A.,1970,Nice,Plenary/Prize winner
+hironaka,Hironaka,H.,1962,Stockholm,Algebraic Geometry
+hironaka,Hironaka,Heisuke,1970,Nice,Analysis/Prize winner
+novikov,Novikov,S. P.,1966,Moskva,1/2 hr. report
+novikov,Novikov,S. P.,1970,Nice,Geometry & Topology/Prize winner
+novikov,Novikov,S. P.,1978,Helsinki,Plenary
+thompson,Thompson,J. G.,1962,Stockholm,Algebra & Theory of Numbers
+thompson,Thompson,J. G.,1966,Moskva,Plenary
+bombieri,Bombieri,Enrico,1974,Vancouver,Plenary/Prize winner
+mumford,Mumford,David,1962,Stockholm,Algebraic Geometry
+mumford,Mumford,David,1970,Nice,Algebra
+mumford,Mumford,David,2002,Beijing,Plenary
+deligne,Deligne,Pierre,1970,Nice,Algebra
+deligne,Deligne,Pierre,1974,Vancouver,Plenary
+fefferman,Fefferman,Charles,1974,Vancouver,Plenary
+margulis,Margulis,G. A.,1974,Vancouver,Differential Geometry & Analysis on Manifolds
+margulis,Margulis,Grigorii A.,1990,Kyoto,Plenary
+quillen,Quillen,Daniel,1970,Nice,Geometry & Topology
+quillen,Quillen,Daniel,1974,Vancouver,Plenary
+connes,Connes,A.,1974,Vancouver,"Operator Algebras, Harmonic Analysis & Representation of Groups"
+connes,Connes,A.,1978,Helsinki,Plenary
+connes,Connes,A.,1986,Berkeley,Real and Functional Analysis
+thurston,Thurston,W. P.,1978,Helsinki,Plenary
+thurston,Thurston,William,1974,Vancouver,Algebraic & Differential Topology
+yau,Yau,S. -T.,1978,Helsinki,Plenary
+donaldson,Donaldson,S. K.,1983,Warszawa,Topology
+donaldson,Donaldson,S. K.,1986,Berkeley,Plenary/Prize winner
+donaldson,Donaldson,S. K.,1998,Berlin,Differential Geometry and Global Analysis
+donaldson,Donaldson,Simon,2018,Rio de Janeiro,Plenary
+faltings,Faltings,G.,1986,Berkeley,Plenary/Prize winner
+faltings,Faltings,Gerd,1994,Zurich,Algebraic Geometry
+freedman,Freedman,M. H.,1983,Warszawa,Topology
+freedman,Freedman,Michael H.,1998,Berlin,Topology
+drinfeld,Drinfeld,V. G.,1978,Helsinki,Lie Groups
+drinfeld,Drinfeld,V. G.,1986,Berkeley,Lie Groups and Representations
+jones,Jones,V. F. R.,1986,Berkeley,Real and Functional Analysis
+jones,Jones,Vaughan F. R.,1990,Kyoto,Plenary/Prize winner
+mori,Mori,Shigefumi,1983,Warszawa,Algebraic Geometry
+mori,Mori,Shigefumi,1990,Kyoto,Plenary/Prize winner
+witten,Witten,E.,1986,Berkeley,Plenary
+witten,Witten,E.,2002,Beijing,Plenary
+bourgain,Bourgain,Jean,1983,Warszawa,Real & Func. Analy.
+bourgain,Bourgain,Jean,1986,Berkeley,Real and Functional Analysis
+bourgain,Bourgain,Jean,1994,Zurich,Plenary/Prize winner
+lions,Lions,Pierre-Louis,1983,Warszawa,Control Theory & Optimization
+lions,Lions,Pierre-Louis,1990,Kyoto,Partial Differential Equations
+lions,Lions,Pierre-Louis,1994,Zurich,Plenary/Prize winner
+yoccoz,Yoccoz,Jean-Christophe,1990,Kyoto,Ordinary Differential Equations & Dynamical Systems
+yoccoz,Yoccoz,Jean-Christophe,1994,Zurich,Plenary/Prize winner
+zelmanov,Zelmanov,Efim I.,1983,Warszawa,Algebra
+zelmanov,Zelmanov,Efim I.,1990,Kyoto,Algebra
+zelmanov,Zelmanov,Efim I.,1994,Zurich,Plenary/Prize winner
+borcherds,Borcherds,Richard E.,1994,Zurich,Lie Groups
+borcherds,Borcherds,Richard E.,1998,Berlin,Plenary/Prize winner
+gowers,Gowers,Timothy,1998,Berlin,Plenary/Prize winner
+gowers,Gowers,W. T.,1994,Zurich,Operator Algebras & Functional Analysis
+mcmullen,McMullen,Curt,1990,Kyoto,Real & Complex Analysis
+mcmullen,McMullen,Curtis T.,1998,Berlin,Ordinary Differential Equations & Dynamical Systems/Prize winner
+lafforgue,Lafforgue,L.,1998,Berlin,Lie Groups
+lafforgue,Lafforgue,Laurent,2002,Beijing,Plenary/Prize winner
+voevodsky,Voevodsky,Vladimir,1998,Berlin,Plenary
+okounkov,Okounkov,Andrei,2006,Madrid,Probability and Statistics/Prize winner
+okounkov,Okounkov,Andrei,2018,Rio de Janeiro,Plenary
+perelman,Perelman,G.,1994,Zurich,Geometry
+tao,Tao,Terence,2006,Madrid,Plenary/Prize winner
+werner,Werner,Wendelin,2006,Madrid,Probability and Statistics/Prize winner
+lindenstrauss,Lindenstrauss,Elon,2006,Madrid,Ordinary Differential Equations and Dynamical Systems
+lindenstrauss,Lindenstrauss,Elon,2010,Hyderabad,Plenary/Prize winner
+ngo,Ngo,Bao Chau,2010,Hyderabad,Plenary/Prize winner
+ngo,Ngo,Bao-Chau,2006,Madrid,Lie Groups and Lie Algebras
+smirnov,Smirnov,Stanislav,2006,Madrid,Analysis
+smirnov,Smirnov,Stanislav,2010,Hyderabad,Plenary/Prize winner
+villani,Villani,Cédric,2006,Madrid,Mathematical Physics
+villani,Villani,Cédric,2010,Hyderabad,Plenary/Prize winner
+avila,Avila,Artur,2010,Hyderabad,Plenary
+avila,Avila,Artur,2014,Seoul,Plenary/Prize winner
+bhargava,Bhargava,Manjul,2006,Madrid,Number Theory
+bhargava,Bhargava,Manjul,2014,Seoul,Plenary/Prize winner
+hairer,Hairer,Martin,2014,Seoul,Probability and Statistics/Prize winner
+mirzakhani,Mirzakhani,Maryam,2010,Hyderabad,Topology and Dynamical Systems & ODE
+mirzakhani,Mirzakhani,Maryam,2014,Seoul,Plenary (lecture was not given)/Prize winner
+birkar,Birkar,Caucher,2018,Rio de Janeiro,Plenary/Prize winner
+figalli,Figalli,Alessio,2014,Seoul,Analysis and its Applications
+figalli,Figalli,Alessio,2018,Rio de Janeiro,Plenary/Prize winner
+scholze,Scholze,Peter,2014,Seoul,Number Theory
+scholze,Scholze,Peter,2018,Rio de Janeiro,Plenary/Prize winner
+venkatesh,Venkatesh,Akshay,2010,Hyderabad,Number Theory and Lie Theory and Generalisations
+venkatesh,Venkatesh,Akshay,2018,Rio de Janeiro,Plenary/Prize winner
+duminil-copin,Duminil-Copin,Hugo,2018,Rio de Janeiro,"Mathematical Physics, Probability and Statistics"
+duminil-copin,Duminil-Copin,Hugo,2022,Virtual,Plenary/Prize winner
+huh,Huh,June,2018,Rio de Janeiro,Combinatorics
+huh,Huh,June,2022,Virtual,Plenary/Prize winner
+maynard,Maynard,James,2018,Rio de Janeiro,Number Theory
+maynard,Maynard,James,2022,Virtual,Plenary/Prize winner
+viazovska,Viazovska,Maryna,2018,Rio de Janeiro,"Number Theory, Combinatorics"
+viazovska,Viazovska,Maryna,2022,Virtual,Plenary/Prize winner

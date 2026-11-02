@@ -1,0 +1,79 @@
+# ledger_sec6.txt -- models=['openai-3-small', 'openai-3-large', 'vertex-005', 'gemini-001', 'openai-ada-002', 'modernbert-embed', 'bge-base', 'bge-m3', 'qwen3-0.6b']; paired cells from bb_cells_subvar.csv
+L1 main W1 AUROC 0.74 to 1.00; CI above 0.5 in 45 of 45
+L1 main longbar CI above 0.5 in 40 of 45; others: fields/gemini-001 0.43 [0.39, 0.48], gutenberg/vertex-005 0.55 [0.49, 0.62], gutenberg/gemini-001 0.46 [0.40, 0.51], wiki/vertex-005 0.42 [0.34, 0.51], wiki/gemini-001 0.14 [0.12, 0.18]
+L1 best single cosine statistic (max |AUROC-0.5|+0.5 over top1/mean/std/slope) 0.70 to 0.99
+L2 diagonal w1: CI excludes 0.5 in 45 of 45 (all chunks), 45 of 45 (own document out)
+L2 diagonal longbar: CI excludes 0.5 in 28 of 45 (all chunks), 42 of 45 (own document out)
+L2 query effect at C750 w1: AUROC 0.43 to 0.96; CI above 0.5 in 44 of 45, below in 1
+L2 query effect at C750 longbar: AUROC 0.54 to 0.94; CI above 0.5 in 45 of 45, below in 0
+L2 query effect at C250 w1: AUROC 0.19 to 0.90; CI above 0.5 in 40 of 45, below in 5
+L2 query effect at C250 longbar: AUROC 0.17 to 0.84; CI above 0.5 in 39 of 45, below in 5
+L2 corpus effect (size-matched) at Q250 w1: AUROC 0.52 to 1.00; CI above 0.5 in 44 of 45, below in 0
+L2 corpus effect (size-matched) at Q250 longbar: AUROC 0.38 to 0.94; CI above 0.5 in 42 of 45, below in 3
+L2 corpus effect (size-matched) at Q750 w1: AUROC 0.34 to 0.98; CI above 0.5 in 42 of 45, below in 1
+L2 corpus effect (size-matched) at Q750 longbar: AUROC 0.18 to 0.77; CI above 0.5 in 34 of 45, below in 9
+L3 W1 real - corpus-bearing control (LODO, fixed Q250): |d| <= 0.08 in 41 of 45; range -0.06 to 0.17; outside: fields/qwen3-0.6b +0.08, gutenberg/bge-m3 +0.09, wiki/gemini-001 +0.17, wiki/qwen3-0.6b +0.08
+L3 longbar Nobel: clear 5 of 9; d -0.05 to 0.10; median +0.04; paired above (real AUROC > 0.5) 5, below 0 of 9 (bb_cells: ['bge-base', 'bge-m3', 'gemini-001', 'modernbert-embed', 'openai-3-large', 'openai-3-small', 'openai-ada-002', 'qwen3-0.6b', 'vertex-005'])
+L3 longbar Turing: clear 3 of 9; d -0.03 to 0.08; median +0.03; paired above (real AUROC > 0.5) 3, below 0 of 9 (bb_cells: ['bge-base', 'bge-m3', 'gemini-001', 'modernbert-embed', 'openai-3-large', 'openai-3-small', 'openai-ada-002', 'qwen3-0.6b', 'vertex-005'])
+L3 longbar Fields: clear 6 of 9; d -0.04 to 0.15; median +0.04; paired above (real AUROC > 0.5) 6, below 0 of 9 (bb_cells: ['bge-base', 'bge-m3', 'gemini-001', 'modernbert-embed', 'openai-3-large', 'openai-3-small', 'openai-ada-002', 'qwen3-0.6b', 'vertex-005'])
+L3 longbar Essays: clear 8 of 9; d -0.01 to 0.18; median +0.11; paired above (real AUROC > 0.5) 8, below 0 of 9 (bb_cells: ['bge-base', 'bge-m3', 'gemini-001', 'modernbert-embed', 'openai-3-large', 'openai-3-small', 'openai-ada-002', 'qwen3-0.6b', 'vertex-005'])
+L3 longbar Wikipedia: clear 0 of 9; d -0.11 to 0.05; median -0.01; paired above (real AUROC > 0.5) 0, below 1 of 9 (bb_cells: ['bge-base', 'bge-m3', 'gemini-001', 'modernbert-embed', 'openai-3-large', 'openai-3-small', 'openai-ada-002', 'qwen3-0.6b', 'vertex-005'])
+L3 LT_max fixed-length AUROC median 0.54 (0.35 to 0.65); minus control median +0.04 (-0.10 to 0.12)
+L3 random-bearing control (LODO, fixed Q250) on the other side of 0.5 from the real w1: 37 of 45
+L3 random-bearing control (LODO, fixed Q250) on the other side of 0.5 from the real longbar: 37 of 45
+L3 longbar Nobel: median real - corpus-bearing +0.041, real - shell-bearing +0.017
+L3 longbar Turing: median real - corpus-bearing +0.034, real - shell-bearing +0.020
+L3 longbar Fields: median real - corpus-bearing +0.045, real - shell-bearing +0.047
+L3 longbar Essays: median real - corpus-bearing +0.113, real - shell-bearing +0.085
+L3 longbar Wikipedia: median real - corpus-bearing -0.010, real - shell-bearing -0.032
+L0 own-document share of top 50, Q750|C250 (all chunks): 20% to 73%
+L0 own-document share of top 50, Q250|C750 (all chunks): 12% to 33%
+L4 bayes longbar mu: +0.041 [-0.026, +0.100] P>0 0.92 rhat 1.013
+L4 bayes longbar tau_corpus: +0.059 [+0.025, +0.140] P>0 1.00 rhat 1.001
+L4 bayes longbar tau_model: +0.040 [+0.019, +0.077] P>0 1.00 rhat 1.001
+L4 bayes longbar sigma_resid: +0.016 [+0.002, +0.030] P>0 1.00 rhat 1.000
+L4 bayes longbar theta[nobel]: +0.045 [+0.010, +0.080] P>0 0.99 rhat 1.003
+L4 bayes longbar theta[wiki]: -0.013 [-0.048, +0.023] P>0 0.22 rhat 1.003
+L4 bayes longbar theta[gutenberg]: +0.100 [+0.067, +0.133] P>0 1.00 rhat 1.003
+L4 bayes longbar theta[turing]: +0.038 [+0.005, +0.073] P>0 0.98 rhat 1.003
+L4 bayes longbar theta[fields]: +0.046 [+0.013, +0.079] P>0 0.99 rhat 1.003
+L4 bayes longbar theta_new (predictive): +0.041 [-0.112, +0.185] P>0 0.76 rhat nan
+L4 bayes w1 mu: +0.028 [-0.004, +0.057] P>0 0.96 rhat 1.003
+L4 bayes w1 tau_corpus: +0.026 [+0.005, +0.075] P>0 1.00 rhat 1.001
+L4 bayes w1 tau_model: +0.012 [+0.000, +0.032] P>0 1.00 rhat 1.001
+L4 bayes w1 sigma_resid: +0.028 [+0.020, +0.039] P>0 1.00 rhat 1.000
+L4 bayes w1 theta[nobel]: +0.021 [-0.001, +0.043] P>0 0.97 rhat 1.001
+L4 bayes w1 theta[wiki]: +0.049 [+0.025, +0.073] P>0 1.00 rhat 1.000
+L4 bayes w1 theta[gutenberg]: +0.027 [+0.004, +0.049] P>0 0.99 rhat 1.000
+L4 bayes w1 theta[turing]: +0.010 [-0.015, +0.033] P>0 0.79 rhat 1.001
+L4 bayes w1 theta[fields]: +0.035 [+0.014, +0.056] P>0 1.00 rhat 1.000
+L4 bayes w1 theta_new (predictive): +0.028 [-0.045, +0.097] P>0 0.86 rhat nan
+L4 bayes ltmax mu: +0.027 [-0.018, +0.067] P>0 0.92 rhat 1.003
+L4 bayes ltmax tau_corpus: +0.034 [+0.003, +0.099] P>0 1.00 rhat 1.001
+L4 bayes ltmax tau_model: +0.024 [+0.003, +0.054] P>0 1.00 rhat 1.001
+L4 bayes ltmax sigma_resid: +0.023 [+0.002, +0.043] P>0 1.00 rhat 1.000
+L4 bayes ltmax theta[nobel]: -0.006 [-0.049, +0.036] P>0 0.39 rhat 1.002
+L4 bayes ltmax theta[wiki]: +0.045 [+0.013, +0.078] P>0 1.00 rhat 1.001
+L4 bayes ltmax theta[gutenberg]: +0.036 [+0.007, +0.065] P>0 0.99 rhat 1.001
+L4 bayes ltmax theta[turing]: +0.032 [+0.000, +0.066] P>0 0.98 rhat 1.001
+L4 bayes ltmax theta[fields]: +0.032 [+0.002, +0.063] P>0 0.98 rhat 1.001
+L4 bayes ltmax theta_new (predictive): +0.027 [-0.072, +0.120] P>0 0.80 rhat nan
+L4 (check that hier_summary's models match the list above)
+L5 flexible classifier: 80 comparisons (40 corpus-model pairs; models ['005', '3-small', 'Gemini', 'ModernBERT', 'Qwen3-0.6B', 'ada-002', 'bge-base', 'bge-m3']); A' median 0.86 to 1.00; B'-A' median -0.00 to 0.00; 2.5-97.5 interval includes 0 in 80; widest Essays 005 same length Q250: C750 vs C250 (subsampled): -0.000 [-0.010, +0.012]
+L5 lowest A': Essays/005 same length Q250: C750 vs C250 (subsampled): A' 0.861, B'-A' -0.000 [-0.010, +0.012]
+L5 lowest A': Essays/005 LODO same length Q250: C750 vs C250 (subsampled): A' 0.876, B'-A' -0.002 [-0.009, +0.004]
+L5 lowest A': Essays/ModernBERT same length Q250: C750 vs C250 (subsampled): A' 0.933, B'-A' +0.002 [-0.005, +0.009]
+L5 lowest A': Wikipedia/005 same length Q250: C750 vs C250 (subsampled): A' 0.947, B'-A' +0.002 [-0.005, +0.011]
+L6 bound R >= mean sin(theta/2): min share of queries satisfying it 1.0000 over 180 cells
+L7 control x feature: $\Wone$ vs random-bearing: Nobel +0.414, Turing +0.380, Fields +0.459, Essays +0.428, Wikipedia +0.480
+L7 control x feature: $\Wone$ vs corpus-bearing: Nobel +0.024, Turing +0.012, Fields +0.027, Essays +0.018, Wikipedia +0.048
+L7 control x feature: $\Wone$ vs shell-bearing: Nobel +0.028, Turing +0.009, Fields +0.032, Essays +0.020, Wikipedia +0.037
+L7 control x feature: $\Wone$ vs document-matched$^\ast$: Nobel +0.053, Turing +0.035, Fields +0.078, Essays +0.095, Wikipedia +0.193
+L7 control x feature: $\Lmax$ vs random-bearing: Nobel +0.339, Turing +0.317, Fields +0.305, Essays +0.320, Wikipedia +0.079
+L7 control x feature: $\Lmax$ vs corpus-bearing: Nobel +0.041, Turing +0.034, Fields +0.045, Essays +0.113, Wikipedia -0.010
+L7 control x feature: $\Lmax$ vs shell-bearing: Nobel +0.017, Turing +0.020, Fields +0.047, Essays +0.085, Wikipedia -0.032
+L7 control x feature: $\Lmax$ vs document-matched$^\ast$: Nobel +0.012, Turing +0.038, Fields +0.113, Essays +0.039, Wikipedia -0.036
+L7 control x feature: $\LTmax$ vs random-bearing: Nobel -0.088, Turing +0.009, Fields +0.041, Essays +0.056, Wikipedia +0.079
+L7 control x feature: $\LTmax$ vs corpus-bearing: Nobel -0.039, Turing +0.040, Fields +0.034, Essays +0.051, Wikipedia +0.045
+L7 control x feature: $\LTmax$ vs shell-bearing: Nobel -0.001, Turing +0.028, Fields +0.031, Essays +0.027, Wikipedia +0.052
+L7 control x feature: $\LTmax$ vs document-matched$^\ast$: Nobel +0.047, Turing -0.010, Fields -0.015, Essays +0.001, Wikipedia +0.019

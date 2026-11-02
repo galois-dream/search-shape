@@ -1,0 +1,27 @@
+% tab_sim_compact.tex -- by gen_sim_compact.py from reference_outputs/simulation_stats_all50.csv and simulation_stats.md (R2b).
+\begin{table}[t]
+\centering
+\small
+\resizebox{\textwidth}{!}{\begin{tabular}{lrrrrcccc}
+\toprule
+Configuration & $D$ & $N_{\text{top}}$ & $n_{\text{parent}}$ & $\sigma$ & $\Wone$ AUROC & control & cosines only & persistence gain \\
+\midrule
+dimension sweep & 64 & 16 & 12 & 0.1 & 1.000 & 0.719 & --- & --- \\
+dimension sweep & 128 & 32 & 16 & 0.1 & 1.000 & 0.870 & --- & --- \\
+main & 256 & 64 & 32 & 0.1 & 1.000 & 0.857 & 1.000 & 0.000 \\
+main & 256 & 64 & 32 & 0.2 & 1.000 & 0.817 & 0.984 & 0.000 \\
+projection: unprojected & 256 & 64 & 32 & 0.01 & 0.950 & 0.893 & --- & --- \\
+projection to $D'{=}64$ & 256 & 64 & 32 & 0.01 & 0.933 & 0.874 & --- & --- \\
+superposition & 256 & 1024 & 32 & 0.1 & 0.975 & 1.000 & 1.000 & 0.000 \\
+superposition & 256 & 1024 & 32 & 0.2 & 0.996 & 0.997 & 1.000 & 0.000 \\
+\bottomrule
+\end{tabular}}
+\caption{Wherever the comparison was made, the cosines alone separate the two regimes about as well as the persistence features: a classifier on four cosine statistics reaches 0.984 to 1.000, and, with that classifier at or near 1.000, no gain from persistence can be measured. One row per simulation configuration, S1 against S2, all 50 neighbours.
+$D$, $N_{\text{top}}$, $n_{\text{parent}}$, $\sigma$: dimension, number of topics, topics per parent passage, noise.
+$\Wone$ AUROC: probability that an S1 query has a larger $\Wone$ than an S2 query.
+Control: the same AUROC on the random-bearing control (\cref{sec:geometry}).
+Cosines only: out-of-fold AUROC of a logistic classifier on the top-1, mean, standard deviation and rank slope of the 50 cosines.
+Persistence gain: out-of-fold AUROC gained by adding $\Wone$, $\LTmax$ and $\Lmax$ to that classifier plus coherence and connectivity; folds grouped by seed.
+---: not computed. Every configuration was run with 5 seeds; the supplementary material gives intervals, the other features and the remaining projections.}
+\label{tab:simcompact}
+\end{table}

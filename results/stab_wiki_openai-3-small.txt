@@ -1,0 +1,12 @@
+openai-3-small: C750 n=402 D=1536  min pairwise |ci-cj| = 3.68e-01, pairs < 1e-3: 0, < 0.05: 0
+  queries 300; cos range in top-50: min 0.151 median-max 0.757 max 0.873; a_min=0.504
+  MST margin (min over non-tree edges, per query): min 2.9e-07 1% 2.8e-06 median 5.8e-04
+  NN margin (min over points 2nd-1st NN): min 2.1e-06 1% 1.5e-05 median 8.0e-04
+  float32 pipeline: MST edge set differs 0.000, NN set differs 0.000, max|d nnsh| 0.000, max|dW1| 1.7e-08
+  Gram-formula distances (f64): MST set differs 0.000, max|dW1| 1.7e-16
+  SD across queries: W1 0.0190 Lmax 0.0295 ratio 0.0373; median nnsh 0.735; lone share 0.253
+  noise 0.0001: MST set changes 0.003; |d nnsh| median 0.000 max 0.000; |dW1|/SD max 0.0001; |dLmax|/SD max 0.0003; lone flips 0.000
+  noise 0.001: MST set changes 0.027; |d nnsh| median 0.000 max 0.020; |dW1|/SD max 0.0007; |dLmax|/SD max 0.0036; lone flips 0.000
+  noise 0.01: MST set changes 0.157; |d nnsh| median 0.000 max 0.020; |dW1|/SD max 0.0071; |dLmax|/SD max 0.0323; lone flips 0.003
+  rank-50/51 swap (cos gap median 1.2e-03): |dW1|/SD median 0.065 95% 0.278; |dLmax|/SD median 0.000 95% 0.673 max 2.96; share Lmax changes >0: 0.260; |dratio|/SD median 0.101 95% 0.336; |dnnsh| median 0.000
+  Lmax - max NN dist on non-lone queries: min 1.2e-05, count < 1e-5 (isclose would mislabel): 0; exact-zero (lone) 0.253

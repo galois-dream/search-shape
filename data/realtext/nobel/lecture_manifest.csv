@@ -1,0 +1,41 @@
+lecture_id,laureate,physics_prize_year,lecture_title,tokens_cl100k,n_c250,n_c750
+anderson-lecture,Carl D. Anderson,1936,The production and properties of positrons,3570,14,4
+appleton-lecture,Edward V. Appleton,1947,The ionosphere,3047,12,4
+bardeen-lecture,John Bardeen,1956,Semiconductor research leading to the point contact transistor,9684,38,12
+blackett-lecture,Patrick M. S. Blackett,1948,Cloud chamber researches in nuclear physics and cosmic radiation,8611,34,11
+bloch-lecture,Felix Bloch,1952,The principle of nuclear induction,6182,24,8
+bohr-lecture,Niels Bohr,1922,The structure of the atom,15534,62,20
+born-lecture,Max Born,1954,The statistical interpretation of quantum mechanics,7653,30,10
+bothe-lecture,Walther Bothe,1954,The coincidence method,2758,11,3
+brattain-lecture,Walter H. Brattain,1956,Surface properties of semiconductors,3766,15,5
+bridgman-lecture,Percy W. Bridgman,1946,General survey of certain results in the field of high-pressure physics,6707,26,8
+broglie-lecture,Louis de Broglie,1929,The wave nature of the electron,5266,21,7
+cerenkov-lecture,Pavel A. Cherenkov,1958,"Radiation of particles moving at a velocity exceeding that of light, and some of the possibilities for their use in experimental physics",19603,78,26
+chadwick-lecture,James Chadwick,1935,The neutron and its properties,4173,16,5
+chamberlain-lecture,Owen Chamberlain,1959,The early antiproton work,5857,23,7
+cockcroft-lecture,John D. Cockcroft,1951,Experiments on the interaction of high-speed nucleons with atomic nuclei,3548,14,4
+compton-lecture,Arthur H. Compton,1927,X-rays as a branch of optics,6984,27,9
+davisson-lecture,Clinton J. Davisson,1937,The discovery of electron waves,3181,12,4
+dirac-lecture,Paul A. M. Dirac,1933,Theory of electrons and positrons,2522,10,3
+einstein-lecture,Albert Einstein,1921,Fundamental ideas and problems of the theory of relativity,4321,17,5
+fermi-lecture,Enrico Fermi,1938,Artificial radioactivity produced by neutron bombardment,3925,15,5
+feynman-lecture,Richard P. Feynman,1965,The development of the space-time view of quantum electrodynamics,13947,55,18
+franck-lecture,James Franck,1925,Transformations of kinetic energy of free electrons into excitation energy of atoms by impacts,4421,17,5
+g_thomson,George P. Thomson,1937,Electronic waves,3527,14,4
+heisenberg-lecture,Werner Heisenberg,1932,The development of quantum mechanics,5427,21,7
+hertz-lecture,Gustav Hertz,1925,The results of the electron-impact tests in the light of Bohr's theory of atoms,6580,26,8
+higgs-lecture,Peter W. Higgs,2013,Evading the Goldstone theorem,2246,8,2
+lawrence-lecture,Ernest O. Lawrence,1939,The evolution of the cyclotron,3206,12,4
+millikan-lecture,Robert A. Millikan,1923,The electron and the light-quant from the experimental point of view,5863,23,7
+pauli-lecture,Wolfgang Pauli,1945,Exclusion principle and quantum mechanics,9480,37,12
+perrin-lecture,Jean Baptiste Perrin,1926,Discontinuous structure of matter,13935,55,18
+planck-lecture,Max Planck,1918,The genesis and present state of development of the quantum theory,7828,31,10
+raman-lecture,Chandrasekhara V. Raman,1930,The molecular scattering of light,3903,15,5
+richardson-lecture-1,Robert C. Richardson,1996,The Pomeranchuk effect,8324,33,11
+salam-lecture,Abdus Salam,1979,Gauge unification of fundamental forces,20366,81,27
+schrodinger-lecture,Erwin Schroedinger,1933,The fundamental idea of wave mechanics,5266,21,7
+schwinger-lecture,Julian Schwinger,1965,Relativistic quantum field theory,20390,81,27
+siegbahn-lecture,Manne Siegbahn,1924,The X-ray spectra and the structure of the atoms,3261,13,4
+thomson-lecture,Joseph J. Thomson,1906,Carriers of negative electricity,4463,17,5
+v_hess-lecture,Victor F. Hess,1936,Unsolved problems in physics: tasks for the immediate future in cosmic ray studies,1338,5,1
+wilson-lecture,Charles T. R. Wilson,1927,On the cloud method of making visible ions and the tracks of ionizing particles,18987,75,25

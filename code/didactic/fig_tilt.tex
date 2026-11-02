@@ -1,0 +1,63 @@
+% fig_tilt.tex -- Didactic figure: to-scale cross-section of the unit sphere through
+% the query q (north pole) and a neighbour c at theta = 60 deg (theta = 120 deg faint). u = -sin(theta/2) q +
+% cos(theta/2) t (paper eq. tilt) is drawn from q with unit length; at 60 deg the chord |c-q| = 2 sin 30 = 1, so u
+% ends exactly at c. Pure TikZ (angles, quotes, arrows.meta). \input from main.tex (no preamble here).
+% (a) adds the projection
+% c = cos(theta) q + sin(theta) t (blue: the part every control keeps); (b) four SCHEMATIC discs seen from above q:
+% grey dots explained.
+% radius sin(theta) identical in all four (cosines kept), angle = bearing (redrawn). Angles hand-set / seeded,
+% not data; a bearing in D dimensions is a point on a (D-2)-sphere, the disc angle is a 2-D stand-in.
+\definecolor{didV}{HTML}{D55E00}\definecolor{didB}{HTML}{0072B2}%
+\def\discReal{\fill[didV] (0.438,0.177) circle (1.3pt);\fill[didV] (0.284,0.164) circle (1.3pt);\fill[didV] (0.343,0.249) circle (1.3pt);\fill[didV] (0.289,0.251) circle (1.3pt);\fill[didV] (0.298,0.320) circle (1.3pt);\fill[didV] (0.215,0.296) circle (1.3pt);\fill[didV] (-0.390,-0.127) circle (1.3pt);\fill[didV] (-0.312,-0.152) circle (1.3pt);\fill[didV] (-0.373,-0.251) circle (1.3pt);\fill[didV] (-0.347,-0.302) circle (1.3pt);\fill[didV] (-0.258,-0.297) circle (1.3pt);\fill[didV] (-0.163,-0.261) circle (1.3pt);}%
+\def\discIso{\fill[didV] (0.468,0.066) circle (1.3pt);\fill[didV] (0.255,0.206) circle (1.3pt);\fill[didV] (0.138,0.401) circle (1.3pt);\fill[didV] (-0.080,0.375) circle (1.3pt);\fill[didV] (-0.269,0.345) circle (1.3pt);\fill[didV] (-0.337,0.143) circle (1.3pt);\fill[didV] (-0.407,-0.043) circle (1.3pt);\fill[didV] (-0.288,-0.194) circle (1.3pt);\fill[didV] (-0.183,-0.411) circle (1.3pt);\fill[didV] (0.040,-0.459) circle (1.3pt);\fill[didV] (0.215,-0.330) circle (1.3pt);\fill[didV] (0.277,-0.135) circle (1.3pt);}%
+\def\discCorp{\fill[black!22] (-0.194,0.243) circle (0.55pt);\fill[black!22] (-0.263,0.035) circle (0.55pt);\fill[black!22] (0.003,0.397) circle (0.55pt);\fill[black!22] (-0.233,0.073) circle (0.55pt);\fill[black!22] (-0.156,0.332) circle (0.55pt);\fill[black!22] (-0.136,0.292) circle (0.55pt);\fill[black!22] (-0.230,-0.071) circle (0.55pt);\fill[black!22] (-0.236,0.271) circle (0.55pt);\fill[black!22] (-0.129,0.196) circle (0.55pt);\fill[black!22] (-0.302,0.156) circle (0.55pt);\fill[black!22] (-0.238,0.051) circle (0.55pt);\fill[black!22] (-0.139,0.207) circle (0.55pt);\fill[black!22] (-0.284,0.182) circle (0.55pt);\fill[black!22] (0.016,0.444) circle (0.55pt);\fill[black!22] (-0.093,0.241) circle (0.55pt);\fill[black!22] (-0.089,0.270) circle (0.55pt);\fill[black!22] (0.105,0.377) circle (0.55pt);\fill[black!22] (0.181,0.440) circle (0.55pt);\fill[black!22] (0.171,0.337) circle (0.55pt);\fill[black!22] (-0.144,0.297) circle (0.55pt);\fill[black!22] (-0.230,0.425) circle (0.55pt);\fill[black!22] (-0.092,0.219) circle (0.55pt);\fill[black!22] (-0.276,0.358) circle (0.55pt);\fill[black!22] (0.082,0.290) circle (0.55pt);\fill[black!22] (-0.139,0.223) circle (0.55pt);\fill[black!22] (-0.178,0.184) circle (0.55pt);\fill[black!22] (-0.275,0.137) circle (0.55pt);\fill[black!22] (-0.022,0.441) circle (0.55pt);\fill[black!22] (-0.092,0.257) circle (0.55pt);\fill[black!22] (0.252,0.284) circle (0.55pt);\fill[black!22] (-0.108,0.379) circle (0.55pt);\fill[black!22] (0.242,0.215) circle (0.55pt);\fill[black!22] (0.120,0.350) circle (0.55pt);\fill[black!22] (-0.235,0.055) circle (0.55pt);\fill[black!22] (0.181,0.159) circle (0.55pt);\fill[black!22] (-0.254,0.117) circle (0.55pt);\fill[black!22] (-0.299,0.274) circle (0.55pt);\fill[black!22] (-0.133,0.311) circle (0.55pt);\fill[black!22] (-0.244,0.188) circle (0.55pt);\fill[black!22] (-0.312,0.218) circle (0.55pt);\fill[black!22] (-0.333,0.091) circle (0.55pt);\fill[black!22] (-0.135,0.273) circle (0.55pt);\fill[black!22] (-0.094,0.425) circle (0.55pt);\fill[black!22] (-0.085,0.401) circle (0.55pt);\fill[black!22] (0.013,0.289) circle (0.55pt);\fill[black!22] (-0.207,0.315) circle (0.55pt);\fill[didV] (-0.295,0.369) circle (1.3pt);\fill[didV] (-0.313,0.097) circle (1.3pt);\fill[didV] (-0.405,-0.125) circle (1.3pt);\fill[didV] (-0.340,0.176) circle (1.3pt);\fill[didV] (-0.368,0.236) circle (1.3pt);\fill[didV] (-0.115,0.347) circle (1.3pt);\fill[didV] (0.185,0.366) circle (1.3pt);\fill[didV] (-0.135,0.320) circle (1.3pt);\fill[didV] (-0.238,0.381) circle (1.3pt);\fill[didV] (-0.023,0.460) circle (1.3pt);\fill[didV] (-0.108,0.379) circle (1.3pt);\fill[didV] (-0.300,0.070) circle (1.3pt);}%
+\def\discLoc{\fill[black!22] (0.291,0.110) circle (0.55pt);\fill[black!22] (0.126,0.233) circle (0.55pt);\fill[black!22] (0.397,-0.022) circle (0.55pt);\fill[black!22] (0.237,0.059) circle (0.55pt);\fill[black!22] (0.351,0.107) circle (0.55pt);\fill[black!22] (0.319,-0.045) circle (0.55pt);\fill[black!22] (0.042,0.237) circle (0.55pt);\fill[black!22] (0.347,-0.093) circle (0.55pt);\fill[black!22] (0.200,0.124) circle (0.55pt);\fill[black!22] (0.304,0.151) circle (0.55pt);\fill[black!22] (0.065,0.235) circle (0.55pt);\fill[black!22] (0.248,-0.025) circle (0.55pt);\fill[black!22] (0.161,0.297) circle (0.55pt);\fill[black!22] (0.412,0.166) circle (0.55pt);\fill[black!22] (0.212,0.146) circle (0.55pt);\fill[black!22] (0.261,0.112) circle (0.55pt);\fill[black!22] (0.240,0.309) circle (0.55pt);\fill[black!22] (0.464,0.107) circle (0.55pt);\fill[black!22] (0.305,0.224) circle (0.55pt);\fill[black!22] (0.230,0.237) circle (0.55pt);\fill[black!22] (0.097,0.474) circle (0.55pt);\fill[black!22] (0.229,-0.061) circle (0.55pt);\fill[black!22] (0.143,0.429) circle (0.55pt);\fill[black!22] (-0.156,-0.258) circle (0.55pt);\fill[black!22] (-0.234,-0.121) circle (0.55pt);\fill[black!22] (-0.182,-0.180) circle (0.55pt);\fill[black!22] (-0.271,-0.143) circle (0.55pt);\fill[black!22] (-0.120,-0.425) circle (0.55pt);\fill[black!22] (-0.201,-0.185) circle (0.55pt);\fill[black!22] (-0.317,-0.208) circle (0.55pt);\fill[black!22] (-0.331,-0.215) circle (0.55pt);\fill[black!22] (-0.270,-0.179) circle (0.55pt);\fill[black!22] (-0.306,-0.208) circle (0.55pt);\fill[black!22] (-0.229,-0.077) circle (0.55pt);\fill[black!22] (-0.028,-0.239) circle (0.55pt);\fill[black!22] (-0.279,0.020) circle (0.55pt);\fill[black!22] (-0.304,0.268) circle (0.55pt);\fill[black!22] (-0.276,-0.195) circle (0.55pt);\fill[black!22] (-0.253,-0.176) circle (0.55pt);\fill[black!22] (-0.263,-0.274) circle (0.55pt);\fill[black!22] (-0.288,-0.190) circle (0.55pt);\fill[black!22] (-0.250,-0.173) circle (0.55pt);\fill[black!22] (-0.306,-0.310) circle (0.55pt);\fill[black!22] (-0.209,-0.353) circle (0.55pt);\fill[black!22] (-0.255,-0.137) circle (0.55pt);\fill[black!22] (-0.327,-0.187) circle (0.55pt);\fill[didV] (0.442,0.167) circle (1.3pt);\fill[didV] (0.314,0.096) circle (1.3pt);\fill[didV] (0.361,0.223) circle (1.3pt);\fill[didV] (0.182,0.337) circle (1.3pt);\fill[didV] (0.269,0.345) circle (1.3pt);\fill[didV] (0.073,0.358) circle (1.3pt);\fill[didV] (-0.364,-0.188) circle (1.3pt);\fill[didV] (-0.256,-0.235) circle (1.3pt);\fill[didV] (-0.372,-0.252) circle (1.3pt);\fill[didV] (-0.346,0.304) circle (1.3pt);\fill[didV] (-0.329,-0.217) circle (1.3pt);\fill[didV] (-0.271,-0.145) circle (1.3pt);}%
+\begin{tikzpicture}[font=\footnotesize, x=2.4cm, y=2.4cm,
+    hair/.style={line width=0.4pt, black!45}, vec/.style={-{Stealth[length=5pt, width=3.5pt]}}]
+  \coordinate (O) at (0,0);
+  \coordinate (q) at (0,1);
+  \coordinate (c) at ({sin(60)},{cos(60)});
+  \coordinate (cf) at ({sin(120)},{cos(120)});
+  \coordinate (t) at (1,1);
+  \coordinate (u) at ($(q)+({cos(30)},{-sin(30)})$);
+  \coordinate (uf) at ($(q)+({cos(60)},{-sin(60)})$);
+  % sphere cross-section, tangent line at q (the plane of bearings), radii
+  \draw[hair] (O) circle (1);
+  \draw[hair] (-0.75,1) -- (1.45,1);
+  \draw[hair] (O) -- (q);
+  \draw[hair] (O) -- (c);
+  % faint second neighbour at 120 deg: chord dotted, unit offset light grey
+  \draw[line width=0.4pt, black!25, densely dotted] (q) -- (cf);
+  \draw[line width=0.5pt, black!30, vec] (q) -- (uf);
+  \fill[black!30] (cf) circle (1.1pt);
+  % chord c - q (under u: equal length at 60 deg)
+  \draw[line width=2.4pt, black!15] (q) -- (c);
+  % bearing t and unit offset u
+  \draw[line width=0.7pt, black, vec] (q) -- (t) node[above left=1pt and -2pt] {$\bm t$};
+  \draw[line width=0.9pt, didV, vec] (q) -- (u);
+  \node[didV, below left=0pt and -1pt] at ($(q)!0.5!(u)$) {$\bm u$};
+  % angles
+  \pic[draw, line width=0.4pt, angle radius=0.55cm, angle eccentricity=1.35, "$\theta$"] {angle = c--O--q};
+  \pic[draw=didV, line width=0.5pt, angle radius=1.05cm, angle eccentricity=1.25, "$\tfrac{\theta}{2}$"] {angle = u--q--t};
+  % projection onto q and onto the tangent plane: the controls keep cos(theta) q, redraw t
+  \draw[line width=1.8pt, didB] (O) -- (0,{cos(60)});
+  \draw[line width=0.8pt, didB, dashed] (0,{cos(60)}) -- (c);
+  \draw[line width=0.4pt, didB] (0.06,{cos(60)}) -- (0.06,{cos(60)-0.06}) -- (0,{cos(60)-0.06});
+  \node[didB, left=1pt, align=right, font=\scriptsize] at (0,0.3) {$\cos\theta\,\bm q$\\kept by\\every control};
+  \node[didB, above=0pt, font=\scriptsize] at (0.3,{cos(60)}) {$\sin\theta\,\bm t$};
+  % points
+  \fill[black] (O) circle (0.9pt);
+  \fill[black] (q) circle (1.4pt) node[above=2pt] {$\bm q$};
+  \fill[black!70] (c) circle (1.4pt) node[right=2pt] {$\bm c$};
+  \node[anchor=west, font=\footnotesize] at (-0.75,1.32) {(a)\enspace one neighbour, side view};
+  % (b) schematic: twelve neighbours seen from above q; same radii, different bearings
+  \node[anchor=west, font=\footnotesize] at (1.72,1.32) {(b)\enspace twelve neighbours, seen from above $\bm q$};
+  \foreach \cx/\cy/\D/\T in {2.3/0.55/Real/actual bearings, 3.55/0.55/Iso/random-bearing control, 2.3/-0.75/Corp/corpus-bearing control, 3.55/-0.75/Loc/shell-bearing control}{
+    \begin{scope}[shift={(\cx,\cy)}]
+      \draw[hair] (0,0) circle (0.5);
+      \csname disc\D\endcsname
+      \fill[black] (0,0) circle (1pt);
+      \node[font=\scriptsize, anchor=south] at (0,0.52) {\T};
+    \end{scope}}
+  \node[font=\scriptsize, align=center, text=black!70] at (2.925,-1.43) {radius $\sin\theta$: the same in all four;\quad angle: the bearing\\grey dots: the bearings a control may borrow (corpus-bearing: chunks outside the cap;\\shell-bearing: the query's ranks 51--500);\quad vermillion: the twelve it borrowed};
+\end{tikzpicture}%

@@ -1,0 +1,52 @@
+shuffle_rank,gutenberg_id,decision
+1,16802,selected
+2,40256,selected
+3,73782,selected
+4,30217,excluded: body 4280 tokens < 6000
+5,31011,excluded: body 779 tokens < 6000
+6,58685,selected
+7,62873,selected
+8,8508,selected
+9,68097,selected
+10,27902,selected
+11,52945,selected
+12,43343,selected
+13,26321,selected
+14,22489,selected
+15,70078,selected
+16,56004,selected
+17,44551,selected
+18,1744,selected
+19,65307,selected
+20,3357,selected
+21,47191,selected
+22,743,selected
+23,77894,skipped: author already selected
+24,72074,selected
+25,64250,selected
+26,33283,excluded: plain text unavailable (HTTP 404)
+27,31354,selected
+28,69832,excluded: plain text unavailable (HTTP 404)
+29,41386,selected
+30,6052,selected
+31,51710,selected
+32,56397,selected
+33,47880,selected
+34,28852,excluded: body 2668 tokens < 6000
+35,36856,excluded: plain text unavailable (HTTP 404)
+36,47990,selected
+37,12787,selected
+38,28897,selected
+39,11939,selected
+40,22050,selected
+41,38956,skipped: author already selected
+42,29122,selected
+43,77946,selected
+44,41063,excluded: body 3638 tokens < 6000
+45,39977,selected
+46,31246,excluded: plain text unavailable (HTTP 404)
+47,920,selected
+48,43116,selected
+49,34295,skipped: author already selected
+50,46652,selected
+51,72892,selected

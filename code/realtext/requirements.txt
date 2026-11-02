@@ -1,0 +1,13 @@
+# Analysis (features, statistics, figures): same stack as the simulation.
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.1.0
+matplotlib==3.11.2
+ripser==0.6.15
+# Chunking and corpus building.
+tiktoken==0.14.0
+# Only for re-embedding with the open models (embed_open.py).
+# torch==2.14.1
+# transformers==5.21.0
+# sentence-transformers==6.2.0

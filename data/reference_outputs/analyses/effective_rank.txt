@@ -1,0 +1,2 @@
+openai-3-small: D=1536, n=1139; corpus effective rank 6.9; dims for 50/80/90% of variance 25/142/270; neighbourhood effective rank median 9.3 [10th-90th pct 7.1, 12.9]
+bge-base: D=768, n=1139; corpus effective rank 4.8; dims for 50/80/90% of variance 16/102/186; neighbourhood effective rank median 8.9 [10th-90th pct 7.1, 11.5]

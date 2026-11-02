@@ -1,0 +1,33 @@
+% fig_loops.tex -- Didactic figure: loops (LT_max(H1) > 0.05) appear when neighbours
+% spread along few directions, whatever the number of topics. Data: data/loops_T{1,2,3}.dat from real_data.py,
+% parsed from data/reference_outputs/loops_check.txt (100 samples per cell, Wilson 95% intervals). x is dodged by
+% x0.90 / x1.00 / x1.11 for T = 1 / 2 / 3 so the intervals do not overlap. \input from main.tex (no preamble here).
+% (pedagogy pass): the x symbol renamed m -> p, matching the paper.
+\providecommand{\didpath}{figs_didactic/}%
+\definecolor{didV}{HTML}{D55E00}\definecolor{didB}{HTML}{0072B2}%
+% distinct colours per topic count, direct label that the three curves
+% coincide, larger axes, wording 'dimensions p' as in the text.
+\definecolor{didG}{HTML}{009E73}%
+\begin{tikzpicture}[font=\footnotesize]
+  \begin{axis}[scale only axis, width=9.2cm, height=4.8cm, xmode=log, xmin=1.35, xmax=640, ymin=0, ymax=1,
+      axis lines=left, axis line style={line width=0.4pt, black!70, -}, tick style={line width=0.4pt, black!70},
+      major tick length=2pt, minor tick num=0, log basis x=10,
+      xtick={2,5,20,383}, xticklabels={$2$,$5$,$20$,$383$}, ytick={0,0.25,0.5,0.75,1}, yticklabels={0,,0.5,,1},
+      xlabel={dimensions $p$ that the scatter of neighbours fills (log axis)},
+      ylabel={share of samples with a loop}, clip=false,
+      error bars/error bar style={line width=0.5pt, solid},
+      legend style={draw=none, fill=none, at={(0.99,0.99)}, anchor=north east, font=\footnotesize, row sep=1pt},
+      legend cell align=left, error bars/error mark options={rotate=90, mark size=1.6pt, line width=0.5pt}]
+    \addplot[line width=1pt, didB, mark=*, mark size=2pt, error bars/.cd, y dir=both, y explicit]
+      table[x=x, y=frac, y error plus=eplus, y error minus=eminus] {\didpath data/loops_T1.dat};
+    \addplot[line width=1pt, didV, mark=square*, mark size=1.8pt, error bars/.cd, y dir=both, y explicit]
+      table[x=x, y=frac, y error plus=eplus, y error minus=eminus] {\didpath data/loops_T2.dat};
+    \addplot[line width=1pt, didG, mark=triangle*, mark size=2.3pt, error bars/.cd, y dir=both, y explicit]
+      table[x=x, y=frac, y error plus=eplus, y error minus=eminus] {\didpath data/loops_T3.dat};
+    \legend{1 topic, 2 topics, 3 topics}
+    \node[anchor=west, align=left, text=black!75] at (axis cs:7.5,0.78) {1, 2 or 3 topics:\\[-1pt] overlapping curves};
+    \draw[->, black!55, line width=0.4pt] (axis cs:7.3,0.74) -- (axis cs:5.6,0.66);
+    \node[anchor=south, text=black!60, font=\scriptsize] at (axis cs:3.9,0.02) {few dimensions: loops};
+    \node[anchor=south, text=black!60, font=\scriptsize] at (axis cs:120,0.06) {many dimensions: none};
+  \end{axis}
+\end{tikzpicture}%

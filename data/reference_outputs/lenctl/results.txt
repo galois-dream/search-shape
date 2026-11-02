@@ -1,0 +1,112 @@
+
+=== bge-base, arm all ===
+g0: w1 M 0.908 R 0.486  longbar M 0.940 R 0.261  ltmax M 0.737 R 0.397  nn_med M 0.210 R 0.758  cov_gain_diff M 0.891 R 0.976
+   w1             M 0.908 [0.882, 0.933]   R 0.486 [0.437, 0.536]
+   longbar        M 0.940 [0.919, 0.959]   R 0.261 [0.216, 0.306]
+   ltmax          M 0.737 [0.693, 0.781]   R 0.397 [0.347, 0.448]
+   w1_corp        M 0.978 [0.966, 0.988]   R 0.439 [0.390, 0.493]
+   longbar_corp   M 0.971 [0.957, 0.983]   R 0.469 [0.418, 0.520]
+   ltmax_corp     M 0.922 [0.898, 0.943]   R 0.311 [0.265, 0.358]
+   top1           M 0.590 [0.538, 0.642]   R 0.048 [0.030, 0.069]
+   mean_cos       M 0.618 [0.567, 0.666]   R 0.887 [0.856, 0.914]
+   std_cos        M 0.508 [0.454, 0.564]   R 0.011 [0.004, 0.022]
+   slope          M 0.493 [0.442, 0.545]   R 0.976 [0.962, 0.988]
+   nn_med         M 0.210 [0.172, 0.255]   R 0.758 [0.714, 0.801]
+   coherence      M 0.012 [0.004, 0.023]   R 0.987 [0.977, 0.994]
+   eig2           M 0.653 [0.603, 0.701]   R 0.551 [0.496, 0.601]
+   cov_gain       M 0.892 [0.860, 0.919]   R 0.918 [0.891, 0.941]
+   cov_gain_diff  M 0.891 [0.865, 0.918]   R 0.976 [0.964, 0.987]
+   L2 ratio: W1 R 0.486, L_max R 0.261 (holds if both within 0.45-0.55)
+   L3 direction: W1 M 0.908 (holds if > 0.5 with interval above)
+   L4 cosines: best mean_cos oriented 0.618 (holds if >= 0.75)
+   L5 sufficiency: best persistence longbar 0.940 vs nn_med 0.790: +0.150 (holds if <= 0.02)
+   L6 coverage (different pages): M 0.891 (holds if > 0.5 with interval above)
+   gain over corpus-bearing control, w1: oriented -0.070
+   gain over corpus-bearing control, longbar: oriented -0.031
+   gain over corpus-bearing control, ltmax: oriented -0.185
+g1: w1 M 0.902 R 0.462  longbar M 0.942 R 0.252  ltmax M 0.772 R 0.378  nn_med M 0.185 R 0.749  cov_gain_diff M 0.884 R 0.972
+g2: w1 M 0.900 R 0.475  longbar M 0.940 R 0.259  ltmax M 0.749 R 0.363  nn_med M 0.225 R 0.732  cov_gain_diff M 0.897 R 0.980
+
+=== bge-base, arm ownout ===
+g0: w1 M 0.926 R 0.593  longbar M 0.940 R 0.521  ltmax M 0.747 R 0.425  nn_med M 0.147 R 0.729  cov_gain_diff M 0.777 R 0.428
+   w1             M 0.926 [0.902, 0.947]   R 0.593 [0.542, 0.641]
+   longbar        M 0.940 [0.918, 0.960]   R 0.521 [0.470, 0.571]
+   ltmax          M 0.747 [0.703, 0.789]   R 0.425 [0.375, 0.474]
+   w1_corp        M 0.977 [0.964, 0.988]   R 0.444 [0.392, 0.495]
+   longbar_corp   M 0.968 [0.955, 0.981]   R 0.514 [0.461, 0.566]
+   ltmax_corp     M 0.936 [0.914, 0.956]   R 0.265 [0.226, 0.310]
+   top1           M 0.652 [0.604, 0.702]   R 0.726 [0.678, 0.773]
+   mean_cos       M 0.624 [0.574, 0.673]   R 0.895 [0.865, 0.922]
+   std_cos        M 0.590 [0.538, 0.639]   R 0.107 [0.080, 0.137]
+   slope          M 0.415 [0.364, 0.465]   R 0.898 [0.869, 0.924]
+   nn_med         M 0.147 [0.114, 0.182]   R 0.729 [0.683, 0.773]
+   coherence      M 0.024 [0.012, 0.038]   R 0.994 [0.989, 0.998]
+   eig2           M 0.610 [0.560, 0.662]   R 0.235 [0.193, 0.277]
+   cov_gain       M 0.777 [0.735, 0.817]   R 0.428 [0.375, 0.478]
+   cov_gain_diff  M 0.777 [0.732, 0.818]   R 0.428 [0.379, 0.482]
+   L2 ratio: W1 R 0.593, L_max R 0.521 (holds if both within 0.45-0.55)
+   L3 direction: W1 M 0.926 (holds if > 0.5 with interval above)
+   L4 cosines: best top1 oriented 0.652 (holds if >= 0.75)
+   L5 sufficiency: best persistence longbar 0.940 vs nn_med 0.853: +0.087 (holds if <= 0.02)
+   L6 coverage (different pages): M 0.777 (holds if > 0.5 with interval above)
+   gain over corpus-bearing control, w1: oriented -0.051
+   gain over corpus-bearing control, longbar: oriented -0.028
+   gain over corpus-bearing control, ltmax: oriented -0.189
+g1: w1 M 0.915 R 0.547  longbar M 0.928 R 0.509  ltmax M 0.769 R 0.363  nn_med M 0.133 R 0.742  cov_gain_diff M 0.774 R 0.460
+g2: w1 M 0.915 R 0.575  longbar M 0.940 R 0.526  ltmax M 0.758 R 0.370  nn_med M 0.164 R 0.707  cov_gain_diff M 0.771 R 0.412
+
+=== bge-m3, arm all ===
+g0: w1 M 0.958 R 0.506  longbar M 0.993 R 0.261  ltmax M 0.797 R 0.289  nn_med M 0.307 R 0.611  cov_gain_diff M 0.881 R 0.992
+   w1             M 0.958 [0.940, 0.973]   R 0.506 [0.452, 0.555]
+   longbar        M 0.993 [0.987, 0.997]   R 0.261 [0.220, 0.307]
+   ltmax          M 0.797 [0.757, 0.833]   R 0.289 [0.243, 0.333]
+   w1_corp        M 1.000 [1.000, 1.000]   R 0.379 [0.330, 0.429]
+   longbar_corp   M 0.998 [0.995, 1.000]   R 0.249 [0.206, 0.294]
+   ltmax_corp     M 0.989 [0.982, 0.995]   R 0.100 [0.073, 0.128]
+   top1           M 0.712 [0.665, 0.756]   R 0.022 [0.012, 0.036]
+   mean_cos       M 0.741 [0.697, 0.782]   R 0.916 [0.891, 0.939]
+   std_cos        M 0.556 [0.502, 0.607]   R 0.007 [0.002, 0.014]
+   slope          M 0.475 [0.424, 0.527]   R 0.982 [0.970, 0.992]
+   nn_med         M 0.307 [0.261, 0.356]   R 0.611 [0.560, 0.663]
+   coherence      M 0.003 [0.000, 0.008]   R 0.984 [0.972, 0.993]
+   eig2           M 0.610 [0.559, 0.660]   R 0.758 [0.711, 0.803]
+   cov_gain       M 0.861 [0.823, 0.894]   R 0.907 [0.880, 0.930]
+   cov_gain_diff  M 0.881 [0.849, 0.910]   R 0.992 [0.987, 0.997]
+   L2 ratio: W1 R 0.506, L_max R 0.261 (holds if both within 0.45-0.55)
+   L3 direction: W1 M 0.958 (holds if > 0.5 with interval above)
+   L4 cosines: best mean_cos oriented 0.741 (holds if >= 0.75)
+   L5 sufficiency: best persistence longbar 0.993 vs nn_med 0.693: +0.300 (holds if <= 0.02)
+   L6 coverage (different pages): M 0.881 (holds if > 0.5 with interval above)
+   gain over corpus-bearing control, w1: oriented -0.042
+   gain over corpus-bearing control, longbar: oriented -0.005
+   gain over corpus-bearing control, ltmax: oriented -0.192
+g1: w1 M 0.959 R 0.491  longbar M 0.991 R 0.249  ltmax M 0.822 R 0.240  nn_med M 0.321 R 0.622  cov_gain_diff M 0.870 R 0.993
+g2: w1 M 0.957 R 0.468  longbar M 0.985 R 0.264  ltmax M 0.754 R 0.298  nn_med M 0.355 R 0.609  cov_gain_diff M 0.884 R 0.992
+
+=== bge-m3, arm ownout ===
+g0: w1 M 0.973 R 0.708  longbar M 0.986 R 0.531  ltmax M 0.834 R 0.235  nn_med M 0.213 R 0.555  cov_gain_diff M 0.871 R 0.596
+   w1             M 0.973 [0.961, 0.984]   R 0.708 [0.661, 0.753]
+   longbar        M 0.986 [0.977, 0.993]   R 0.531 [0.479, 0.584]
+   ltmax          M 0.834 [0.799, 0.869]   R 0.235 [0.193, 0.277]
+   w1_corp        M 1.000 [0.999, 1.000]   R 0.370 [0.320, 0.419]
+   longbar_corp   M 0.999 [0.998, 1.000]   R 0.483 [0.433, 0.536]
+   ltmax_corp     M 0.988 [0.981, 0.994]   R 0.085 [0.061, 0.111]
+   top1           M 0.729 [0.683, 0.771]   R 0.724 [0.680, 0.765]
+   mean_cos       M 0.749 [0.707, 0.792]   R 0.934 [0.912, 0.954]
+   std_cos        M 0.548 [0.499, 0.600]   R 0.076 [0.054, 0.100]
+   slope          M 0.456 [0.402, 0.508]   R 0.930 [0.906, 0.950]
+   nn_med         M 0.213 [0.175, 0.256]   R 0.555 [0.503, 0.611]
+   coherence      M 0.007 [0.001, 0.017]   R 0.991 [0.983, 0.997]
+   eig2           M 0.537 [0.484, 0.591]   R 0.263 [0.220, 0.309]
+   cov_gain       M 0.871 [0.838, 0.900]   R 0.596 [0.547, 0.649]
+   cov_gain_diff  M 0.871 [0.838, 0.899]   R 0.596 [0.542, 0.647]
+   L2 ratio: W1 R 0.708, L_max R 0.531 (holds if both within 0.45-0.55)
+   L3 direction: W1 M 0.973 (holds if > 0.5 with interval above)
+   L4 cosines: best mean_cos oriented 0.749 (holds if >= 0.75)
+   L5 sufficiency: best persistence longbar 0.986 vs nn_med 0.787: +0.199 (holds if <= 0.02)
+   L6 coverage (different pages): M 0.871 (holds if > 0.5 with interval above)
+   gain over corpus-bearing control, w1: oriented -0.027
+   gain over corpus-bearing control, longbar: oriented -0.013
+   gain over corpus-bearing control, ltmax: oriented -0.154
+g1: w1 M 0.967 R 0.690  longbar M 0.987 R 0.524  ltmax M 0.832 R 0.193  nn_med M 0.228 R 0.572  cov_gain_diff M 0.871 R 0.587
+g2: w1 M 0.968 R 0.653  longbar M 0.985 R 0.549  ltmax M 0.826 R 0.244  nn_med M 0.257 R 0.569  cov_gain_diff M 0.850 R 0.583
