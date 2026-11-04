@@ -107,15 +107,15 @@ for i, (k, name) in enumerate(CORP):
 save(fig, "dist_2x2.pdf")
 
 # 3. W1 against its controls in the mismatched cells: real, corpus-bearing, random-bearing (same scores)
-fig, ax = plt.subplots(5, 3, figsize=(7.0, 6.2), constrained_layout=True, sharex="row")
+fig, ax = plt.subplots(5, 4, figsize=(7.0, 6.2), constrained_layout=True, sharex="row")
 for i, (k, name) in enumerate(CORP):
     d = R[k]; pl, mfl = d[d.cell == "Q250|C750"], d[d.cell == "Q750|C250"]
-    ser = [x.dropna().to_numpy() for x in (pl.w1, mfl.w1, pl.w1_enull, mfl.w1_enull, pl.w1_null, mfl.w1_null)]
+    ser = [x.dropna().to_numpy() for x in (pl.w1, mfl.w1, pl.w1_enull, mfl.w1_enull, pl.w1_lnull, mfl.w1_lnull, pl.w1_null, mfl.w1_null)]
     rng_row = (min(np.percentile(x, 0.5) for x in ser), max(np.percentile(x, 99.5) for x in ser))  # every series fits
-    for j, (col, ttl) in enumerate([("w1", "real bearings"), ("w1_enull", "corpus-bearing control"),
-                                    ("w1_null", "random-bearing control")]):
+    for j, (col, ttl) in enumerate([("w1", "real bearings"), ("w1_enull", "corpus-bearing\ncontrol"),
+                                    ("w1_lnull", "shell-bearing control\n(ranks 51-500)"), ("w1_null", "random-bearing\ncontrol")]):
         panel(ax[i, j], [("multi-factual-like Q750|C250", B, "-", mfl[col]), ("polysemic-like Q250|C750", V, "-", pl[col])],
-              W1 if i == 4 else "", f"controls {name} {ttl}", rng=rng_row)
+              W1 if i == 4 else "", f"controls {name} {ttl.replace(chr(10), ' ')}", rng=rng_row)
         if i == 0:
             ax[i, j].set_title(ttl, fontsize=9)
     ax[i, 0].set_ylabel(name, rotation=0, ha="right", va="center", fontsize=9)

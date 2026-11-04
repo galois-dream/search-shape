@@ -1,0 +1,26 @@
+# swap_corpus.py output, 2026-11-04 ~19:20 CET; text-embedding-3-small, one draw per query, medians of the mean bar (2 W1)
+== nobel
+Q250|C750 polysemic-like (n=878): {'real': 0.709, 'own': 0.74, 'other': 0.864, 'random': 1.21}
+Q750|C250 multi-factual-like (n=280): {'real': 0.879, 'own': 0.894, 'other': 0.801, 'random': 1.237}
+gap (multi - poly): {'real': 0.17, 'own': 0.154, 'other': -0.063, 'random': 0.028}
+swapped corpora gap (poly bearings from C250, multi from C750): -0.063
+== turing
+Q250|C750 polysemic-like (n=950): {'real': 0.731, 'own': 0.758, 'other': 0.884, 'random': 1.207}
+Q750|C250 multi-factual-like (n=307): {'real': 0.897, 'own': 0.92, 'other': 0.818, 'random': 1.234}
+gap (multi - poly): {'real': 0.166, 'own': 0.162, 'other': -0.066, 'random': 0.027}
+swapped corpora gap (poly bearings from C250, multi from C750): -0.066
+== fields
+Q250|C750 polysemic-like (n=1430): {'real': 0.75, 'own': 0.794, 'other': 0.898, 'random': 1.224}
+Q750|C250 multi-factual-like (n=468): {'real': 0.901, 'own': 0.928, 'other': 0.843, 'random': 1.245}
+gap (multi - poly): {'real': 0.151, 'own': 0.134, 'other': -0.055, 'random': 0.02}
+swapped corpora gap (poly bearings from C250, multi from C750): -0.055
+== gutenberg
+Q250|C750 polysemic-like (n=2372): {'real': 0.711, 'own': 0.804, 'other': 0.901, 'random': 1.19}
+Q750|C250 multi-factual-like (n=790): {'real': 0.876, 'own': 0.933, 'other': 0.849, 'random': 1.225}
+gap (multi - poly): {'real': 0.165, 'own': 0.129, 'other': -0.052, 'random': 0.036}
+swapped corpora gap (poly bearings from C250, multi from C750): -0.052
+== wiki
+Q250|C750 polysemic-like (n=1249): {'real': 0.632, 'own': 0.774, 'other': 0.856, 'random': 1.111}
+Q750|C250 multi-factual-like (n=402): {'real': 0.791, 'own': 0.907, 'other': 0.843, 'random': 1.175}
+gap (multi - poly): {'real': 0.159, 'own': 0.133, 'other': -0.013, 'random': 0.064}
+swapped corpora gap (poly bearings from C250, multi from C750): -0.013

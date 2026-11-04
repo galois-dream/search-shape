@@ -31,18 +31,23 @@ sim all_ltmax_h1 |  | medians: multi-factual (S1) 0.051, polysemic (S2) 0.028 | 
 2x2 Wikipedia ltmax | medians: Q250|C750 (1/3) 0.023, Q250|C250 (1) 0.032, Q750|C750 (1) 0.025, Q750|C250 (3) 0.034 | AUROC(last-listed > first-listed) 0.803
 controls Nobel real bearings |  | medians: multi-factual-like Q750|C250 0.439, polysemic-like Q250|C750 0.354 | AUROC(first > second) 1.000
 controls Nobel corpus-bearing control |  | medians: multi-factual-like Q750|C250 0.449, polysemic-like Q250|C750 0.370 | AUROC(first > second) 0.997
+controls Nobel shell-bearing control (ranks 51-500) |  | medians: multi-factual-like Q750|C250 0.442, polysemic-like Q250|C750 0.370 | AUROC(first > second) 0.996
 controls Nobel random-bearing control |  | medians: multi-factual-like Q750|C250 0.619, polysemic-like Q250|C750 0.605 | AUROC(first > second) 0.814
 controls Turing real bearings |  | medians: multi-factual-like Q750|C250 0.449, polysemic-like Q250|C750 0.365 | AUROC(first > second) 0.996
 controls Turing corpus-bearing control |  | medians: multi-factual-like Q750|C250 0.460, polysemic-like Q250|C750 0.379 | AUROC(first > second) 0.999
+controls Turing shell-bearing control (ranks 51-500) |  | medians: multi-factual-like Q750|C250 0.452, polysemic-like Q250|C750 0.379 | AUROC(first > second) 0.996
 controls Turing random-bearing control |  | medians: multi-factual-like Q750|C250 0.617, polysemic-like Q250|C750 0.603 | AUROC(first > second) 0.817
 controls Fields real bearings |  | medians: multi-factual-like Q750|C250 0.451, polysemic-like Q250|C750 0.375 | AUROC(first > second) 0.999
 controls Fields corpus-bearing control |  | medians: multi-factual-like Q750|C250 0.464, polysemic-like Q250|C750 0.397 | AUROC(first > second) 0.995
+controls Fields shell-bearing control (ranks 51-500) |  | medians: multi-factual-like Q750|C250 0.458, polysemic-like Q250|C750 0.396 | AUROC(first > second) 0.993
 controls Fields random-bearing control |  | medians: multi-factual-like Q750|C250 0.622, polysemic-like Q250|C750 0.612 | AUROC(first > second) 0.840
 controls Essays real bearings |  | medians: multi-factual-like Q750|C250 0.438, polysemic-like Q250|C750 0.356 | AUROC(first > second) 0.994
 controls Essays corpus-bearing control |  | medians: multi-factual-like Q750|C250 0.468, polysemic-like Q250|C750 0.402 | AUROC(first > second) 0.998
+controls Essays shell-bearing control (ranks 51-500) |  | medians: multi-factual-like Q750|C250 0.447, polysemic-like Q250|C750 0.394 | AUROC(first > second) 0.985
 controls Essays random-bearing control |  | medians: multi-factual-like Q750|C250 0.613, polysemic-like Q250|C750 0.595 | AUROC(first > second) 0.848
 controls Wikipedia real bearings | $W_1(H_0)$ | medians: multi-factual-like Q750|C250 0.395, polysemic-like Q250|C750 0.316 | AUROC(first > second) 0.997
 controls Wikipedia corpus-bearing control | $W_1(H_0)$ | medians: multi-factual-like Q750|C250 0.453, polysemic-like Q250|C750 0.387 | AUROC(first > second) 1.000
+controls Wikipedia shell-bearing control (ranks 51-500) | $W_1(H_0)$ | medians: multi-factual-like Q750|C250 0.426, polysemic-like Q250|C750 0.388 | AUROC(first > second) 0.978
 controls Wikipedia random-bearing control | $W_1(H_0)$ | medians: multi-factual-like Q750|C250 0.588, polysemic-like Q250|C750 0.555 | AUROC(first > second) 0.976
 page bge-base mean_cos | medians: Q1|C3 (1/3) 0.591, Q1|C1 (1) 0.583, Q3|C3 (1) 0.630, Q3|C1 (3) 0.602 | AUROC(last-listed > first-listed) 0.618
 page bge-base coherence | medians: Q1|C3 (1/3) 0.602, Q1|C1 (1) 0.549, Q3|C3 (1) 0.605, Q3|C1 (3) 0.542 | AUROC(last-listed > first-listed) 0.012
