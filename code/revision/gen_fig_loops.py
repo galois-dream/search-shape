@@ -1,7 +1,7 @@
 # gen_fig_loops.py -- written 2026-11-02 14:06 CET. Writes fig_loops_pr.tex from ../theory/h2probe.txt (CLEAN=1 run):
 # median LT_max(H1) against effective dimension (participation ratio of the bearings), for synthetic scatter in p
 # dimensions (curve), real neighbourhoods (Nobel; two models x two mismatched cells) and random bearings at the same
-# scores. Replaces the v4 loops figure (share of samples with a loop vs nominal p; graded B- by Alex, 14:03 CET).
+# scores. Replaces the v4 loops figure (share of samples with a loop vs nominal p).
 import re, math
 t = open("../theory/h2probe.txt").read()
 syn = [(int(p), float(h)) for p, h in re.findall(r"synthetic, scatter fills p=(\d+)\s+n=\s*\d+\s+H1 max: median ([0-9.]+)", t)]
@@ -23,9 +23,9 @@ for v in (0, 0.02, 0.04, 0.06):
 L.append(f"\\node[below] at ({W / 2},-0.55) {{effective dimension of the bearings (participation ratio, log scale)}};")
 L.append(f"\\node[rotate=90] at (-1.15,{H / 2}) {{median $\\LTmax$}};")
 pts = [(X(pr), Y(h)) for (p, h), pr in zip(syn, synpr)]
-L.append("\\draw[black, line width=0.9pt] " + " -- ".join(f"({x:.3f},{y:.3f})" for x, y in pts) + ";")
+L.append("\\draw[black, line width=1pt] " + " -- ".join(f"({x:.3f},{y:.3f})" for x, y in pts) + ";")
 for (p, h), (x, y) in zip(syn, pts):
-    L.append(f"\\filldraw[fill=white, draw=black, line width=0.8pt] ({x:.3f},{y:.3f}) circle (2.4pt);")
+    L.append(f"\\filldraw[fill=white, draw=black, line width=1pt] ({x:.3f},{y:.3f}) circle (2.4pt);")
     L.append(f"\\node[font=\\footnotesize, anchor={'south' if p <= 20 else 'north'}] at ({x:.3f},{y + (0.1 if p <= 20 else -0.1):.3f}) {{$p={p}$}};")
 for (m, q, _c, kind, h) in cells:
     pr_real, pr_rand = prs[m, q]

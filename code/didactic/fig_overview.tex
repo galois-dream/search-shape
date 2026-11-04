@@ -12,10 +12,10 @@
 \definecolor{didV}{HTML}{D55E00}\definecolor{didB}{HTML}{0072B2}%
 \input{\didpath data/overview_coords.tex}%
 \begin{tikzpicture}[font=\footnotesize,
-    hair/.style={line width=0.4pt, black!45},
-    flow/.style={-{Stealth[length=4pt, width=3pt]}, line width=0.4pt, black!45},
+    hair/.style={line width=1pt, black!45},
+    flow/.style={-{Stealth[length=4pt, width=3pt]}, line width=1pt, black!45},
     title/.style={anchor=south west, inner sep=0pt},
-    qx/.style={line width=0.75pt, black},
+    qx/.style={line width=1pt, black},
     gA/.style={fill=didB}, gB/.style={fill=black!50}]
   \def\ttl{1.55}     % baseline of the panel titles (cm)
   \def\rowtwo{-3.3}  % y offset of the second row (cm)
@@ -41,11 +41,11 @@
       \ifnum\i=1 \draw[line width=1.6pt, didV] (0,\yy) -- ({\d*\sx},\yy);
       \else      \draw[line width=1.1pt, black!60] (0,\yy) -- ({\d*\sx},\yy); \fi}
     \node[anchor=east, inner sep=2pt] at (0,{\ytop-(#2-1)*\sy/2}) {$H_0$};
-    \draw[densely dotted, line width=0.6pt, black] ({#3*\sx},{\ytop-(#2-1)*\sy-0.05}) -- ({#3*\sx},{\ytop+#4});}
+    \draw[densely dotted, line width=1pt, black] ({#3*\sx},{\ytop-(#2-1)*\sy-0.05}) -- ({#3*\sx},{\ytop+#4});}
   % axis 0..2 at height #1
   \def\didaxis#1{%
-    \draw[line width=0.4pt, black!70] (0,#1) -- ({2*\sx},#1);
-    \foreach \v in {0,0.5,1,1.5,2} { \draw[line width=0.4pt, black!70] ({\v*\sx},#1) -- ({\v*\sx},#1-0.06)
+    \draw[line width=1pt, black!70] (0,#1) -- ({2*\sx},#1);
+    \foreach \v in {0,0.5,1,1.5,2} { \draw[line width=1pt, black!70] ({\v*\sx},#1) -- ({\v*\sx},#1-0.06)
       node[below=0.5pt, inner sep=1pt] {$\pgfmathprintnumber{\v}$}; }}
   \pgfmathsetmacro{\yh}{\ytop-14*\sy-0.3}   % H1 row (15 H0 bars in both rows)
   \pgfmathsetmacro{\ya}{\yh-0.25}           % axis
@@ -73,15 +73,15 @@
   \node[title] at (2.75,\ttl) {(b)\enspace directions from $\bm q$};
   \draw[flow] (4.65,0) -- (5.05,0);
   \begin{scope}[shift={(6.85,-0.1)}, x=0.7cm, y=0.7cm]
-    \draw[line width=0.8pt, didB!45] \foreach \x/\y in \ovTopA { (\x,\y) circle (\ovRdraw) };
-    \draw[line width=0.8pt, black!30] \foreach \x/\y in \ovTopB { (\x,\y) circle (\ovRdraw) };
+    \draw[line width=1pt, didB!45] \foreach \x/\y in \ovTopA { (\x,\y) circle (\ovRdraw) };
+    \draw[line width=1pt, black!30] \foreach \x/\y in \ovTopB { (\x,\y) circle (\ovRdraw) };
     \fill[didB!10] \foreach \x/\y in \ovTopA { (\x,\y) circle (\ovRdraw) };
     \fill[black!7] \foreach \x/\y in \ovTopB { (\x,\y) circle (\ovRdraw) };
     \draw[line width=1.2pt, didV] (\ovGapTop) -- (\ovGapTopB);
     \node[above=2pt, inner sep=1pt, text=didV, fill=white, fill opacity=0.85, text opacity=1] at ($(\ovGapTop)!0.5!(\ovGapTopB)$) {joins at $d=\ovLmaxTxt$};
     \foreach \x/\y in \ovTopA { \fill[gA] (\x,\y) circle (1.4pt); }
     \foreach \x/\y in \ovTopB { \fill[gB] (\x,\y) circle (1.4pt); }
-    \draw[line width=0.4pt, black!70, {Bar[width=3pt]}-{Bar[width=3pt]}] (-0.9551,-0.17) -- ++(0,-\ovRdraw);
+    \draw[line width=1pt, black!70, {Bar[width=3pt]}-{Bar[width=3pt]}] (-0.9551,-0.17) -- ++(0,-\ovRdraw);
     \node[anchor=north, inner sep=1pt] at ($(-0.9551,-0.17)+(0,-\ovRdraw)$) {$r=d/2$};
   \end{scope}
   \node[title] at (5.8,\ttl) {(c)\enspace discs of radius $r$};
@@ -119,7 +119,7 @@
     \end{scope}
     \draw[flow] (4.65,0) -- (5.05,0);
     \begin{scope}[shift={(6.85,-0.1)}, x=0.7cm, y=0.7cm]
-      \draw[line width=0.8pt, didB!45] \foreach \x/\y in \ovOTop { (\x,\y) circle (\ovRdraw) };
+      \draw[line width=1pt, didB!45] \foreach \x/\y in \ovOTop { (\x,\y) circle (\ovRdraw) };
       \fill[didB!10] \foreach \x/\y in \ovOTop { (\x,\y) circle (\ovRdraw) };
       \foreach \x/\y in \ovOTop { \fill[gA] (\x,\y) circle (1.4pt); }
       \node[anchor=east, text=black!60, align=right] at (-0.05,0) {same $r$:\\no gap};

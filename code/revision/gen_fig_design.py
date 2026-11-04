@@ -1,7 +1,7 @@
 # gen_fig_design.py -- written 2026-11-02 13:43 CET. Writes fig_design.tex: the 2x2 chunking design as a grid of tiles
 # (bars = texts, length proportional to tokens; dots = topic units, one per 250 tokens, the stand-in for topic count;
 # tint = regime) and, to the right, small multiples: one mini grid per comparison with the two compared cells filled.
-# Replaces the hand-drawn version (graded B- by Alex, 13:42 CET): no crossing lines, no detached legend. Usage: python3 gen_fig_design.py
+# Replaces an earlier hand-drawn version: no crossing lines, no detached legend. Usage: python3 gen_fig_design.py
 W, H, G = 3.7, 2.15, 0.35            # tile width, height, gap (cm)
 TOK = 0.0024                          # cm per token: 250 -> 0.6, 750 -> 1.8
 cells = {(0, 0): (250, 750), (0, 1): (250, 250), (1, 0): (750, 750), (1, 1): (750, 250)}
@@ -40,7 +40,7 @@ for k, (pair, title, where) in enumerate(comps):
     for (r, c) in cells:
         x = X0 + c * (s + g); y = ytop - r * (s + g)
         f = ({(0, 0): "fpV", (1, 1): "fpB"}.get((r, c), "black!55")) if (r, c) in pair else "white"
-        L.append(f"\\filldraw[fill={f}, draw=black!45, line width=0.4pt] ({x:.2f},{y:.2f}) rectangle ({x + s:.2f},{y - s:.2f});")
+        L.append(f"\\filldraw[fill={f}, draw=black!45, line width=1pt] ({x:.2f},{y:.2f}) rectangle ({x + s:.2f},{y - s:.2f});")
     L.append(f"\\node[anchor=north west, align=left, font=\\footnotesize, inner sep=0pt] at ({X0 + 2 * s + g + 0.22:.2f},{ytop + 0.02:.2f}) {{\\textbf{{{title}}}\\\\{where}}};")
 yk = cy(1) - H - 0.38
 L.append(f"\\fill[black!18, rounded corners=1.5pt] (0.05,{yk - 0.12:.2f}) rectangle ({0.05 + 250 * TOK:.2f},{yk + 0.12:.2f});")

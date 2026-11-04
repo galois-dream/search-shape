@@ -15,10 +15,10 @@ for k, (l, f) in enumerate(b):
     y = -k * sy
     L.append(f"\\draw[{'fpB' if f else 'fpV'}, line width=1.25pt] (0,{y:.3f}) -- ({l * sx:.3f},{y:.3f});")
 yb = -(n - 1) * sy - 0.25
-L += [f"\\draw[densely dotted, line width=0.6pt] ({mean * sx:.3f},0.25) -- ({mean * sx:.3f},{yb + 0.1:.3f});",
+L += [f"\\draw[densely dotted, line width=1pt] ({mean * sx:.3f},0.25) -- ({mean * sx:.3f},{yb + 0.1:.3f});",
       f"\\node[anchor=south, inner sep=1pt] at ({mean * sx:.3f},0.25) {{mean bar ${mean:.2f}$}};",
-      f"\\draw[black!60, line width=0.4pt] (0,{yb:.3f}) -- ({1.42 * sx:.3f},{yb:.3f});",
-      f"\\draw[black!45, dashed, line width=0.6pt] ({1.3 * sx:.3f},0.25) -- ({1.3 * sx:.3f},{yb + 0.1:.3f});",
+      f"\\draw[black!60, line width=1pt] (0,{yb:.3f}) -- ({1.42 * sx:.3f},{yb:.3f});",
+      f"\\draw[black!45, dashed, line width=1pt] ({1.3 * sx:.3f},0.25) -- ({1.3 * sx:.3f},{yb + 0.1:.3f});",
       f"\\node[anchor=south, align=center, inner sep=1pt, black!60] at ({1.3 * sx:.3f},0.25) {{random\\\\bearings}};"]
 for v in (0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4):
     L.append(f"\\draw[black!60] ({v * sx:.3f},{yb:.3f}) -- ({v * sx:.3f},{yb - 0.08:.3f}) node[below] {{${v:g}$}};")
