@@ -26,7 +26,7 @@ pts = [(X(pr), Y(h)) for (p, h), pr in zip(syn, synpr)]
 L.append("\\draw[black, line width=1pt] " + " -- ".join(f"({x:.3f},{y:.3f})" for x, y in pts) + ";")
 for (p, h), (x, y) in zip(syn, pts):
     L.append(f"\\filldraw[fill=white, draw=black, line width=1pt] ({x:.3f},{y:.3f}) circle (2.4pt);")
-    L.append(f"\\node[font=\\footnotesize, anchor={'south' if p <= 20 else 'north'}] at ({x:.3f},{y + (0.1 if p <= 20 else -0.1):.3f}) {{$p={p}$}};")
+    L.append(f"\\node[font=\\footnotesize, anchor={'south' if p <= 20 else 'north'}] at ({x:.3f},{y + (0.1 if p <= 20 else -0.1):.3f}) {{${p}$}};")
 for (m, q, _c, kind, h) in cells:
     pr_real, pr_rand = prs[m, q]
     if kind == "real":
@@ -36,7 +36,7 @@ for (m, q, _c, kind, h) in cells:
         L.append(f"\\fill[black!55] ({x - 0.07:.3f},{y - 0.07:.3f}) rectangle ({x + 0.07:.3f},{y + 0.07:.3f});")
 L.append(f"\\node[fpV, anchor=south west, align=left, font=\\footnotesize] at ({X(25.5):.3f},{Y(0.0405):.3f}) {{real neighbourhoods\\\\(two models, two cells)}};")
 L.append(f"\\node[black!65, anchor=west, align=left, font=\\footnotesize] at ({X(52):.3f},{Y(0.0135):.3f}) {{random bearings,\\\\same scores}};")
-L.append(f"\\node[anchor=north east, align=left, font=\\footnotesize] at ({X(13):.3f},{Y(0.025):.3f}) {{synthetic scatter filling\\\\$p$ random dimensions}};")
+L.append(f"\\node[anchor=north east, align=left, font=\\footnotesize] at ({X(13):.3f},{Y(0.025):.3f}) {{synthetic scatter filling\\\\$D_s$ random dimensions\\\\(numbers: $D_s$)}};")
 L.append("\\end{tikzpicture}%")
 open("fig_loops_pr.tex", "w").write("\n".join(L) + "\n")
 print("ok", syn, synpr)

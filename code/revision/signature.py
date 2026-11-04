@@ -25,13 +25,13 @@ if sys.argv[1] == "figure":
     # replacing the count table. Filled dot: 95% interval excludes 0.5; hollow: it does not. Tick: median.
     R = list(csv.DictReader(open(os.path.join(H, "sig_auroc.csv"))))
     models = sorted({r["model"] for r in R}); corpora = sorted({r["corpus"] for r in R})
-    groups = [("Multi-factual-like vs polysemic-like (Q750$|$C250 vs Q250$|$C750)",
+    groups = [("Mismatched cells of \\cref{fig:design} (Q750$|$C250 vs Q250$|$C750)",
                [("primary", "mismatched", "mean50", "mean score"), ("primary", "mismatched", "std50", "SD of the scores"),
                 ("lodo", "mismatched", "std50", "SD, own document out"), ("primary", "mismatched", "w1", "$\\Wone$")]),
-              ("The same, with the finer chunking size-matched (one subsample)",
+              ("Mismatched cells, with the finer chunking size-matched (one subsample)",
                [("dens", "mismatched", "mean50", "mean score"), ("dens", "mismatched", "std50", "SD of the scores"), ("dens", "mismatched", "w1", "$\\Wone$"),
                 ("dens", "mismatched", "w1_enull", "$\\Wone$, corpus bearings"), ("dens", "mismatched", "w1_null", "$\\Wone$, random bearings")]),
-              ("Equal length ratio, long vs short (Q750$|$C750 vs Q250$|$C250)",
+              ("Matched cells of \\cref{fig:design}, equal length ratio (Q750$|$C750 vs Q250$|$C250)",
                [("primary", "matched", "mean50", "mean score"), ("primary", "matched", "std50", "SD of the scores"),
                 ("primary", "matched", "w1", "$\\Wone$")])]
     sx, row, head = 8.4, 0.52, 0.5
