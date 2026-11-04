@@ -1,0 +1,21 @@
+(a) threshold | share of ambiguous below | n | W1 AUROC (below vs clear) | W1 AUROC (at/above vs clear)
+    0.05 |  0.6% |    29 | 0.519 | 0.474
+    0.10 |  2.1% |   102 | 0.653 | 0.470
+    0.15 |  4.6% |   217 | 0.652 | 0.466
+    0.20 |  7.5% |   357 | 0.650 | 0.460
+    0.25 | 11.4% |   543 | 0.642 | 0.453
+    0.30 | 16.7% |   791 | 0.628 | 0.444
+    0.40 | 26.8% |  1271 | 0.598 | 0.429
+    0.50 | 37.0% |  1756 | 0.573 | 0.416
+(b) jac < 0.2 [8789] jac=0.12 Q: Ps i love you who wrote the letters?
+      - In Ps I love you, which character wrote the letters? / Gerry
+      - In the film PS I love you, who voices the character who wrote the letters? / Gerard Butler
+(b) jac < 0.2 [6557] jac=0.18 Q: Who sang the original i'll be there?
+      - Who sang the original of the I'll Be There song that was released on August 28, 1970? / The Jackson 5
+      - Who sang the original of the I'll Be There song that was recorded in 1960? / Bobby Darin
+(b) jac >= 0.5 [2738] jac=1.00 Q: When did construction start on the great wall of china?
+      - When did construction start on the first versions of the great wall of china? / 771–476 bc
+      - When did construction start on most parts of the great wall of china visible today? / 1368–1644
+(b) jac >= 0.5 [8669] jac=0.57 Q: Who has the most little league world series championships?
+      - What country has won the most little league world series championships? / United States
+      - When all of the states are considered separately, what geographic location has won the most little league world series championships? / Taiwan

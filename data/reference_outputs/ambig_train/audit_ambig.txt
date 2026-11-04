@@ -1,0 +1,18 @@
+1. questions 10036 | ambiguous 4749 (0.473) | clear 5287 | label matches retrieved.npz: True
+   annotations per question: {1: 9887, 2: 83, 3: 66}
+   keys in a record: ['annotations', 'id', 'nq_answer', 'nq_doc_title', 'question', 'used_queries', 'viewed_doc_titles']
+2. corpus rows 37528 | titles in parquet == corpus_titles.npy: True | retrieval rows (10036, 50)
+3. nq_doc_title present for 10036 | gold page in corpus: 0.957
+4. gold page among top-50 titles: 0.944 (ambiguous 0.938 clear 0.949) | top-1: 0.718
+5. [9466] Q: When does game of thrones come out this year? | gold: Game of Thrones (season 7)
+     readings: When does game of thrones come out in 2017? || When does game of thrones come out in 2016?
+     top-5 titles: ['Game of Thrones (season 7)', 'Game of Thrones (season 3)', 'Game of Thrones (season 8)', 'Game of Thrones', 'Game of Thrones (season 2)']
+     top-1 text: Game of Thrones (season 7)  The seventh and penultimate season of the fantasy drama television series "Game of Thrones" premiered on HBO on 
+5. [6267] Q: Who has the number one pick in the nba draft this year? | gold: List of first overall NBA draft picks
+     readings: Who was the number one pick in the nba draft in 2017? || Who was the number one pick in the nba draft in 2016?
+     top-5 titles: ['List of first overall NBA draft picks', '2009 NBA draft', '2007 NBA draft', '1993 NBA draft', 'NBA high school draftees']
+     top-1 text: List of first overall NBA draft picks  The National Basketball Association's first overall pick is the player who is selected first among al
+5. [6847] Q: Where does tea come from in the world? | gold: Tea
+     readings: Where does tea come from in the world originally? || Where does tea come from in the world currently?
+     top-5 titles: ['Tea', 'Chinese tea culture', 'Teak', 'Tea production in Sri Lanka']
+     top-1 text: Tea  Tea is an aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the "Camellia sinensis", an evergree

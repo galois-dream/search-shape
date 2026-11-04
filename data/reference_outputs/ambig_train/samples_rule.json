@@ -1,0 +1,174 @@
+{
+ "rule": "numpy default_rng(0); permutation of each group; first two",
+ "rows": [
+  {
+   "group": "ambiguous, readings on different pages (overlap < 0.2)",
+   "i": 4712,
+   "question": "How does the temperature of venus compare to that of earth?",
+   "readings": [
+    [
+     "What is the mean surface temperature of Venus?",
+     "867 \u00b0F"
+    ],
+    [
+     "What is the mean surface temperature of Earth from 1961-1990?",
+     "57.2 \u00b0F"
+    ]
+   ],
+   "overlap": 0.17,
+   "neighbours": [
+    "Venus",
+    "Atmosphere of Venus",
+    "Atmosphere",
+    "Atmosphere of Mars",
+    "Sun"
+   ],
+   "w1": 0.378,
+   "longbar": 1.042,
+   "mean_score": 0.421,
+   "pages50": 24
+  },
+  {
+   "group": "ambiguous, readings on different pages (overlap < 0.2)",
+   "i": 442,
+   "question": "Who makes the rules for house and senate?",
+   "readings": [
+    [
+     "Who makes the rules for U.S. house?",
+     "United States House of Representatives"
+    ],
+    [
+     "Who makes the rules for U.S. senate?",
+     "Senate"
+    ]
+   ],
+   "overlap": 0.14,
+   "neighbours": [
+    "Article One of the United States Constitution",
+    "Federal government of the United States",
+    "United States House of Representatives",
+    "Senate",
+    "United States Congress"
+   ],
+   "w1": 0.399,
+   "longbar": 0.921,
+   "mean_score": 0.522,
+   "pages50": 30
+  },
+  {
+   "group": "ambiguous, readings on the same pages (overlap >= 0.5)",
+   "i": 5553,
+   "question": "When did the new england patriots change their logo?",
+   "readings": [
+    [
+     "When did the new england patriots first change their logo?",
+     "1961"
+    ],
+    [
+     "When did the new england patriots change their logo for the second time?",
+     "1993"
+    ]
+   ],
+   "overlap": 0.75,
+   "neighbours": [
+    "New England Patriots",
+    "Third jersey",
+    "Super Bowl LIII",
+    "Vince Lombardi Trophy",
+    "Boston Red Sox"
+   ],
+   "w1": 0.386,
+   "longbar": 0.99,
+   "mean_score": 0.435,
+   "pages50": 30
+  },
+  {
+   "group": "ambiguous, readings on the same pages (overlap >= 0.5)",
+   "i": 6771,
+   "question": "Who played marla on a league of their own?",
+   "readings": [
+    [
+     "Who played younger Marla on a League of Their Own?",
+     "Megan Cavanagh"
+    ],
+    [
+     "Who played older Marla on A League of their Own?",
+     "Patricia Wilson"
+    ]
+   ],
+   "overlap": 1.0,
+   "neighbours": [
+    "Wendy Makkena",
+    "A League of Their Own",
+    "Lynn Cartwright",
+    "Marla Sokoloff",
+    "Megan Cavanagh"
+   ],
+   "w1": 0.452,
+   "longbar": 1.057,
+   "mean_score": 0.388,
+   "pages50": 43
+  },
+  {
+   "group": "clear",
+   "i": 4202,
+   "question": "Who was the boy playing banjo in deliverance?",
+   "readings": [],
+   "overlap": null,
+   "answer": "Billy Redden",
+   "neighbours": [
+    "Billy Redden",
+    "Deliverance",
+    "William Sadler (actor)",
+    "The Fox and the Hound 2",
+    "Those Were the Days (song)"
+   ],
+   "w1": 0.47,
+   "longbar": 1.044,
+   "mean_score": 0.386,
+   "pages50": 43
+  },
+  {
+   "group": "clear",
+   "i": 3562,
+   "question": "Nba players to score more than 70 points?",
+   "readings": [],
+   "overlap": null,
+   "answer": "Kobe Bryant",
+   "neighbours": [
+    "List of National Basketball Association single-game scoring leaders",
+    "List of career achievements by Michael Jordan",
+    "List of National Basketball Association annual scoring leaders",
+    "List of highest-scoring NBA games",
+    "List of career achievements by Kareem Abdul-Jabbar"
+   ],
+   "w1": 0.368,
+   "longbar": 0.875,
+   "mean_score": 0.562,
+   "pages50": 26
+  }
+ ],
+ "medians": {
+  "ambiguous, readings on different pages (overlap < 0.2)": {
+   "n": 326,
+   "w1": 0.443,
+   "longbar": 1.04,
+   "mean_score": 0.4,
+   "pages50": 40.0
+  },
+  "ambiguous, readings on the same pages (overlap >= 0.5)": {
+   "n": 2837,
+   "w1": 0.405,
+   "longbar": 1.031,
+   "mean_score": 0.44,
+   "pages50": 31.0
+  },
+  "clear": {
+   "n": 5287,
+   "w1": 0.416,
+   "longbar": 1.034,
+   "mean_score": 0.423,
+   "pages50": 34.0
+  }
+ }
+}

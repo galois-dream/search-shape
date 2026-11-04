@@ -1,0 +1,6 @@
+distinct pages in own top-10: clear 5.0  topic-split 7.0  same-pages 4.0
+distinct pages in own top-50: clear 25.0  topic-split 36.0  same-pages 21.0
+topic split  within pages10 bins: w1 0.59  mean_cos 0.38  w1_corp 0.39
+topic split  within pages50 bins: w1 0.49  mean_cos 0.42  w1_corp 0.43
+same pages   within pages10 bins: w1 0.45  mean_cos 0.59  w1_corp 0.59
+same pages   within pages50 bins: w1 0.49  mean_cos 0.58  w1_corp 0.57

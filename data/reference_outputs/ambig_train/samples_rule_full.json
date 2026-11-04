@@ -1,0 +1,172 @@
+{
+ "rule": "numpy default_rng(0); permutation of each group; first two",
+ "rows": [
+  {
+   "group": "ambiguous, readings on different pages (overlap < 0.2)",
+   "i": 8789,
+   "question": "Ps i love you who wrote the letters?",
+   "readings": [
+    [
+     "In Ps I love you, which character wrote the letters?",
+     "Gerry"
+    ],
+    [
+     "In the film PS I love you, who voices the character who wrote the letters?",
+     "Gerard Butler"
+    ]
+   ],
+   "overlap": 0.12,
+   "neighbours": [
+    "Mary, Queen of Scots",
+    "Acrostic",
+    "Longest word in English",
+    "Emily Dickinson",
+    "I'm Sorry I Haven't a Clue"
+   ],
+   "w1": 0.444,
+   "longbar": 1.015,
+   "mean_score": 0.343,
+   "pages50": 37
+  },
+  {
+   "group": "ambiguous, readings on different pages (overlap < 0.2)",
+   "i": 6557,
+   "question": "Who sang the original i'll be there?",
+   "readings": [
+    [
+     "Who sang the original of the I'll Be There song that was released on August 28, 1970?",
+     "The Jackson 5"
+    ],
+    [
+     "Who sang the original of the I'll Be There song that was recorded in 1960?",
+     "Bobby Darin"
+    ]
+   ],
+   "overlap": 0.18,
+   "neighbours": [
+    "I'll Be Seeing You (song)",
+    "I'll Be There for You (The Rembrandts song)",
+    "The Stones in the Park",
+    "Hairspray (2007 film)",
+    "Partition (song)"
+   ],
+   "w1": 0.481,
+   "longbar": 1.024,
+   "mean_score": 0.428,
+   "pages50": 48
+  },
+  {
+   "group": "ambiguous, readings on the same pages (overlap >= 0.5)",
+   "i": 2738,
+   "question": "When did construction start on the great wall of china?",
+   "readings": [
+    [
+     "When did construction start on the first versions of the great wall of china?",
+     "771\u2013476 bc"
+    ],
+    [
+     "When did construction start on most parts of the great wall of china visible today?",
+     "1368\u20131644"
+    ]
+   ],
+   "overlap": 1.0,
+   "neighbours": [
+    "History of the Great Wall of China",
+    "Great Wall of China",
+    "History of China"
+   ],
+   "w1": 0.393,
+   "longbar": 0.903,
+   "mean_score": 0.59,
+   "pages50": 3
+  },
+  {
+   "group": "ambiguous, readings on the same pages (overlap >= 0.5)",
+   "i": 8669,
+   "question": "Who has the most little league world series championships?",
+   "readings": [
+    [
+     "What country has won the most little league world series championships?",
+     "United States"
+    ],
+    [
+     "When all of the states are considered separately, what geographic location has won the most little league world series championships?",
+     "Taiwan"
+    ]
+   ],
+   "overlap": 0.57,
+   "neighbours": [
+    "List of World Series champions",
+    "World Series",
+    "Chicago Cubs",
+    "New York Yankees",
+    "Dodgers\u2013Yankees rivalry"
+   ],
+   "w1": 0.368,
+   "longbar": 0.952,
+   "mean_score": 0.561,
+   "pages50": 24
+  },
+  {
+   "group": "clear",
+   "i": 7576,
+   "question": "Who sang the song she's a little runaway?",
+   "readings": [],
+   "overlap": null,
+   "answer": "Bon Jovi",
+   "neighbours": [
+    "Merry Clayton",
+    "Too Good at Goodbyes",
+    "Go Tell It on the Mountain (song)",
+    "The Night the Lights Went Out in Georgia",
+    "I Will Always Love You"
+   ],
+   "w1": 0.474,
+   "longbar": 1.08,
+   "mean_score": 0.447,
+   "pages50": 44
+  },
+  {
+   "group": "clear",
+   "i": 2809,
+   "question": "Who got voted off the bachelorette june 19?",
+   "readings": [],
+   "overlap": null,
+   "answer": "Brady, Bryce, and Diggy",
+   "neighbours": [
+    "The Bachelor (season 22)",
+    "The Bachelorette (season 14)",
+    "The Bachelor (season 20)",
+    "American Idol",
+    "American Idol (season 1)"
+   ],
+   "w1": 0.432,
+   "longbar": 1.044,
+   "mean_score": 0.493,
+   "pages50": 25
+  }
+ ],
+ "medians": {
+  "ambiguous, readings on different pages (overlap < 0.2)": {
+   "n": 357,
+   "w1": 0.44,
+   "longbar": 1.044,
+   "mean_score": 0.436,
+   "pages50": 36.0
+  },
+  "ambiguous, readings on the same pages (overlap >= 0.5)": {
+   "n": 2993,
+   "w1": 0.404,
+   "longbar": 1.028,
+   "mean_score": 0.49,
+   "pages50": 21.0
+  },
+  "clear": {
+   "n": 5287,
+   "w1": 0.413,
+   "longbar": 1.034,
+   "mean_score": 0.464,
+   "pages50": 25.0
+  }
+ }
+}

@@ -5,7 +5,7 @@
 #             per question: persistence features and controls, cosine and similarity statistics, coverage gain.
 #   auroc     (needs pandas):                 python ambig.py auroc OUT_DIR
 # Feature definitions follow code/realtext/features.py and code/lenctl/feats.py.
-import ast, json, sys
+import ast, json, os, sys
 from pathlib import Path
 import numpy as np
 
@@ -19,7 +19,7 @@ def retrieve(data, real, out):
     T = json.load(open(Path(data) / "ambignq" / "train.json"))
     lab = np.array([int(any(a["type"] == "multipleQAs" for a in (ast.literal_eval(t["annotations"]) if isinstance(t["annotations"], str) else t["annotations"]))) for t in T])
     qs = [t["question"] for t in T]
-    B = pd.read_parquet(Path(real) / "chunks.parquet"); keep = B.in_corpus.to_numpy()
+    B = pd.read_parquet(Path(real) / "chunks.parquet"); keep = np.ones(len(B), bool) if os.environ.get("FULL") == "1" else B.in_corpus.to_numpy()  # FULL=1 (added day 6): every chunk of the gold pages, not the first 5
     E = np.load(Path(real) / "chunk_emb.npy")[keep].astype(np.float32); titles = B.title[keep].to_numpy()
     m = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2", device="cpu")
     Q = m.encode(qs, batch_size=64, normalize_embeddings=True).astype(np.float32)
@@ -44,7 +44,7 @@ def flip_retrieve(data, real, out):
         if len(dq) >= 2:
             for typ, q in enumerate((t["question"], " ".join(dq), dq[0])):
                 qs.append(q); lab.append(typ); grp.append(k)
-    B = pd.read_parquet(Path(real) / "chunks.parquet"); keep = B.in_corpus.to_numpy()
+    B = pd.read_parquet(Path(real) / "chunks.parquet"); keep = np.ones(len(B), bool) if os.environ.get("FULL") == "1" else B.in_corpus.to_numpy()  # FULL=1 (added day 6): every chunk of the gold pages, not the first 5
     E = np.load(Path(real) / "chunk_emb.npy")[keep].astype(np.float32); titles = B.title[keep].to_numpy()
     m = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2", device="cpu")
     Q = m.encode(qs, batch_size=64, normalize_embeddings=True).astype(np.float32)

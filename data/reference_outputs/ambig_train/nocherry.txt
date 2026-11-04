@@ -1,0 +1,21 @@
+(a) threshold | share of ambiguous below | n | W1 AUROC (below vs clear) | W1 AUROC (at/above vs clear)
+    0.05 |  0.5% |    22 | 0.500 | 0.476
+    0.10 |  2.1% |    98 | 0.621 | 0.473
+    0.15 |  4.2% |   201 | 0.641 | 0.469
+    0.20 |  6.9% |   326 | 0.639 | 0.465
+    0.25 | 11.5% |   546 | 0.625 | 0.457
+    0.30 | 16.7% |   794 | 0.615 | 0.449
+    0.40 | 28.6% |  1358 | 0.594 | 0.430
+    0.50 | 40.3% |  1912 | 0.574 | 0.411
+(b) jac < 0.2 [4712] jac=0.17 Q: How does the temperature of venus compare to that of earth?
+      - What is the mean surface temperature of Venus? / 867 °F
+      - What is the mean surface temperature of Earth from 1961-1990? / 57.2 °F
+(b) jac < 0.2 [442] jac=0.14 Q: Who makes the rules for house and senate?
+      - Who makes the rules for U.S. house? / United States House of Representatives
+      - Who makes the rules for U.S. senate? / Senate
+(b) jac >= 0.5 [5553] jac=0.75 Q: When did the new england patriots change their logo?
+      - When did the new england patriots first change their logo? / 1961
+      - When did the new england patriots change their logo for the second time? / 1993
+(b) jac >= 0.5 [6771] jac=1.00 Q: Who played marla on a league of their own?
+      - Who played younger Marla on a League of Their Own? / Megan Cavanagh
+      - Who played older Marla on A League of their Own? / Patricia Wilson

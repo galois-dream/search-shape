@@ -528,6 +528,27 @@ ambiguous; "96% ... three chunks or fewer, 83% a single chunk") and `lenctl grou
 95%) and `Q3_g0` (multi-factual, Q3 against C1: 80%), from `python isolate.py lenctl work/emb_<model>.npz`. The file
 does not record which of the two models the lenctl rows used.
 
+### 5.4 What people label: underspecification (`code/ambig_train/`, post hoc, added day 6)
+
+Exploratory checks, not registered, behind the paper's paragraph "What people label is mostly underspecification" and
+its Table of AmbigNQ examples. They read the `train` output directory of `ambig.py` (`feats.csv`, `retrieved.npz`,
+`corpus_emb.npy`, `corpus_titles.npy`), which needs the embeddings (not shipped).
+
+| script | what it computes | reference output (`data/reference_outputs/ambig_train/`) |
+|---|---|---|
+| `probe_slot.py TRAIN_JSON train` | embeds each ambiguous question's readings; their mean cosine against the question's 50 neighbours; page overlap of the readings (mean Jaccard of their top-10 page titles); writes `train/probe_slot.csv` | `probe_slot.txt`; table `data/ambig_train/probe_slot.csv.xz` |
+| `probe_slot2.py train` | the topic-split stratum (overlap < 0.2) against clear questions within quintiles of how many pages the neighbours span | `probe_slot2.txt` |
+| `probe_answers.py TRAIN_JSON CHUNKS_PARQUET train` | where the neighbours hold separate passages answering two readings: the H0 bar joining the two groups, against random groups of the same sizes | `probe_answers.txt`; table `data/ambig_train/probe_answers.csv.xz` |
+| `nocherry.py TRAIN_JSON train` | the topic-split share and W1 AUROC at every overlap threshold 0.05 to 0.5; the example rows by a fixed rule (seed 0, first two draws per group) | `nocherry.txt` |
+| `samples_rule.py TRAIN_JSON train` | more rule-drawn examples with their features and group medians | `samples_rule.json` |
+| `audit_ambig.py TRAIN_JSON CHUNKS_PARQUET train` | data audit: label counts, corpus row alignment, gold page in corpus (95.7%) and retrieved (94.4%), annotations per question | `audit_ambig.txt` |
+| `../lenctl/samples_rule.py work` | rule-drawn examples from the equal-length page test (bge-base, g0, arm all) | `../lenctl/samples_rule.json` |
+
+The registered corpus keeps the first five chunks of each gold page (37,528). `FULL=1` makes `ambig.py retrieve` and
+`probe_answers.py` use every chunk of the gold pages (123,636); `bash run_full.sh DATA_DIR REAL_DIR` reruns everything
+above that way. Its outputs are the `*_full.*` files and `auroc_full.txt`; no conclusion changes (the paper says so in
+one sentence). Run on the whole pages, the mean-score AUROC interval is [0.538, 0.561].
+
 ## 6. Revision analyses (added 2026-11-02, after review)
 
 All of these were added after the main results and are post hoc. Each reads the per-query feature tables of section 2
@@ -572,7 +593,8 @@ in the script if your copy lives elsewhere. Per-query features and embeddings ar
   year, title, PDF page span and source URL; `selection_log.csv` the decision for all 64 medallists; `candidates.csv` and
   `imu_talks.csv` the talks located and checked.
 - **AmbigNQ** (section 5.2): questions and labels from AmbigQA, CC BY-SA 3.0; only per-question numbers are shipped
-  (`feats_train.csv`: row `i` = position in `train.json`).
+  (`feats_train.csv`, `probe_*.csv`: row `i` = position in `train.json`). The rule-drawn examples
+  (`nocherry*.txt`, `samples_rule*`) quote a few questions, readings and answers, and Wikipedia page titles.
 - **Embeddings**: none shipped, except `data/examples/crane_vectors.csv.xz` (all-MiniLM-L6-v2 vectors of the six crane sentences,
   their neighbours and 250 random chunks each, all from Wikipedia, CC BY-SA 3.0). Commercial embeddings cannot be
   redistributed; open-model embeddings regenerate from the shipped code (section 2.4; section 5: `build.py`,

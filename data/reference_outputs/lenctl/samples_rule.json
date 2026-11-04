@@ -1,0 +1,169 @@
+{
+ "rule": "bge-base, g0, arm all; default_rng(0) permutation per cell, first two",
+ "rows": [
+  {
+   "group": "polysemic-like",
+   "cell": "Q1|C3",
+   "q": 100,
+   "query_pages": [
+    "William Riker"
+   ],
+   "neighbours": [
+    [
+     "William Riker",
+     "Marc Chagall",
+     "Building society"
+    ],
+    [
+     "William Riker",
+     "Marc Chagall",
+     "Building society"
+    ],
+    [
+     "William Riker",
+     "Marc Chagall",
+     "Building society"
+    ],
+    [
+     "William Riker",
+     "Marc Chagall",
+     "Building society"
+    ],
+    [
+     "William Riker",
+     "Marc Chagall",
+     "Building society"
+    ]
+   ],
+   "reach_bound_of_50": 14,
+   "w1": 0.402,
+   "longbar": 0.97,
+   "mean_cos": 0.615,
+   "std_cos": 0.039,
+   "coherence": 0.613
+  },
+  {
+   "group": "polysemic-like",
+   "cell": "Q1|C3",
+   "q": 201,
+   "query_pages": [
+    "Alphonse DeCarre"
+   ],
+   "neighbours": [
+    [
+     "Computer-aided dispatch",
+     "Alphonse DeCarre",
+     "Sigil (computer programming)"
+    ],
+    [
+     "Computer-aided dispatch",
+     "Alphonse DeCarre",
+     "Sigil (computer programming)"
+    ],
+    [
+     "Computer-aided dispatch",
+     "Alphonse DeCarre",
+     "Sigil (computer programming)"
+    ],
+    [
+     "Computer-aided dispatch",
+     "Alphonse DeCarre",
+     "Sigil (computer programming)"
+    ],
+    [
+     "Computer-aided dispatch",
+     "Alphonse DeCarre",
+     "Sigil (computer programming)"
+    ]
+   ],
+   "reach_bound_of_50": 14,
+   "w1": 0.375,
+   "longbar": 0.926,
+   "mean_cos": 0.6,
+   "std_cos": 0.034,
+   "coherence": 0.603
+  },
+  {
+   "group": "multi-factual-like",
+   "cell": "Q3|C1",
+   "q": 21,
+   "query_pages": [
+    "Stonewall (charity)",
+    "Bonnie Dumanis",
+    "Eli Holzman"
+   ],
+   "neighbours": [
+    [
+     "Stonewall (charity)"
+    ],
+    [
+     "Stonewall (charity)"
+    ],
+    [
+     "Stonewall (charity)"
+    ],
+    [
+     "Eli Holzman"
+    ],
+    [
+     "Stonewall (charity)"
+    ]
+   ],
+   "reach_bound_of_50": 9,
+   "w1": 0.42,
+   "longbar": 0.969,
+   "mean_cos": 0.566,
+   "std_cos": 0.049,
+   "coherence": 0.532
+  },
+  {
+   "group": "multi-factual-like",
+   "cell": "Q3|C1",
+   "q": 151,
+   "query_pages": [
+    "Maggie Rita's",
+    "V. Muraleedharan",
+    "2013 Charlotte 49ers football team"
+   ],
+   "neighbours": [
+    [
+     "2013 Charlotte 49ers football team"
+    ],
+    [
+     "2013 Charlotte 49ers football team"
+    ],
+    [
+     "2013 Charlotte 49ers football team"
+    ],
+    [
+     "2013 Charlotte 49ers football team"
+    ],
+    [
+     "2013 Charlotte 49ers football team"
+    ]
+   ],
+   "reach_bound_of_50": 9,
+   "w1": 0.419,
+   "longbar": 0.988,
+   "mean_cos": 0.601,
+   "std_cos": 0.027,
+   "coherence": 0.534
+  }
+ ],
+ "medians": {
+  "polysemic-like": {
+   "w1": 0.393,
+   "longbar": 0.932,
+   "mean_cos": 0.591,
+   "std_cos": 0.031,
+   "coherence": 0.602
+  },
+  "multi-factual-like": {
+   "w1": 0.424,
+   "longbar": 1.005,
+   "mean_cos": 0.602,
+   "std_cos": 0.031,
+   "coherence": 0.542
+  }
+ }
+}

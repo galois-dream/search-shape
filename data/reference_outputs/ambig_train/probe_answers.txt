@@ -1,0 +1,6 @@
+# probe_answers.py run on day 6 at 17:18; 4749 ambiguous questions
+readings with an answer-bearing passage among the 50 neighbours: none 20%, one 28%, two or more 52%
+two readings with separate passages (best case): 1382 questions (29%)
+  all best-case            n=1382  groups joined by the longest bar: 2% (random groups: 2%); by one of the 3 longest: 7%; join / median edge: median 1.01; percentile vs random groups: median 0.48, share above 0.95: 8%
+  topic split (jac<0.2)    n=  72  groups joined by the longest bar: 6% (random groups: 2%); by one of the 3 longest: 12%; join / median edge: median 1.01; percentile vs random groups: median 0.53, share above 0.95: 14%
+  same pages (jac>=0.5)    n= 869  groups joined by the longest bar: 2% (random groups: 2%); by one of the 3 longest: 5%; join / median edge: median 1.00; percentile vs random groups: median 0.46, share above 0.95: 8%
