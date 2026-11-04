@@ -1,0 +1,67 @@
+# supp_distributions.py: per panel, group medians and AUROC = P(second-listed group > first-listed group)
+sim cos_mean |  | medians: multi-factual (S1) 0.633, polysemic (S2) 0.324 | AUROC(first > second) 0.849
+sim cos_std |  | medians: multi-factual (S1) 0.020, polysemic (S2) 0.083 | AUROC(first > second) 0.000
+sim all_w1_h0 |  | medians: multi-factual (S1) 0.511, polysemic (S2) 0.383 | AUROC(first > second) 1.000
+sim all_h0_maxbar |  | medians: multi-factual (S1) 1.099, polysemic (S2) 0.867 | AUROC(first > second) 0.905
+sim all_ltmax_h1 |  | medians: multi-factual (S1) 0.051, polysemic (S2) 0.028 | AUROC(first > second) 0.945
+2x2 Nobel mean50 | medians: Q250|C750 (1/3) 0.557, Q250|C250 (1) 0.589, Q750|C750 (1) 0.629, Q750|C250 (3) 0.627 | AUROC(last-listed > first-listed) 0.828
+2x2 Nobel std50 | medians: Q250|C750 (1/3) 0.050, Q250|C250 (1) 0.046, Q750|C750 (1) 0.054, Q750|C250 (3) 0.043 | AUROC(last-listed > first-listed) 0.404
+2x2 Nobel w1 | medians: Q250|C750 (1/3) 0.354, Q250|C250 (1) 0.418, Q750|C750 (1) 0.385, Q750|C250 (3) 0.439 | AUROC(last-listed > first-listed) 1.000
+2x2 Nobel longbar | medians: Q250|C750 (1/3) 0.899, Q250|C250 (1) 0.994, Q750|C750 (1) 0.993, Q750|C250 (3) 1.039 | AUROC(last-listed > first-listed) 0.981
+2x2 Nobel ltmax | medians: Q250|C750 (1/3) 0.032, Q250|C250 (1) 0.034, Q750|C750 (1) 0.035, Q750|C250 (3) 0.036 | AUROC(last-listed > first-listed) 0.622
+2x2 Turing mean50 | medians: Q250|C750 (1/3) 0.547, Q250|C250 (1) 0.570, Q750|C750 (1) 0.632, Q750|C250 (3) 0.620 | AUROC(last-listed > first-listed) 0.824
+2x2 Turing std50 | medians: Q250|C750 (1/3) 0.044, Q250|C250 (1) 0.043, Q750|C750 (1) 0.048, Q750|C250 (3) 0.041 | AUROC(last-listed > first-listed) 0.429
+2x2 Turing w1 | medians: Q250|C750 (1/3) 0.365, Q250|C250 (1) 0.424, Q750|C750 (1) 0.401, Q750|C250 (3) 0.449 | AUROC(last-listed > first-listed) 0.996
+2x2 Turing longbar | medians: Q250|C750 (1/3) 0.892, Q250|C250 (1) 0.995, Q750|C750 (1) 0.991, Q750|C250 (3) 1.049 | AUROC(last-listed > first-listed) 0.986
+2x2 Turing ltmax | medians: Q250|C750 (1/3) 0.030, Q250|C250 (1) 0.031, Q750|C750 (1) 0.034, Q750|C250 (3) 0.033 | AUROC(last-listed > first-listed) 0.609
+2x2 Fields mean50 | medians: Q250|C750 (1/3) 0.592, Q250|C250 (1) 0.609, Q750|C750 (1) 0.651, Q750|C250 (3) 0.646 | AUROC(last-listed > first-listed) 0.844
+2x2 Fields std50 | medians: Q250|C750 (1/3) 0.039, Q250|C250 (1) 0.038, Q750|C750 (1) 0.047, Q750|C250 (3) 0.039 | AUROC(last-listed > first-listed) 0.498
+2x2 Fields w1 | medians: Q250|C750 (1/3) 0.375, Q250|C250 (1) 0.433, Q750|C750 (1) 0.403, Q750|C250 (3) 0.451 | AUROC(last-listed > first-listed) 0.999
+2x2 Fields longbar | medians: Q250|C750 (1/3) 0.908, Q250|C250 (1) 1.000, Q750|C750 (1) 0.992, Q750|C250 (3) 1.042 | AUROC(last-listed > first-listed) 0.988
+2x2 Fields ltmax | medians: Q250|C750 (1/3) 0.027, Q250|C250 (1) 0.031, Q750|C750 (1) 0.030, Q750|C250 (3) 0.034 | AUROC(last-listed > first-listed) 0.734
+2x2 Essays mean50 | medians: Q250|C750 (1/3) 0.512, Q250|C250 (1) 0.558, Q750|C750 (1) 0.579, Q750|C250 (3) 0.600 | AUROC(last-listed > first-listed) 0.843
+2x2 Essays std50 | medians: Q250|C750 (1/3) 0.062, Q250|C250 (1) 0.052, Q750|C750 (1) 0.075, Q750|C250 (3) 0.052 | AUROC(last-listed > first-listed) 0.376
+2x2 Essays w1 | medians: Q250|C750 (1/3) 0.356, Q250|C250 (1) 0.417, Q750|C750 (1) 0.386, Q750|C250 (3) 0.438 | AUROC(last-listed > first-listed) 0.994
+2x2 Essays longbar | medians: Q250|C750 (1/3) 0.926, Q250|C250 (1) 1.003, Q750|C750 (1) 1.010, Q750|C250 (3) 1.046 | AUROC(last-listed > first-listed) 0.959
+2x2 Essays ltmax | medians: Q250|C750 (1/3) 0.030, Q250|C250 (1) 0.032, Q750|C750 (1) 0.032, Q750|C250 (3) 0.035 | AUROC(last-listed > first-listed) 0.652
+2x2 Wikipedia mean50 | medians: Q250|C750 (1/3) 0.340, Q250|C250 (1) 0.493, Q750|C750 (1) 0.376, Q750|C250 (3) 0.518 | AUROC(last-listed > first-listed) 0.978
+2x2 Wikipedia std50 | medians: Q250|C750 (1/3) 0.157, Q250|C250 (1) 0.130, Q750|C750 (1) 0.177, Q750|C250 (3) 0.150 | AUROC(last-listed > first-listed) 0.404
+2x2 Wikipedia w1 | medians: Q250|C750 (1/3) 0.316, Q250|C250 (1) 0.380, Q750|C750 (1) 0.329, Q750|C250 (3) 0.395 | AUROC(last-listed > first-listed) 0.997
+2x2 Wikipedia longbar | medians: Q250|C750 (1/3) 1.006, Q250|C250 (1) 1.032, Q750|C750 (1) 1.052, Q750|C250 (3) 1.062 | AUROC(last-listed > first-listed) 0.828
+2x2 Wikipedia ltmax | medians: Q250|C750 (1/3) 0.023, Q250|C250 (1) 0.032, Q750|C750 (1) 0.025, Q750|C250 (3) 0.034 | AUROC(last-listed > first-listed) 0.803
+controls Nobel real bearings |  | medians: multi-factual-like Q750|C250 0.439, polysemic-like Q250|C750 0.354 | AUROC(first > second) 1.000
+controls Nobel corpus-bearing control |  | medians: multi-factual-like Q750|C250 0.449, polysemic-like Q250|C750 0.370 | AUROC(first > second) 0.997
+controls Nobel random-bearing control |  | medians: multi-factual-like Q750|C250 0.619, polysemic-like Q250|C750 0.605 | AUROC(first > second) 0.814
+controls Turing real bearings |  | medians: multi-factual-like Q750|C250 0.449, polysemic-like Q250|C750 0.365 | AUROC(first > second) 0.996
+controls Turing corpus-bearing control |  | medians: multi-factual-like Q750|C250 0.460, polysemic-like Q250|C750 0.379 | AUROC(first > second) 0.999
+controls Turing random-bearing control |  | medians: multi-factual-like Q750|C250 0.617, polysemic-like Q250|C750 0.603 | AUROC(first > second) 0.817
+controls Fields real bearings |  | medians: multi-factual-like Q750|C250 0.451, polysemic-like Q250|C750 0.375 | AUROC(first > second) 0.999
+controls Fields corpus-bearing control |  | medians: multi-factual-like Q750|C250 0.464, polysemic-like Q250|C750 0.397 | AUROC(first > second) 0.995
+controls Fields random-bearing control |  | medians: multi-factual-like Q750|C250 0.622, polysemic-like Q250|C750 0.612 | AUROC(first > second) 0.840
+controls Essays real bearings |  | medians: multi-factual-like Q750|C250 0.438, polysemic-like Q250|C750 0.356 | AUROC(first > second) 0.994
+controls Essays corpus-bearing control |  | medians: multi-factual-like Q750|C250 0.468, polysemic-like Q250|C750 0.402 | AUROC(first > second) 0.998
+controls Essays random-bearing control |  | medians: multi-factual-like Q750|C250 0.613, polysemic-like Q250|C750 0.595 | AUROC(first > second) 0.848
+controls Wikipedia real bearings | $W_1(H_0)$ | medians: multi-factual-like Q750|C250 0.395, polysemic-like Q250|C750 0.316 | AUROC(first > second) 0.997
+controls Wikipedia corpus-bearing control | $W_1(H_0)$ | medians: multi-factual-like Q750|C250 0.453, polysemic-like Q250|C750 0.387 | AUROC(first > second) 1.000
+controls Wikipedia random-bearing control | $W_1(H_0)$ | medians: multi-factual-like Q750|C250 0.588, polysemic-like Q250|C750 0.555 | AUROC(first > second) 0.976
+page bge-base mean_cos | medians: Q1|C3 (1/3) 0.591, Q1|C1 (1) 0.583, Q3|C3 (1) 0.630, Q3|C1 (3) 0.602 | AUROC(last-listed > first-listed) 0.618
+page bge-base coherence | medians: Q1|C3 (1/3) 0.602, Q1|C1 (1) 0.549, Q3|C3 (1) 0.605, Q3|C1 (3) 0.542 | AUROC(last-listed > first-listed) 0.012
+page bge-base w1 | medians: Q1|C3 (1/3) 0.393, Q1|C1 (1) 0.413, Q3|C3 (1) 0.411, Q3|C1 (3) 0.424 | AUROC(last-listed > first-listed) 0.908
+page bge-base longbar | medians: Q1|C3 (1/3) 0.932, Q1|C1 (1) 1.012, Q3|C3 (1) 0.982, Q3|C1 (3) 1.005 | AUROC(last-listed > first-listed) 0.940
+page bge-base w1_corp | medians: Q1|C3 (1/3) 0.423, Q1|C1 (1) 0.446, Q3|C3 (1) 0.443, Q3|C1 (3) 0.460 | AUROC(last-listed > first-listed) 0.978
+page bge-m3 mean_cos | medians: Q1|C3 (1/3) 0.457, Q1|C1 (1) 0.452, Q3|C3 (1) 0.507, Q3|C1 (3) 0.480 | AUROC(last-listed > first-listed) 0.741
+page bge-m3 coherence | medians: Q1|C3 (1/3) 0.475, Q1|C1 (1) 0.413, Q3|C3 (1) 0.476, Q3|C1 (3) 0.404 | AUROC(last-listed > first-listed) 0.003
+page bge-m3 w1 | medians: Q1|C3 (1/3) 0.402, Q1|C1 (1) 0.420, Q3|C3 (1) 0.419, Q3|C1 (3) 0.429 | AUROC(last-listed > first-listed) 0.958
+page bge-m3 longbar | medians: Q1|C3 (1/3) 0.942, Q1|C1 (1) 1.013, Q3|C3 (1) 0.989, Q3|C1 (3) 1.009 | AUROC(last-listed > first-listed) 0.993
+page bge-m3 w1_corp | medians: Q1|C3 (1/3) 0.430, Q1|C1 (1) 0.454, Q3|C3 (1) 0.451, Q3|C1 (3) 0.467 | AUROC(last-listed > first-listed) 1.000
+joined | mean score | medians: joined readings (multi-factual stand-in) 0.400, original question 0.429, first reading alone 0.426 | AUROC(first > second) 0.354
+joined | $W_1(H_0)$ | medians: joined readings (multi-factual stand-in) 0.404, original question 0.413, first reading alone 0.412 | AUROC(first > second) 0.409
+joined | longest bar $L_{\max}(H_0)$ | medians: joined readings (multi-factual stand-in) 1.018, original question 1.034, first reading alone 1.030 | AUROC(first > second) 0.384
+joined | $W_1(H_0)$, corpus bearings | medians: joined readings (multi-factual stand-in) 0.504, original question 0.510, first reading alone 0.509 | AUROC(first > second) 0.354
+joined | words in the query | medians: joined readings (multi-factual stand-in) 30.000, original question 8.000, first reading alone 11.000 | AUROC(first > second) 0.999
+ambignq | mean score | medians: clear 0.423, ambiguous 0.429 | AUROC(first > second) 0.464
+ambignq | coherence | medians: clear 0.327, ambiguous 0.334 | AUROC(first > second) 0.474
+ambignq | $W_1(H_0)$ | medians: clear 0.416, ambiguous 0.413 | AUROC(first > second) 0.523
+ambignq | longest bar $L_{\max}(H_0)$ | medians: clear 1.034, ambiguous 1.034 | AUROC(first > second) 0.498
+ambignq | $LT_{\max}(H_1)$ | medians: clear 0.035, ambiguous 0.036 | AUROC(first > second) 0.474
+fig8 cell (Nobel, text-embedding-3-small, Q250|C750; mean bar = 2 W1) | queries 878 | median mean bar: real 0.709, corpus-bearing 0.740, random-bearing 1.210 | share with real < corpus-bearing 0.86 | median (corpus-bearing - real) 0.032

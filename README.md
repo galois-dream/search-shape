@@ -564,6 +564,7 @@ tables through `code/realtext/features.py`. Outputs are in `results/revision/`.
 | `gen_fig_design.py` | the 2x2 design figure | Fig. "The 2x2 design" |
 | `../realtext/densseed.py` + `densseed_auc.py` | the size-matched cell over ten C250 subsamples (seed 0 reproduces the pipeline exactly); AUROC per seed | sec. "What else could produce the signature", corpus density |
 | `../realtext/realbarcode_ctrl.py` | the corpus-bearing control (20 draws) for the one-query barcode figure; output `results/example_barcode_ctrl.json` | Figure 8, the real barcode |
+| `../figures/supp_distributions.py` | distribution figures for the supplement: each feature query by query, per scenario and stand-in, from the archive's shipped data; output `results/dist_summary.txt` | supplement, last section |
 | `gen_fig_loops.py` | median LT_max(H1) against the participation ratio, from `h2probe.txt` | Fig. "Loops shrink as the neighbours fill more dimensions" |
 
 How to run: `signature.py stats` and `h2probe.py` need numpy, pandas and ripser (`code/realtext/requirements.txt`).
