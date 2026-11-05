@@ -27,7 +27,7 @@ from simcore import (PassageGenerator, matched_cosine_null, persistence_features
 HERE = Path(__file__).resolve().parent
 EPS = [0.01, 0.05, 0.1, 0.2, 0.4, 1.0, 2.0, 4.0]
 EPS_NULL = 0.4          # eps at which the null and the statistics are computed
-N_CORPUS = 50           # passages per group = retrieved set size
+N_CORPUS = int(os.environ.get("SIM_NCORPUS", "50"))  # MAX_CORPUS_SIZE; SIM_NCORPUS=20 for the N=20 check (2026-11-05 CET)
 
 # N = number of topics; n_parent = topics per parent passage.
 CONFIGS = {

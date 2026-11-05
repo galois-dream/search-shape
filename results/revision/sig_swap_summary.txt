@@ -1,0 +1,7 @@
+# bearing swap (swap_bearings.py), size-matched mismatched cells; AUROC = P(Q750|C250 > Q250|C750), as plotted
+w1_eqA    n=45 median=0.51 range=[0.45,0.56] above 0.5: 10  below 0.5: 2  across: 33  fields 0.49 gutenberg 0.52 nobel 0.52 turing 0.52 wiki 0.50
+w1_eqB    n=45 median=0.51 range=[0.48,0.57] above 0.5: 10  below 0.5: 0  across: 35  fields 0.50 gutenberg 0.51 nobel 0.51 turing 0.53 wiki 0.50
+w1_own    n=45 median=0.93 range=[0.72,1.00] above 0.5: 45  below 0.5: 0  across: 0  fields 0.97 gutenberg 0.93 nobel 0.92 turing 0.92 wiki 0.98
+w1_rand   n=45 median=0.52 range=[0.46,0.83] above 0.5: 26  below 0.5: 2  across: 17  fields 0.52 gutenberg 0.52 nobel 0.53 turing 0.54 wiki 0.50
+w1_shuf   n=45 median=0.96 range=[0.70,1.00] above 0.5: 45  below 0.5: 0  across: 0  fields 0.97 gutenberg 0.94 nobel 0.97 turing 0.96 wiki 0.97
+w1_swap   n=45 median=0.05 range=[0.00,0.27] above 0.5: 0  below 0.5: 45  across: 0  fields 0.03 gutenberg 0.06 nobel 0.05 turing 0.05 wiki 0.03

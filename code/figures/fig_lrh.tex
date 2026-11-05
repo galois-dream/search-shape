@@ -1,0 +1,59 @@
+% fig_lrh.tex -- written 2026-11-05 CET (moved from the supplement's Figure SM1 at a co-author's request). The linear
+% representation hypothesis in two panels; numbers checked by figs_didactic/companion_numbers.py ("model"). \input inside a figure.
+\begin{tikzpicture}[font=\small]
+  % (a) two topic directions; unit length = 2.6 cm
+  \begin{scope}
+    \def\R{2.6}
+    \node[anchor=west] at (-0.3,4.45) {(a) topics are directions};
+    \draw[black!35, line width=1pt, dashed, domain=0:90, samples=60] plot ({\R*cos(\x)},{\R*sin(\x)});
+    \draw[-{Stealth[length=5pt]}, line width=1pt] (0,0) -- (3.2,0) node[right] {$\vf_1$};
+    \draw[-{Stealth[length=5pt]}, line width=1pt] (0,0) -- (0,3.2) node[above] {$\vf_2$};
+    \draw[black!50, line width=1pt, densely dotted] (\R,0) -- (\R,\R) -- (0,\R);
+    \fill[black!60] (\R,\R) circle (1.6pt) node[above right, font=\footnotesize, black!70] {$\vf_1+\vf_2$};
+    \draw[-{Stealth[length=6pt]}, tabB, line width=1.6pt] (0,0) -- (\R,0);
+    \draw[-{Stealth[length=6pt]}, tabV, line width=1.6pt] (0,0) -- ({\R*cos(45)},{\R*sin(45)});
+    \node[tabB, font=\footnotesize] at ({\R/2},-0.3) {query $\{1\}$};
+    \draw[tabV, line width=1pt] ({\R*cos(45)+0.06},{\R*sin(45)-0.04}) -- (2.95,1.45);
+    \node[tabV, font=\footnotesize, align=left, anchor=west] at (2.95,1.45) {passage $\{1,2\}$:\\ $\vf_1+\vf_2$,\\ normalised};
+    \draw[line width=1pt, domain=0:45, samples=30] plot ({0.75*cos(\x)},{0.75*sin(\x)}); \node[font=\footnotesize] at (22.5:1.05) {$45^\circ$};
+    \node[align=left, font=\footnotesize, anchor=north west] at (-0.3,-0.65) {cosine $=1/\sqrt{1\cdot2}\approx0.71$: one shared\\ topic over $\sqrt{|Q|\,|C|}$};
+  \end{scope}
+  % (b) Remark 4.1's example drawn topic by topic (nu = 0): squares are topics, filled = shared with the query;
+  % score = (shared topics)/sqrt(2*4) on the axis at the right. Polysemic: query {1,2}, passages of 4 topics sharing 2,1,1,1.
+  % Multi-factual: query {1,2,3,4}, passages of 2 topics, all inside the query.
+  \begin{scope}[xshift=7.7cm]
+    \def\sq{0.3}\def\xo{2.3}\def\W{4.0}
+    \def\trow#1#2#3#4{% #1 y, #2 colour, #3 list of topic/shared, #4 score
+      \foreach \t/\f [count=\k] in {#3} {
+        \ifnum\f=1 \filldraw[fill=#2, draw=#2, line width=0.6pt] ({(\k-1)*(\sq+0.04)},#1) rectangle ++(\sq,\sq);
+          \node[white, font=\tiny] at ({(\k-1)*(\sq+0.04)+\sq/2},{#1+\sq/2}) {\t};
+        \else \draw[black!45, line width=0.6pt] ({(\k-1)*(\sq+0.04)},#1) rectangle ++(\sq,\sq);
+          \node[black!55, font=\tiny] at ({(\k-1)*(\sq+0.04)+\sq/2},{#1+\sq/2}) {\t};\fi}
+      \ifx&#4&\else \fill[#2] ({\xo+\W*#4},{#1+\sq/2}) circle (2.6pt); \draw[black!20, line width=0.6pt, densely dotted] (1.5,{#1+\sq/2}) -- ({\xo+\W*#4-0.1},{#1+\sq/2});\fi}
+    \node[anchor=west] at (-1.3,4.45) {(b) the same bound, reached by different counts};
+    % bound line and axis
+    \draw[black!50, dashed, line width=1pt] ({\xo+\W*0.7071},-2.15) -- ({\xo+\W*0.7071},3.45);
+    \node[font=\footnotesize, black!70, anchor=south] at ({\xo+\W*0.7071},3.45) {bound $2/\sqrt8=0.71$};
+    \draw[line width=1pt] (\xo,-2.15) -- ({\xo+\W},-2.15);
+    \foreach \v in {0,0.25,0.5,0.75,1} \draw[line width=1pt] ({\xo+\W*\v},-2.15) -- ({\xo+\W*\v},-2.25) node[below, font=\footnotesize] {$\v$};
+    \node[font=\footnotesize] at ({\xo+\W/2},-2.85) {score: cosine to the query ($\nu=0$)};
+    % polysemic block
+    \node[anchor=west, font=\footnotesize, tabV] at (-0.2,3.3) {polysemic: query of 2 topics};
+    \trow{2.75}{tabV}{1/1,2/1}{}
+    \node[anchor=east, font=\footnotesize, black!60] at (-0.25,{2.75+0.15}) {query};
+    \trow{2.25}{tabV}{1/1,2/1,3/0,4/0}{0.7071}
+    \trow{1.85}{tabV}{1/1,5/0,6/0,7/0}{0.3536}
+    \trow{1.45}{tabV}{2/1,8/0,9/0,10/0}{0.3536}
+    \trow{1.05}{tabV}{1/1,11/0,12/0,13/0}{0.3536}
+    \node[anchor=east, font=\footnotesize, black!60, align=right] at (-0.25,1.8) {passages,\\ 4 topics};
+    % multi-factual block
+    \node[anchor=west, font=\footnotesize, tabB] at (-0.2,0.5) {multi-factual: query of 4 topics};
+    \trow{-0.05}{tabB}{1/1,2/1,3/1,4/1}{}
+    \node[anchor=east, font=\footnotesize, black!60] at (-0.25,{-0.05+0.15}) {query};
+    \trow{-0.55}{tabB}{1/1,2/1}{0.7071}
+    \trow{-0.95}{tabB}{3/1,4/1}{0.7071}
+    \trow{-1.35}{tabB}{1/1,3/1}{0.7071}
+    \trow{-1.75}{tabB}{2/1,4/1}{0.7071}
+    \node[anchor=east, font=\footnotesize, black!60, align=right] at (-0.25,-1.0) {passages,\\ 2 topics};
+  \end{scope}
+\end{tikzpicture}

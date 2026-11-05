@@ -38,8 +38,9 @@ def query(q, X, a):
     Sd, Srho, Sr = dd.sum() / (2 * N), R.min(1).sum() / (2 * N), (DC.min(1) / A).sum() / (2 * N)
     k = N / (N - 1); gap, radial, asym = (G - M) / (2 * (N - 1)), k * (Sd - Srho), k * (Srho - Sr)
     bars = sorted(zip(T.data.tolist(), flags), reverse=True)
+    rr = sorted((DC.min(1) / A).tolist(), reverse=True)  # 2026-11-05: the 50 nearest-neighbour ratios r_i, for supplement Figure SM6
     return (W1, k * Sr, k * Srho, gap, radial, asym, W1 - k * Sr - gap - radial - asym, a.max() - a.min(),
-            a.mean(), mednn, np.mean(flags)), bars
+            a.mean(), mednn, np.mean(flags)), (bars, rr)
 
 
 def cell(meta, P, Q, qg, cg):
@@ -49,7 +50,7 @@ def cell(meta, P, Q, qg, cg):
     ov = (qm.start.values[:, None] < cm.end.values[None, :]) & (cm.start.values[None, :] < qm.end.values[:, None])
     S = np.where(same & ov, -np.inf, S); top = np.argsort(-S, axis=1, kind="stable")[:, :F.K]
     out = [query(Qe[i], C[top[i]], S[i, top[i]]) for i in range(len(qm))]
-    return np.array([o[0] for o in out]), [o[1] for o in out]
+    return np.array([o[0] for o in out]), [o[1][0] for o in out], [o[1][1] for o in out]
 
 
 def summary(m):
@@ -62,9 +63,16 @@ def summary(m):
 
 
 model = sys.argv[1]; meta, P, Q = F.load_model(model)
-(m1, b1), (m3, _) = cell(meta, P, Q, 250, 750), cell(meta, P, Q, 750, 250)
+(m1, b1, r1), (m3, _, _) = cell(meta, P, Q, 250, 750), cell(meta, P, Q, 750, 250)
 print(f"{F.CORPUS:9s} {model:16s} Q250|C750: {summary(m1)} || Q750|C250: {summary(m3)}", flush=True)
 if os.environ.get("DUMP"):
     nnsh = m1[:, 10]; i = int(np.argsort(np.abs(nnsh - np.median(nnsh)))[0])
     json.dump({"corpus": F.CORPUS, "model": model, "cell": "Q250|C750", "query_index": i, "nn_share": float(nnsh[i]),
                "W1": float(m1[i, 0]), "bars": [[float(l), bool(f)] for l, f in b1[i]]}, open(os.environ["DUMP"], "w"))
+    if os.environ.get("DUMPTERMS"):  # 2026-11-05 CET: the same query's terms of (5.6)-(5.7), in units of W1, for supplement Figure SM5
+        W, Xr, Xrho, gap, rad, asy, res = m1[i, :7]
+        json.dump({"query_index": i, "W1": float(W), "ratios": float(Xr), "clump": float(gap), "radial": float(rad),
+                   "scaling": float(asy), "residual": float(res),
+                   "cell_W1": [round(float(x), 5) for x in m1[:, 0]], "cell_ratios": [round(float(x), 5) for x in m1[:, 1]],
+                   "cell_clump": [round(float(x), 5) for x in m1[:, 3]], "ratios_r": [round(float(x), 5) for x in r1[i]]},
+                  open(os.environ["DUMPTERMS"], "w"))
