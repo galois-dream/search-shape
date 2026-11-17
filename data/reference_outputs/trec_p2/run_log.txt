@@ -1,0 +1,81 @@
+# copied from the run machine's run/run.log on 2026-11-17 12:36 CET, unchanged below (source of the 8,865-passage corpus size)
+start Sat Nov 14 10:45:12 PST 2026
+primary topics 198 pages 3908
+withdis topics 198 pages 3908
+== primary/minilm prep Sat Nov 14 10:47:19 PST 2026
+chunks: 12358 total over 3908 pages; corpus 8865 (cap 50000)
+chunks per page quantiles (0, .1, .25, .5, .75, .9, .99, 1): [1, 1, 1, 2, 3, 7, 24, 75]
+pages with < 10 chunks: 3686
+primary minilm topics 200 corpus (8865, 384)
+== primary/minilm feats Sat Nov 14 10:49:43 PST 2026
+rows 200
+== primary/minilm fit Sat Nov 14 10:49:48 PST 2026
+# p2.py fit -- run/primary/minilm; topics 200, kept (ambiguous or faceted) 200, excluded 0
+ambiguous 58, faceted 142; coverage by type (median): ambiguous 0.600, faceted 0.550
+real: AUROC M0 0.718, M1 0.682; gain -0.037 [-0.073, +0.001]; log-likelihood gain per topic -0.0277 [-0.0559, +0.0038]
+VERDICT (registered rule): not demonstrated
+control corp (report only): AUROC M0 0.718, M1 0.686; gain -0.033 [-0.070, +0.002]; log-likelihood gain per topic -0.0181 [-0.0447, +0.0089]
+control swap (report only): AUROC M0 0.718, M1 0.676; gain -0.042 [-0.084, -0.002]; log-likelihood gain per topic -0.0387 [-0.0753, -0.0028]
+longest bar, ambiguous vs faceted: AUROC 0.627, Mann-Whitney U = 5162, n1 = 58, n2 = 142, p = 0.00496 (two-sided)
+permutation test of the log-likelihood gain (one repetition, 1000 permutations, seed 0): observed -0.0327, p = 0.999 (one-sided; reported, not used to decide)
+== primary/minilm done Sat Nov 14 11:43:04 PST 2026
+== primary/mpnet prep Sat Nov 14 11:43:04 PST 2026
+primary mpnet topics 200 corpus (8865, 768)
+== primary/mpnet feats Sat Nov 14 11:55:47 PST 2026
+rows 200
+== primary/mpnet fit Sat Nov 14 11:55:53 PST 2026
+# p2.py fit -- run/primary/mpnet; topics 200, kept (ambiguous or faceted) 200, excluded 0
+ambiguous 58, faceted 142; coverage by type (median): ambiguous 0.570, faceted 0.540
+real: AUROC M0 0.725, M1 0.727; gain +0.002 [-0.038, +0.040]; log-likelihood gain per topic -0.0148 [-0.0435, +0.0132]
+VERDICT (registered rule): not demonstrated
+control corp (report only): AUROC M0 0.725, M1 0.728; gain +0.003 [-0.029, +0.035]; log-likelihood gain per topic -0.0049 [-0.0298, +0.0210]
+control swap (report only): AUROC M0 0.725, M1 0.701; gain -0.025 [-0.060, +0.008]; log-likelihood gain per topic -0.0168 [-0.0411, +0.0060]
+longest bar, ambiguous vs faceted: AUROC 0.631, Mann-Whitney U = 5196, n1 = 58, n2 = 142, p = 0.00372 (two-sided)
+permutation test of the log-likelihood gain (one repetition, 1000 permutations, seed 0): observed -0.0261, p = 0.996 (one-sided; reported, not used to decide)
+== primary/mpnet done Sat Nov 14 12:52:15 PST 2026
+== withdis/minilm prep Sat Nov 14 12:52:15 PST 2026
+chunks: 12039 total over 3908 pages; corpus 8676 (cap 50000)
+chunks per page quantiles (0, .1, .25, .5, .75, .9, .99, 1): [1, 1, 1, 2, 3, 6, 24, 75]
+pages with < 10 chunks: 3695
+withdis minilm topics 200 corpus (8676, 384)
+== withdis/minilm feats Sat Nov 14 12:54:32 PST 2026
+rows 200
+== withdis/minilm fit Sat Nov 14 12:54:36 PST 2026
+# p2.py fit -- run/withdis/minilm; topics 200, kept (ambiguous or faceted) 200, excluded 0
+ambiguous 58, faceted 142; coverage by type (median): ambiguous 0.600, faceted 0.560
+real: AUROC M0 0.708, M1 0.686; gain -0.022 [-0.064, +0.022]; log-likelihood gain per topic -0.0226 [-0.0498, +0.0065]
+VERDICT (registered rule): not demonstrated
+control corp (report only): AUROC M0 0.708, M1 0.682; gain -0.026 [-0.059, +0.004]; log-likelihood gain per topic -0.0177 [-0.0412, +0.0056]
+control swap (report only): AUROC M0 0.708, M1 0.675; gain -0.033 [-0.068, +0.000]; log-likelihood gain per topic -0.0347 [-0.0619, -0.0096]
+longest bar, ambiguous vs faceted: AUROC 0.608, Mann-Whitney U = 5011, n1 = 58, n2 = 142, p = 0.0163 (two-sided)
+permutation test of the log-likelihood gain (one repetition, 1000 permutations, seed 0): observed -0.0283, p = 1 (one-sided; reported, not used to decide)
+== withdis/minilm done Sat Nov 14 13:48:26 PST 2026
+== A/minilm prep Sat Nov 14 13:48:26 PST 2026
+A minilm topics 200 corpus (87528, 384)
+== A/minilm feats Sat Nov 14 14:12:17 PST 2026
+rows 200
+== A/minilm fit Sat Nov 14 14:12:22 PST 2026
+# p2.py fit -- run/A/minilm; topics 200, kept (ambiguous or faceted) 200, excluded 0
+ambiguous 58, faceted 142; coverage by type (median): ambiguous 0.000, faceted 0.000
+real: AUROC M0 0.694, M1 0.680; gain -0.014 [-0.064, +0.029]; log-likelihood gain per topic -0.0074 [-0.0357, +0.0197]
+VERDICT (registered rule): not demonstrated
+control corp (report only): AUROC M0 0.694, M1 0.665; gain -0.029 [-0.050, -0.011]; log-likelihood gain per topic -0.0265 [-0.0410, -0.0115]
+control swap (report only): AUROC M0 0.694, M1 0.610; gain -0.084 [-0.132, -0.045]; log-likelihood gain per topic -0.0467 [-0.0870, -0.0140]
+longest bar, ambiguous vs faceted: AUROC 0.501, Mann-Whitney U = 4125, n1 = 58, n2 = 142, p = 0.986 (two-sided)
+permutation test of the log-likelihood gain (one repetition, 1000 permutations, seed 0): observed -0.0096, p = 0.943 (one-sided; reported, not used to decide)
+== A/minilm done Sat Nov 14 15:12:08 PST 2026
+== A/mpnet prep Sat Nov 14 15:12:08 PST 2026
+A mpnet topics 200 corpus (87528, 768)
+== A/mpnet feats Sat Nov 14 17:16:54 PST 2026
+rows 200
+== A/mpnet fit Sat Nov 14 17:17:01 PST 2026
+# p2.py fit -- run/A/mpnet; topics 200, kept (ambiguous or faceted) 200, excluded 0
+ambiguous 58, faceted 142; coverage by type (median): ambiguous 0.000, faceted 0.000
+real: AUROC M0 0.716, M1 0.703; gain -0.013 [-0.059, +0.036]; log-likelihood gain per topic -0.0121 [-0.0445, +0.0216]
+VERDICT (registered rule): not demonstrated
+control corp (report only): AUROC M0 0.716, M1 0.693; gain -0.024 [-0.044, -0.004]; log-likelihood gain per topic -0.0198 [-0.0362, -0.0030]
+control swap (report only): AUROC M0 0.716, M1 0.686; gain -0.031 [-0.076, +0.012]; log-likelihood gain per topic -0.0296 [-0.0621, +0.0004]
+longest bar, ambiguous vs faceted: AUROC 0.599, Mann-Whitney U = 4936, n1 = 58, n2 = 142, p = 0.0277 (two-sided)
+permutation test of the log-likelihood gain (one repetition, 1000 permutations, seed 0): observed -0.0133, p = 0.965 (one-sided; reported, not used to decide)
+== A/mpnet done Sat Nov 14 18:15:18 PST 2026
+done Sat Nov 14 18:15:18 PST 2026

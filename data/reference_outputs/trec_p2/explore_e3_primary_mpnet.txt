@@ -1,0 +1,15 @@
+# explore.py e3 -- run/primary/mpnet (exploratory, not registered)
+E3a 1 word: ambiguous 31, faceted 22
+E3a 2 words: ambiguous 14, faceted 33
+E3a 3+ words: ambiguous 13, faceted 87
+E3a query length (words), ambiguous vs faceted: AUROC 0.266, U = 2190, n1 = 58, n2 = 142, p = 7.2e-08
+E3a ambiguous share by year: 2009 12/50, 2010 27/50, 2011 9/50, 2012 10/50
+E3b (i) length alone: CV AUROC 0.699 [0.615, 0.781]
+E3b (ii) baseline without length: CV AUROC 0.639 [0.555, 0.718]
+E3b (iii) full baseline: CV AUROC 0.725 [0.642, 0.803]
+E3b (iv) length + topology: CV AUROC 0.722 [0.641, 0.798]
+E3c 1 word, longest bar: AUROC 0.565, U = 385, n1 = 31, n2 = 22, p = 0.432
+E3c 1 word, top cosine: AUROC 0.370, U = 252, n1 = 31, n2 = 22, p = 0.11
+E3c 2+ words, longest bar: AUROC 0.663, U = 2147, n1 = 27, n2 = 120, p = 0.00844
+E3c 2+ words, top cosine: AUROC 0.312, U = 1012, n1 = 27, n2 = 120, p = 0.00237
+E3d Spearman: longest bar vs length rho = -0.121 (p = 0.0878); vs top cosine rho = +0.011 (p = 0.874); n = 200

@@ -1,0 +1,20 @@
+# ambig.py qpp_report -- AmbigNQ train, n1 = 4749, n2 = 5287; AUROC = P(ambiguous > clear) [95% bootstrap] -- run 2026-11-14 on a desktop machine (out_full/, whole gold pages); report written 02:21 PST
+nqc                    0.498 [0.487, 0.509]  oriented 0.502  U = 12506330, z = -0.33, p = 0.74
+nqc_cen                0.474 [0.462, 0.485]  oriented 0.526  U = 11896742, z = -4.54, p = 5.8e-06
+wig_dense              0.540 [0.530, 0.552]  oriented 0.540  U = 13568969, z = +7.00, p = 2.5e-12
+lsmv                   0.517 [0.506, 0.529]  oriented 0.517  U = 12990478, z = +3.01, p = 0.0026
+sigma_max              0.502 [0.491, 0.514]  oriented 0.502  U = 12609320, z = +0.38, p = 0.7
+gap                    0.481 [0.469, 0.492]  oriented 0.519  U = 12070177, z = -3.34, p = 0.00084
+spread_R               0.517 [0.505, 0.528]  oriented 0.517  U = 12972106, z = +2.89, p = 0.0039
+ac_embs                0.519 [0.507, 0.530]  oriented 0.519  U = 13020724, z = +3.22, p = 0.0013
+wand                   0.513 [0.502, 0.524]  oriented 0.513  U = 12881441, z = +2.26, p = 0.024
+density                0.504 [0.493, 0.516]  oriented 0.504  U = 12666341, z = +0.78, p = 0.44
+components             0.512 [0.503, 0.521]  oriented 0.512  U = 12847686, z = +2.68, p = 0.0073
+clarity                0.476 [0.465, 0.488]  oriented 0.524  U = 11960776, z = -4.09, p = 4.3e-05
+avg_idf                0.429 [0.418, 0.440]  oriented 0.571  U = 10778041, z = -12.25, p = 1.6e-34
+max_idf                0.439 [0.427, 0.450]  oriented 0.561  U = 11012026, z = -10.64, p = 1.9e-26
+avg_scq                0.455 [0.444, 0.466]  oriented 0.545  U = 11422345, z = -7.81, p = 5.8e-15
+max_scq                0.480 [0.468, 0.491]  oriented 0.520  U = 12058678, z = -3.42, p = 0.00063
+Dense-QPP: (s, K) chosen on the tuning half (5018 questions) = dqpp_s0.09_K400; held-out half (5018):
+  dqpp_s0.09_K400      0.538 [0.521, 0.553]  oriented 0.538  U = 3374532, z = +4.62, p = 3.8e-06
+  range over all 90 variants on the held-out half: 0.526 to 0.540

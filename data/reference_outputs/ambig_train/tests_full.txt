@@ -1,0 +1,17 @@
+# ambig.py tests -- AmbigNQ, n1 = 4749 ambiguous, n2 = 5287 clear; two-sided p; AUROC = U/(n1*n2) -- run 2026-11-14 09:29 CET on a desktop machine, out_full/feats.csv (whole gold pages)
+w1             AUROC 0.474  U = 11906667, z = -4.47, p = 7.9e-06
+longbar        AUROC 0.496  U = 12464895, z = -0.61, p = 0.54
+ltmax          AUROC 0.516  U = 12958812, z = +2.79, p = 0.0052
+top1           AUROC 0.534  U = 13403963, z = +5.87, p = 4.5e-09
+mean_cos       AUROC 0.550  U = 13797289, z = +8.58, p = 9.5e-18
+std_cos        AUROC 0.512  U = 12858492, z = +2.10, p = 0.036
+slope          AUROC 0.481  U = 12086400, z = -3.23, p = 0.0013
+nn_med         AUROC 0.541  U = 13578298, z = +7.07, p = 1.6e-12
+coherence      AUROC 0.540  U = 13563034, z = +6.96, p = 3.3e-12
+eig2           AUROC 0.491  U = 12329973, z = -1.55, p = 0.12
+cov_gain       AUROC 0.488  U = 12240701, z = -2.16, p = 0.031
+cov_gain_diff  AUROC 0.487  U = 12224253, z = -2.28, p = 0.023
+nwords         AUROC 0.463  U = 11616972, z = -6.89, p = 5.8e-12
+w1 real - corpus-bearing control: -0.073, DeLong z = -7.53, p = 4.9e-14
+longbar real - corpus-bearing control: -0.054, DeLong z = -5.76, p = 8.6e-09
+ltmax real - corpus-bearing control: +0.001, DeLong z = +0.17, p = 0.87

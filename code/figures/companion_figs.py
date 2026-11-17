@@ -4,7 +4,7 @@
 #        Source: nobel/out_clean/example_barcode_terms.json (mstpieces.py with DUMPTERMS).
 #   ../supplement/fig_cp_gauss.tex   (a) one random Gaussian cloud of 50 points in the plane (seed 0) with its minimum
 #        spanning tree, nearest-neighbour edges blue and bridges vermillion; (b) median share of nearest-neighbour bars by
-#        dimension (supplement Table SM7, from data/reference_outputs/simods/random_nn_share.txt) against the real 76%.
+#        dimension (supplement Table SM7, from results/random_nn_share.txt) against the real 76%.
 # Run with any Python that has numpy and scipy: python companion_figs.py   (prints the numbers it draws)
 import json, os
 import numpy as np

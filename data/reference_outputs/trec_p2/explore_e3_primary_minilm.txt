@@ -1,0 +1,15 @@
+# explore.py e3 -- run/primary/minilm (exploratory, not registered)
+E3a 1 word: ambiguous 31, faceted 22
+E3a 2 words: ambiguous 14, faceted 33
+E3a 3+ words: ambiguous 13, faceted 87
+E3a query length (words), ambiguous vs faceted: AUROC 0.266, U = 2190, n1 = 58, n2 = 142, p = 7.2e-08
+E3a ambiguous share by year: 2009 12/50, 2010 27/50, 2011 9/50, 2012 10/50
+E3b (i) length alone: CV AUROC 0.699 [0.615, 0.781]
+E3b (ii) baseline without length: CV AUROC 0.533 [0.456, 0.609]
+E3b (iii) full baseline: CV AUROC 0.718 [0.636, 0.795]
+E3b (iv) length + topology: CV AUROC 0.708 [0.624, 0.787]
+E3c 1 word, longest bar: AUROC 0.499, U = 340, n1 = 31, n2 = 22, p = 0.993
+E3c 1 word, top cosine: AUROC 0.472, U = 322, n1 = 31, n2 = 22, p = 0.738
+E3c 2+ words, longest bar: AUROC 0.640, U = 2074, n1 = 27, n2 = 120, p = 0.0233
+E3c 2+ words, top cosine: AUROC 0.371, U = 1203, n1 = 27, n2 = 120, p = 0.0372
+E3d Spearman: longest bar vs length rho = -0.191 (p = 0.0066); vs top cosine rho = +0.032 (p = 0.649); n = 200

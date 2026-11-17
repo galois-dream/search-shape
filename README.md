@@ -1,11 +1,11 @@
 # What Persistent Homology Sees Around a Search Query: code and derived data
 
-Code for every number, table and figure of the paper by Thomas Barillot and Alex Castro (submitted to the SIAM Journal on
-Mathematics of Data Science), and of the earlier preprint it revisits, Barillot and De Castro, "Topological
-quantification of ambiguity in semantic search", arXiv:2406.07990. Licence: Apache-2.0 (LICENSE). The authors
-contributed equally; Alex Castro is the corresponding author.
+Code for every number, table and figure of the paper by Thomas Barillot and Alex Castro (under review), and of the
+earlier preprint it revisits, Barillot and De Castro, "Topological quantification of ambiguity in semantic search",
+arXiv:2406.07990. Licence: Apache-2.0 (LICENSE). The authors contributed equally; Alex Castro is the corresponding
+author.
 
-**Added for the SIMODS paper**
+**Added for the journal version**
 
 ```
 code/geometry/     mstcheck.py (H0 bars = spanning tree; nearest-neighbour share), mstpieces.py (the exact decomposition of
@@ -17,12 +17,37 @@ code/figures/      the four-point figure and the generator of the real-barcode f
 results/           the outputs these scripts produced for the paper (each file says how it was run)
 ```
 
+**Added in the November 2026 revision.** Calendar dates and clock times are kept in these files (unlike the study
+days used elsewhere): they show that each plan predates its run. Copies of the authors' files say so in their first
+line, with what changed (paths and imports for this layout, host names).
+
+```
+code/trec_p2/      registered test P2 on TREC Web track 2009-2012 topics, ambiguous vs faceted (build_index.py: BM25
+                   index of the AmbigQA dump; fetch_topics.py; p2.py: bm25, corpus_a, prep, feats, fit; ambigqa.py: the
+                   registered corpus's chunker; explore.py: exploratory E1-E4). Needs the open-source Blowfish library
+                   (Apache-2.0) for chunking. The NIST topic files are not shipped: fetch them from trec.nist.gov
+code/ambig_train/  ambig.py now also computes query-performance predictors (qpp, qpp_report) and the Mann-Whitney
+                   and DeLong tests (tests)
+code/review_checks/  exploratory checks E5-E8: simulated senses at a realistic dimension (explore_e5.py, imports
+                   ../simulation/matched/matched.py), crowding of long chunks (e6), bearings from another corpus (e7,
+                   e8; import ../realtext/features.py, read $RT_WORK)
+data/trec_p2/, data/review_checks/  BM25 page lists per topic (bm25.csv.xz); E5's simulated neighbourhoods (e5_cells.csv.xz)
+data/reference_outputs/trec_p2/      registered results per arm (primary_*, withdis_minilm, A_*), exploratory
+                                     outputs (explore_*), and the run log
+data/reference_outputs/ambig_train/  qpp_train.txt, qpp_full.txt, tests_train.txt, tests_full.txt
+data/reference_outputs/review_checks/  E5-E8 outputs (e6_run1.txt is superseded by e6.txt, as the plan records)
+docs/analysis_plan_deviation7.md     deviation 7 of the registered plan: test P2, registered before any TREC data
+docs/trec_p2_exploratory.md          dated plans and results of the exploratory TREC analyses E1-E4
+docs/review_checks_exploratory.md      dated plans and results of E5-E8
+docs/ambig_train_plan.md             now with amendments 2 and 2a (query-performance predictors) and their result
+```
+
 **Data.** No source text is included, and no embeddings except the crane example's vectors: several corpora are
 copyrighted (see "Data and licences" below, which gives every selection rule and identifier needed to rebuild them).
 Derived data that are not here (embeddings for all nine models, per-query features and results, and the chunk tables;
-about 2 GB) are kept privately. The authors share them, on request to the corresponding author, only with SIAM
-editors and with researchers whose institutional affiliation they can verify, for research use. Texts of copyrighted
-corpora are not shared, only their chunk identifiers and offsets.
+about 2 GB) are kept privately. The authors share them, on request to the corresponding author, only with journal
+editors and reviewers and with researchers whose institutional affiliation they can verify, for research use. Texts
+of copyrighted corpora are not shared, only their chunk identifiers and offsets.
 
 ---
 

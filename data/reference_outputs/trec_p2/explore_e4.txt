@@ -1,0 +1,16 @@
+# explore.py e4 -- names, Wikipedia coverage, year (exploratory, not registered); n1 = 58, n2 = 142
+E4a own article, all: ambiguous 19/58, faceted 30/142; Fisher OR = 1.82, p = 0.103
+E4a own article, 1 word: ambiguous 15/31, faceted 8/22; Fisher OR = 1.64, p = 0.415
+E4a own article, 2+ words: ambiguous 4/27, faceted 22/120; Fisher OR = 0.77, p = 0.786
+E4a own article: AUROC 0.558; given length LR chi2(1) = 0.01, p = 0.932
+E4b disambiguation page, all: ambiguous 10/58, faceted 4/142; Fisher OR = 7.19, p = 0.000816
+E4b disambiguation page, 1 word: ambiguous 9/31, faceted 4/22; Fisher OR = 1.84, p = 0.52
+E4b disambiguation page, 2+ words: ambiguous 1/27, faceted 0/120; Fisher OR = inf, p = 0.184
+E4b disambiguation page: AUROC 0.572; given length LR chi2(1) = 3.30, p = 0.0692
+E4c disambiguation pages in top 20, all: median ambiguous 0, faceted 0; AUROC 0.590, U = 4860, n1 = 58, n2 = 142, p = 0.0221
+E4c disambiguation pages in top 20, 1 word: median ambiguous 1, faceted 0; AUROC 0.571, U = 390, n1 = 31, n2 = 22, p = 0.349
+E4c disambiguation pages in top 20, 2+ words: median ambiguous 0, faceted 0; AUROC 0.583, U = 1890, n1 = 27, n2 = 120, p = 0.109
+E4c given length: LR chi2(1) = 3.58, p = 0.0583
+E4d year given length: LR chi2(3) = 13.63, p = 0.00346; length given year: LR chi2(1) = 23.90, p = 1.01e-06
+E4d ambiguous share by year, 1 word: 2009 7/17, 2010 19/23, 2011 0/0, 2012 5/13
+E4d ambiguous share by year, 2+ words: 2009 5/33, 2010 8/27, 2011 9/50, 2012 5/37

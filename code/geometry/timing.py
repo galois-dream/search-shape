@@ -1,4 +1,4 @@
-# timing.py -- written 2026-11-02 08:37 CET. Cost per query of each statistic, for the SIMODS version's computation
+# timing.py -- written 2026-11-02 08:37 CET. Cost per query of each statistic, for the journal version's computation
 # paragraph (a separate script: it measures cost, not a result of the paper). Same retrieval as mstpieces.py
 # (Q250|C750 cell, span-overlap exclusion, K = 50). Per query, wall time of:
 #   dist  : the 50 x 50 distance matrices (offsets and passages)       O(K^2 D)

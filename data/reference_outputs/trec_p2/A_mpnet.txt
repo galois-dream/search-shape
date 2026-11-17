@@ -1,0 +1,8 @@
+# p2.py fit -- run/A/mpnet; topics 200, kept (ambiguous or faceted) 200, excluded 0
+ambiguous 58, faceted 142; coverage by type (median): ambiguous 0.000, faceted 0.000
+real: AUROC M0 0.716, M1 0.703; gain -0.013 [-0.059, +0.036]; log-likelihood gain per topic -0.0121 [-0.0445, +0.0216]
+VERDICT (registered rule): not demonstrated
+control corp (report only): AUROC M0 0.716, M1 0.693; gain -0.024 [-0.044, -0.004]; log-likelihood gain per topic -0.0198 [-0.0362, -0.0030]
+control swap (report only): AUROC M0 0.716, M1 0.686; gain -0.031 [-0.076, +0.012]; log-likelihood gain per topic -0.0296 [-0.0621, +0.0004]
+longest bar, ambiguous vs faceted: AUROC 0.599, Mann-Whitney U = 4936, n1 = 58, n2 = 142, p = 0.0277 (two-sided)
+permutation test of the log-likelihood gain (one repetition, 1000 permutations, seed 0): observed -0.0133, p = 0.965 (one-sided; reported, not used to decide)

@@ -1,0 +1,8 @@
+# explore_e8 -- openai-3-small, CLEAN=1; next corpus in the cycle, same chunking; one draw per query, rng seed 1; mean bar = 2 W1(H0)
+# own = own corpus outside top 50; cross = next corpus outside top 50 (E7); xshell = next corpus ranks 51-500; else = query searches the next corpus (its top 50, real scores and bearings)
+corpus (next) | gap multi-poly, mean bar: real own cross xshell else | AUROC poly smaller: real own cross xshell else | mean score poly/multi: real; else | n poly, multi
+Nobel (Turing) | +0.170 +0.155 +0.152 +0.137 +0.135 | 1.000 0.998 1.000 1.000 1.000 | 0.557/0.627; 0.316/0.368 | 878, 280
+Turing (Fields) | +0.166 +0.163 +0.123 +0.115 +0.127 | 0.996 0.998 1.000 1.000 0.996 | 0.547/0.620; 0.366/0.395 | 950, 307
+Fields (Essays) | +0.151 +0.136 +0.115 +0.059 +0.119 | 0.999 0.996 1.000 0.988 1.000 | 0.592/0.646; 0.286/0.332 | 1430, 468
+Essays (Wikipedia) | +0.165 +0.129 +0.108 +0.063 +0.078 | 0.994 0.997 0.998 0.947 0.983 | 0.512/0.600; 0.241/0.292 | 2372, 790
+Wikipedia (Nobel) | +0.159 +0.132 +0.154 +0.143 +0.105 | 0.997 1.000 1.000 1.000 0.998 | 0.340/0.518; 0.175/0.197 | 1249, 402

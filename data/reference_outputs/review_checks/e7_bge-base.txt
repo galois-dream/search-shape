@@ -1,0 +1,7 @@
+# explore_e7 -- bge-base, CLEAN=1; bearings: own corpus / next corpus in cycle (same chunking) / random; mean bar = 2 W1(H0); one draw per query, rng seed 1
+corpus (bearings from) | gap multi-poly: real own cross random | AUROC poly smaller: real own cross | n poly, multi
+Nobel (Turing) | +0.069 +0.065 +0.056 +0.013 | 0.843 0.840 0.952 | 878, 280
+Turing (Fields) | +0.078 +0.066 +0.050 +0.014 | 0.835 0.799 0.825 | 950, 307
+Fields (Essays) | +0.053 +0.052 +0.062 +0.011 | 0.838 0.839 0.989 | 1430, 468
+Essays (Wikipedia) | +0.080 +0.072 +0.043 +0.016 | 0.863 0.893 0.922 | 2372, 790
+Wikipedia (Nobel) | +0.068 +0.052 +0.056 +0.030 | 0.907 0.936 0.955 | 1249, 402

@@ -1,0 +1,20 @@
+# ambig.py qpp_report -- AmbigNQ train, n1 = 4749, n2 = 5287; AUROC = P(ambiguous > clear) [95% bootstrap] -- run 2026-11-14 on a desktop machine (out/, registered corpus); report written 01:17 PST
+nqc                    0.508 [0.496, 0.519]  oriented 0.508  U = 12744009, z = +1.31, p = 0.19
+nqc_cen                0.484 [0.472, 0.495]  oriented 0.516  U = 12145530, z = -2.82, p = 0.0048
+wig_dense              0.529 [0.518, 0.541]  oriented 0.529  U = 13276165, z = +4.98, p = 6.2e-07
+lsmv                   0.523 [0.511, 0.534]  oriented 0.523  U = 13121300, z = +3.91, p = 9e-05
+sigma_max              0.510 [0.499, 0.522]  oriented 0.510  U = 12814193, z = +1.80, p = 0.073
+gap                    0.482 [0.470, 0.493]  oriented 0.518  U = 12098410, z = -3.14, p = 0.0017
+spread_R               0.504 [0.493, 0.516]  oriented 0.504  U = 12655675, z = +0.70, p = 0.48
+ac_embs                0.524 [0.512, 0.535]  oriented 0.524  U = 13149048, z = +4.11, p = 4e-05
+wand                   0.505 [0.494, 0.516]  oriented 0.505  U = 12683909, z = +0.90, p = 0.37
+density                0.501 [0.490, 0.512]  oriented 0.501  U = 12577888, z = +0.16, p = 0.87
+components             0.506 [0.498, 0.513]  oriented 0.506  U = 12701659, z = +1.50, p = 0.13
+clarity                0.484 [0.473, 0.495]  oriented 0.516  U = 12144498, z = -2.83, p = 0.0047
+avg_idf                0.434 [0.422, 0.444]  oriented 0.566  U = 10884788, z = -11.52, p = 1.1e-30
+max_idf                0.442 [0.430, 0.452]  oriented 0.558  U = 11089110, z = -10.11, p = 5e-24
+avg_scq                0.465 [0.454, 0.476]  oriented 0.535  U = 11669362, z = -6.10, p = 1e-09
+max_scq                0.488 [0.476, 0.499]  oriented 0.512  U = 12246938, z = -2.12, p = 0.034
+Dense-QPP: (s, K) chosen on the tuning half (5018 questions) = dqpp_s0.09_K100; held-out half (5018):
+  dqpp_s0.09_K100      0.536 [0.520, 0.551]  oriented 0.536  U = 3361029, z = +4.36, p = 1.3e-05
+  range over all 90 variants on the held-out half: 0.526 to 0.540

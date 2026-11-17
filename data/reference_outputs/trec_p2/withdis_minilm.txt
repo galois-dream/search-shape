@@ -1,0 +1,8 @@
+# p2.py fit -- run/withdis/minilm; topics 200, kept (ambiguous or faceted) 200, excluded 0
+ambiguous 58, faceted 142; coverage by type (median): ambiguous 0.600, faceted 0.560
+real: AUROC M0 0.708, M1 0.686; gain -0.022 [-0.064, +0.022]; log-likelihood gain per topic -0.0226 [-0.0498, +0.0065]
+VERDICT (registered rule): not demonstrated
+control corp (report only): AUROC M0 0.708, M1 0.682; gain -0.026 [-0.059, +0.004]; log-likelihood gain per topic -0.0177 [-0.0412, +0.0056]
+control swap (report only): AUROC M0 0.708, M1 0.675; gain -0.033 [-0.068, +0.000]; log-likelihood gain per topic -0.0347 [-0.0619, -0.0096]
+longest bar, ambiguous vs faceted: AUROC 0.608, Mann-Whitney U = 5011, n1 = 58, n2 = 142, p = 0.0163 (two-sided)
+permutation test of the log-likelihood gain (one repetition, 1000 permutations, seed 0): observed -0.0283, p = 1 (one-sided; reported, not used to decide)

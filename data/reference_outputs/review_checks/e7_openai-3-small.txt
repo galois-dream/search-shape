@@ -1,0 +1,7 @@
+# explore_e7 -- openai-3-small, CLEAN=1; bearings: own corpus / next corpus in cycle (same chunking) / random; mean bar = 2 W1(H0); one draw per query, rng seed 1
+corpus (bearings from) | gap multi-poly: real own cross random | AUROC poly smaller: real own cross | n poly, multi
+Nobel (Turing) | +0.170 +0.157 +0.154 +0.028 | 1.000 0.998 1.000 | 878, 280
+Turing (Fields) | +0.166 +0.161 +0.121 +0.027 | 0.996 0.998 1.000 | 950, 307
+Fields (Essays) | +0.151 +0.133 +0.114 +0.021 | 0.999 0.995 1.000 | 1430, 468
+Essays (Wikipedia) | +0.165 +0.127 +0.110 +0.036 | 0.994 0.998 0.999 | 2372, 790
+Wikipedia (Nobel) | +0.159 +0.133 +0.154 +0.065 | 0.997 1.000 1.000 | 1249, 402

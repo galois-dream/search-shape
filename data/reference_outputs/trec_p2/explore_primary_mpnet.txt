@@ -1,0 +1,6 @@
+# explore.py -- run/primary/mpnet; n1 = 58, n2 = 142 (exploratory, not registered)
+E2 reproduction: AUROC gain +0.002 [-0.038, +0.040]; log-likelihood gain -0.0148 [-0.0435, +0.0132] (must match result.txt 'real')
+E2: share of 2000 bootstrap draws with AUROC gain >= +0.03: 0.081; with AUROC gain > 0: 0.523; with log-likelihood gain > 0: 0.161
+E1 real: longest bar given M0, beta per SD +0.266 [-0.077, +0.610], LR chi2(1) = 2.39, p = 0.122; E1b four features: LR chi2(4) = 7.42, p = 0.115
+E1 control corp: longest bar given M0, beta per SD -0.006 [-0.351, +0.338], LR chi2(1) = 0.00, p = 0.972; E1b four features: LR chi2(4) = 1.46, p = 0.834
+E1 control swap: longest bar given M0, beta per SD +0.214 [-0.143, +0.572], LR chi2(1) = 1.41, p = 0.236; E1b four features: LR chi2(4) = 5.44, p = 0.245

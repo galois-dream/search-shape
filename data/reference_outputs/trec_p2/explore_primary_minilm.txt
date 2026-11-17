@@ -1,0 +1,6 @@
+# explore.py -- run/primary/minilm; n1 = 58, n2 = 142 (exploratory, not registered)
+E2 reproduction: AUROC gain -0.037 [-0.073, +0.001]; log-likelihood gain -0.0277 [-0.0559, +0.0038] (must match result.txt 'real')
+E2: share of 2000 bootstrap draws with AUROC gain >= +0.03: 0.002; with AUROC gain > 0: 0.030; with log-likelihood gain > 0: 0.038
+E1 real: longest bar given M0, beta per SD +0.238 [-0.116, +0.591], LR chi2(1) = 1.77, p = 0.183; E1b four features: LR chi2(4) = 4.62, p = 0.329
+E1 control corp: longest bar given M0, beta per SD +0.025 [-0.322, +0.372], LR chi2(1) = 0.02, p = 0.889; E1b four features: LR chi2(4) = 3.05, p = 0.549
+E1 control swap: longest bar given M0, beta per SD +0.199 [-0.155, +0.554], LR chi2(1) = 1.22, p = 0.269; E1b four features: LR chi2(4) = 3.72, p = 0.445

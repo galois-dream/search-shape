@@ -1,4 +1,4 @@
-# densseed.py -- written 2026-11-02 14:03 CET. The size-matched contrast of the SIMODS paper (Q750 queries against
+# densseed.py -- written 2026-11-02 14:03 CET. The size-matched contrast of the paper's first journal version (Q750 queries against
 # C250 subsampled to |C750| per lecture) used ONE subsample (features.py, seed 0); red-team M2. This recomputes that
 # cell for subsample seeds 0..9 with features.py's exact rule (uniform per lecture, n = the lecture's C750 count;
 # overlap exclusion), and writes per-query mean and SD of the 50 scores and W1(H0). Seed 0 must reproduce the
